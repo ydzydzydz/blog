@@ -15,5 +15,14 @@
     <link rel="stylesheet" type="text/css" href="{{ '/static/css/style.css' | prepend: site.baseurl | prepend: site.url}}" />
     {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl | prepend: site.url}}" />
     {%endfor%}
-
+    <script>
+        (function(){
+            if('{{ page.password }}'){
+                if (prompt('请输入文章密码') !== '{{ page.password }}'){
+                    alert('密码错误');
+                    history.back();
+                }
+            }
+        })();
+    </script>
 </head>
