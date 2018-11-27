@@ -31,6 +31,7 @@ function share(){
 function disqus(){
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = '{{site.disqus_shortname}}';
+    <script type="text/javascript">
 var disqus = {    //插入这一行代码 (1/5)
 load : function disqus(){    //插入这一行代码 (2/5)
   var disqus_config = function () {
@@ -70,5 +71,6 @@ load : function disqus(){    //插入这一行代码 (2/5)
   $('#load-disqus').remove();    //插入这一行代码 (3/5)
   }    //插入这一行代码 (4/5)
 }    //插入这一行代码 (5/5)
+   </script>
     document.getElementsByTagName("script")[0].parentNode.appendChild(dsq);
 }
