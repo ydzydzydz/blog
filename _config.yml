@@ -30,7 +30,7 @@ email: "2474745326@qq.com"
 description: "Blog"
 github_username:  "ydzydzydz"
 swiftype_searchId: "Aa7dnBnQCGkqajYpSqP5"
-#disqus_shortname: "zhuangzhuangyao"
+disqus_shortname: "zhuangzhuangyao"
 
 gems: [jekyll-paginate]
 
