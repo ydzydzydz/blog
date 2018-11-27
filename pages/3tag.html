@@ -1,12 +1,19 @@
 ---
 layout: page
-title: Tag
+title: 标签
 permalink: /tags/
 icon: octicon-tag
 isNavItem: true
 styles: [tagCloud.css,tags.css]
 scripts: [tagCloud.js,tags.js]
 ---
+
+<div class="tagCloud">
+    {% for tag in site.tags %}
+    <a href="#{{ tag | first }}">{{ tag | first }}</a>
+    {% endfor %}
+</div>
+
 
 <div>
     <ul class="tag-box inline">
@@ -25,11 +32,5 @@ scripts: [tagCloud.js,tags.js]
         <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_string }}</time></span> &raquo; <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></li>
         {% endif %}{% endfor %}{% endfor %}
     </ul>
-    {% endfor %}
-</div>
-
-<div class="tagCloud">
-    {% for tag in site.tags %}
-    <a href="#{{ tag | first }}">{{ tag | first }}</a>
     {% endfor %}
 </div>

@@ -5,9 +5,9 @@ markdown: kramdown
 kramdown:
   input:  GFM
   syntax_highlighter: rouge
+#excerpt_separator: <!--more-->
 
-
-paginate: 10
+paginate: 5
 paginate_path: ":num"
 baseurl: ""
 
@@ -25,20 +25,19 @@ defaults:
 
 
 
-title: "RainyAlley"
-email: "sincerebravefight@gmail.com"
-description: "Developer"
-github_username:  "WakelessDragon"
-swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm"
-disqus_shortname: "rainyalley"
+title: "zhuangzhuang"
+email: "2474745326@qq.com"
+description: "Blog"
+github_username:  "ydzydzydz"
+swiftype_searchId: "Aa7dnBnQCGkqajYpSqP5"
+disqus_shortname: "zhuangzhuangyao"
+
+gems: [jekyll-paginate]
 
 
-
-
-url: "http://blog.rainyalley.com"
-imgrepo: "http://blog.rainyalley.com/static/img"
+url: "http://zhuangzhuang.cf"
+imgrepo: "http://zhuangzhuang.cf/static/img"
 
 
 #url: "http://127.0.0.1:4000"
 #imgrepo: "http://127.0.0.1:4000/static/img"
-
