@@ -32,4 +32,4 @@ aweme.snssdk.com,api.amemv.com
 [抖音微视去水印](https://raw.githubusercontent.com/ydzydzydz/Rules/master/conf/watermark.conf)
 
 ---
-**注意:需Surge3,确保打开`Rewrite`和`MITM`(证书安装并信任)**
+**注意:确保打开`Rewrite`和`MITM`(证书安装并信任)**
