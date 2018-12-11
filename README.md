@@ -2,4 +2,4 @@
 
 [ZHUANGZHUANG](http://zhuangzhuang.cf)
 
-**forked from [WakelessDragon/blog](https://github.com/WakelessDragon/blog)**
+**Forked from [WakelessDragon/blog](https://github.com/WakelessDragon/blog)**
