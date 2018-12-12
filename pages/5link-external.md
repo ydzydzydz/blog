@@ -1,25 +1,16 @@
 ---
 layout: page
-title: 关于我
+title: Twitter时间线
 permalink: /link/
 icon: octicon-link-external
 ---
-
-[Timeline](http://feifei.zhuangzhuang.cf)  
-
-[Weibo](https://weibo.com/5367293800/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1)   
-
-[Twitter](https://mobile.twitter.com/YRJYJQ)   
-
-[Telegram](https://t.me/YDZ123456)  
-
-[WeChat](./static/img/weixin.png)
-
-[QQ](mqq://im/chat?chat_type=wpa&uin=2474745326&version=1&src_type=web)  
-
-  
+<p align="right">
+<span style='color:#0c7abf'> 「In me the tiger sniffs the rose. 心有猛虎，细嗅蔷薇。」<br /></span>
+<span style='color:#0c7abf;font-size:14px'>————Sason/余光中<br /></span>
+<span style='text-align:right;text-indent:0'><a href="https://twitter.com/YRJYJQ?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @YRJYJQ</a> </span></p>
 
 
-### 友链
----
-[007ayong](http://007ayong.tk)  
+<center>
+<p class="md_block">
+    <span style='text-align:center;text-indent:0' ><a class="twitter-timeline" data-lang="zh-cn" href="https://twitter.com/YRJYJQ?ref_src=twsrc%5Etfw" data-width="600" data-chrome="noheader nofooter noborders">Tweets by zhuangzhuang</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </span>
+</p></center>
