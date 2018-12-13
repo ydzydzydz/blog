@@ -37,10 +37,10 @@
 
 .post header p.post-tag a{
     display: inline-block;
-    background: #2ca6cb;
-    color: #fff;
+    /*background: #2ca6cb;*/
+    color: #ff0500;
     padding: 2px 5px 0px 5px;
-    border: 1px solid #2ca6cb;
+    /*border: 1px solid #2ca6cb;*/
     margin-top: 2px;
 }
 
