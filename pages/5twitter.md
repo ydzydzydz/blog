@@ -1,10 +1,9 @@
 ---
 layout: page
-title:
+title: Twitter
 permalink: /twitter/
 icon: fa fa-twitter
 ---
-# <i class="fa fa-twitter"></i> Twitter
 <br/><br/>
 <p align="right">
 <a href="https://t.me/YDZ123456" title="telegram"><i class="fa fa-send-o"></i></a>
