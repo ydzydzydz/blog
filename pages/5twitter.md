@@ -1,11 +1,11 @@
 ---
 layout: page
-title: <i class="fa fa-weibo"></i> 微博
-permalink: /weibo/
-icon: fa fa-weibo
+title: <i class="fa fa-twitter"></i> Twitter
+permalink: /twitter/
+icon: fa fa-twitte
 ---
 <head>
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
 </head>
 <br/><br/>
 <p align="right">
@@ -23,7 +23,10 @@ icon: fa fa-weibo
 <p align="right">
 <span style='color:#0c7abf'> 「In me the tiger sniffs the rose. 心有猛虎，细嗅蔷薇。」<br /></span>
 <span style='color:#0c7abf;font-size:14px'>————Sason/余光中<br /></span>
-</p>
+<span style='text-align:right;text-indent:0'><a href="https://twitter.com/YRJYJQ?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @YRJYJQ</a> </span></p>
+
 
 <center>
-<iframe width="95%" height="800" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=2&ptype=1&speed=0&skin=9&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=5367293800&verifier=54d69218&dpc=1"></iframe></center>
+<p class="md_block">
+    <span style='text-align:center;text-indent:0' ><a class="twitter-timeline" data-lang="zh-cn" href="https://twitter.com/YRJYJQ?ref_src=twsrc%5Etfw" data-width="750" data-chrome="noheader nofooter noborders">Tweets by zhuangzhuang</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </span>
+</p></center>
