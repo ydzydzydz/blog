@@ -1,12 +1,10 @@
 ---
 layout: page
-title: <i class="fa fa-weibo"></i> 微博
+title:
 permalink: /weibo/
 icon: fa fa-weibo
 ---
-<head>
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-</head>
+# <i class="fa fa-weibo"></i> 微博
 <br/><br/>
 <p align="right">
 <a href="https://t.me/YDZ123456" title="telegram"><i class="fa fa-send-o"></i></a>
