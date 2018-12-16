@@ -39,7 +39,7 @@ layout: default
 
           <br/>
 
-		<!-- Donate Module -->
+		<!-- 打赏 -->
 <center><div id="donate_module">
 	<!-- css -->
 	<style type="text/css">
@@ -63,15 +63,6 @@ layout: default
 		}
 		.bold{ font-weight: bold; }
 	</style>
-	<!-- /css -->
-	<!-- form -->
-	<form id="donate" action="https://shenghuo.alipay.com/send/payment/fill.htm" method="POST" target="_blank" accept-charset="GBK">
-		<input name="optEmail" type="hidden" value="2474745326@qq.com" />
-		<input name="payAmount" type="hidden" value="1.00" />
-		<input id="title" name="title" type="hidden" value="打赏《<%= item.title.substr(0, 16) %>》"/>
-		<input name="memo" type="hidden" value="留下您的大名及联系方式(email,blog,etc)，多交流共勉共进：" />
-	</form>
-	<!-- /form -->
 	<!-- btn_donate & tips -->
 	<div id="donate_board" class="donate_bar center">
 		<a id="btn_donate" class="btn_donate" target="_self" href="javascript:;" title="Donate 打赏"></a>
@@ -81,7 +72,6 @@ layout: default
 		</span>
 		<br/>
 	</div>
-	<!-- /btn_donate & tips -->
 	<!-- donate guide -->
 	<div id="donate_guide" class="donate_bar center hidden">
 		<form action="" method="post" target="_blank">
