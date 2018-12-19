@@ -7,5 +7,15 @@ categories: App
 
 **[安装TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)**
 
++ [Grape for GitHub](https://testflight.apple.com/join/xajXBrHT)
 + [网盘搜索](https://testflight.apple.com/join/k02d3pgQ)
-+ [ttte for twitter](https://testflight.apple.com/join/YsHONy5I)
++ [ttte for twitter](https://testflight.apple.com/join/YsHONy5I)  
+
+
+
++ [Mume VPN](https://testflight.apple.com/join/wgXjVEh8)
++ [WireGuard](https://testflight.apple.com/join/63I19SDT)
++ [i2Ray-V2Ray Proxy Manager](https://testflight.apple.com/join/K57owAmM)
++ [Loon](https://testflight.apple.com/join/23LA2tmX)
++ [Potatso Lite](https://testflight.apple.com/join/NkF46PRd)
++ [Pharos Pro](https://testflight.apple.com/join/3i6uBkB4)
