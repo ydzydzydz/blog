@@ -9,7 +9,8 @@ categories: App
 
 + [Grape for GitHub](https://testflight.apple.com/join/xajXBrHT)
 + [网盘搜索](https://testflight.apple.com/join/k02d3pgQ)
-+ [ttte for twitter](https://testflight.apple.com/join/YsHONy5I)  
++ [ttte for twitter](https://testflight.apple.com/join/YsHONy5I)
++ [Pythonista3](https://testflight.apple.com/join/qDkBu2ur) 
 
 
 
