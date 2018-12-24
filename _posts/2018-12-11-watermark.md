@@ -17,13 +17,12 @@ categories: Surge
 (?<=\?video_id=\w{32})[^*]+  302
 ```
 
-## [MITM]
+### [MITM]
 
 hostname =
 ```
 aweme.snssdk.com,api.amemv.com
 ```
-
 
 ---
 # 参考配置
