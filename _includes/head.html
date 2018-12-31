@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
     <meta name ="apple-mobile-web-app-capable" content ="yes">
-    <meta name ="apple-mobile-web-app-status-bar-style" content ="black">
+    <meta name ="apple-mobile-web-app-status-bar-style" content ="black-translucent">
 
     <link rel ="apple-touch-startup-image" href ="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
 
@@ -52,5 +52,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-W878RTG');</script>
 <!-- End Google Tag Manager -->
+
+<script>
+if(('standalone' in window.navigator)&&window.navigator.standalone){
+        var noddy,remotes=false;
+        document.addEventListener('click',function(event){
+                noddy=event.target;
+                while(noddy.nodeName!=='A'&&noddy.nodeName!=='HTML') noddy=noddy.parentNode;
+                if('href' in noddy&&noddy.href.indexOf('http')!==-1&&(noddy.href.indexOf(document.location.host)!==-1||remotes)){
+                        event.preventDefault();
+                        document.location.href=noddy.href;
+                }
+        },false);
+}
+</script>
+
 
 </head>
