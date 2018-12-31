@@ -103,10 +103,20 @@ html{
     margin: 0px 0px 0px 0px;
 }
 body {
-    background-image: url({{ "/static/bg.jpg" | prepend: site.baseurl | prepend: site.url }});
+    /*原背景图*/
+    /*background-image: url({{ "/static/bg.jpg" | prepend: site.baseurl | prepend: site.url }});
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;*/
+    /*网页必应背景*/
+    background-image: url(https://apis.elepover.com/bing/);
     height: 100%;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
 body,code,pre{
