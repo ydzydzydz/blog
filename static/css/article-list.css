@@ -12,13 +12,17 @@ article header{
     /*text-shadow: 0 1px #fff;*/
     font-weight: bold;
     display: block;
+    -webkit-animation: zoomIn 2s;
+    animation: zoomIn 2s;
 }
 
 article header a{
     color: #00E3FF;
 }
 
-article .module {
+
+
+article .module{
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -30,6 +34,8 @@ article .module {
     -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
     -o-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
     box-shadow: 15px 20px 17px 0px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+    -webkit-animation: zoomIn 2s;
+    animation: zoomIn 2s;
 }
 article .title{
     font-size: 1.6em;
