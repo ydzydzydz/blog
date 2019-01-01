@@ -108,3 +108,17 @@
     <script type="text/javascript" src="{{'/static/js/script.js' | prepend:site.baseurl | prepend: site.url  }}"></script>
     {% for script in page.scripts %}<script type="text/javascript" src="{{'/static/js/' | append:script | prepend:site.baseurl | prepend: site.url  }}"></script>
     {%endfor%}
+
+
+    <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+          opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+        <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="搜索：文章标题 标签" >
+
+        <div style="position: fixed; top: 16px; right: 16px;">
+          <li><a id="cb-close-btn"><span class="fa fa-close"></span><span>&nbsp;关闭</a></li>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="{{ "/search/css/cb-search.css" | prepend: site.baseurl }}">
+    <script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
