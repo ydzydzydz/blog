@@ -30,6 +30,8 @@ categories: App
 + [Wikiloc Outdoor Navigation GPS](https://testflight.apple.com/join/P93jBr23)
 + [To Dot](https://testflight.apple.com/join/7o1Q4Q8p)
 + [myNotes-Dark Themed Note App](https://testflight.apple.com/join/vnMy8s64)
++ [HandCash](https://testflight.apple.com/join/JUOB0hwr)
++ [NoSeen for Facebook Messenge](https://testflight.apple.com/join/DGHcr3A1)
 
 
 
