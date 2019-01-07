@@ -15,17 +15,17 @@
                         {% if page.url == "/index.html" %}
                         <li class="active">{% else %}
                         <li>{% endif %}
-                        <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep"><span class="octicon octicon-book"></span><span>&nbsp;&nbsp;主页</a>
+                        <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep"><span class="octicon octicon-book" style="width:16px"></span><span>&nbsp;&nbsp;主页</a>
                         </li>
                         {% for p in site.pages %}{% if p.isNavItem %}
                         {% if p.url == page.url %}
                         <li class="active">{% else %}
                         <li>{% endif %}
-                            <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" class="word-keep"><span class="octicon {{ p.icon }}"></span>&nbsp;&nbsp;{{ p.title }}</a>
+                            <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" class="word-keep"><span class="octicon {{ p.icon }}" style="width:16px"></span>&nbsp;&nbsp;{{ p.title }}</a>
                         </li>
                         {% endif %}
                         {% endfor %}
-                        <li><a id="cb-search-btn"><span class="octicon octicon-search"></span><span>&nbsp;&nbsp;搜索</a></li>
+                        <li><a id="cb-search-btn"><span class="octicon octicon-search" style="width:16px"></span><span>&nbsp;&nbsp;搜索</a></li>
                     </ul>
                 </div>
             </div>
