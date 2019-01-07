@@ -151,6 +151,8 @@ a:active {text-decoration: none}	/* 选定的链接 */
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
 	-o-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
 	box-shadow: 20px 20px 17px 0px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+  -webkit-animation: slideInLeft 2s;
+  animation: slideInLeft 2s;
 }
 
 .sheet{

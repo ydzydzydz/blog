@@ -121,6 +121,8 @@
 .content-navigation{
     max-width: 292px;
     padding-left: 30px;
+    -webkit-animation: slideInRight 2s;
+    animation: slideInRight 2s;
 }
 .content-navigation-header {
     display: block;
