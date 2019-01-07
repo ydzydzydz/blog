@@ -51,11 +51,26 @@ categories: App
 + [Yandex Browser](https://testflight.apple.com/join/Y4k4ze6V)
 + [Drift Music](https://testflight.apple.com/join/gYn8g7oj)
 + [osu!](https://testflight.apple.com/join/pl0udqiO)
++ [SideCoach](https://testflight.apple.com/join/nT69xbrU)
++ [Quizland](https://testflight.apple.com/join/yelwsUGl)
++ [Rad Trails!](https://testflight.apple.com/join/S7tXxfKK)
++ [Emoji Stickers Pack](https://testflight.apple.com/join/3ZTdq2Kv)
++ [Wraldpyk's Blackjack](https://testflight.apple.com/join/cJbVQ4HE)
++ [RoomScan Pro](https://testflight.apple.com/join/srkYDsAE)
++ [Newstats](https://testflight.apple.com/join/y4Dif3WF)
++ [iSH Shell](https://testflight.apple.com/join/97i7KM8O)
++ [ErgBot](https://testflight.apple.com/join/JDPdeT9t)
++ [Snapthread](https://testflight.apple.com/join/nOZ0d7n7)
++ [Telegram Messenger](https://testflight.apple.com/join/SRgSA6ru)
++ [Telegram X](https://rink.hockeyapp.net/apps/c6f5a76f5c364ac89a98b77671ef2d63)
++ [MasjidPal](https://testflight.apple.com/join/pglWN65b)
++ 
 
 
 
 ---
 
++ [寒梅](https://testflight.apple.com/join/7U4YKpl2)
 + [Mume VPN](https://testflight.apple.com/join/wgXjVEh8)
 + [WireGuard](https://testflight.apple.com/join/63I19SDT)
 + [i2Ray-V2Ray Proxy Manager](https://testflight.apple.com/join/K57owAmM)
@@ -63,5 +78,17 @@ categories: App
 + [Potatso Lite](https://testflight.apple.com/join/NkF46PRd)
 + [Pharos Pro](https://testflight.apple.com/join/3i6uBkB4)
 + [Kitsunebi](https://testflight.apple.com/join/IdFRwmNy)
-+ [寒梅](https://testflight.apple.com/join/7U4YKpl2)
 + [OneProxy](https://testflight.apple.com/join/oIVZQhx1)
++ [A.BIG.T IV](https://testflight.apple.com/join/3aArQFMQ)
++ [BananaNet](https://testflight.apple.com/join/0QhRcg1c)
++ [TunSafe VPN](https://testflight.apple.com/join/9gbYAJLB)
++ [Paptter](https://testflight.apple.com/join/YiCQfQv3)
++ [SSR-SS](https://testflight.apple.com/join/EeNKSIBZ)
+
+
+
+---
+
+[花花铺子：TestFlight 软件内测申请大全](https://zaihua.io/archives/270/)
+
+[聪聪：TestFlight 邀请链接分享](https://congcong0806.github.io/2018/11/19/TestFlight/)
