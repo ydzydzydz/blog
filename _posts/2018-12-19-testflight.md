@@ -64,7 +64,10 @@ categories: App
 + [Telegram Messenger](https://testflight.apple.com/join/SRgSA6ru)
 + [Telegram X](https://rink.hockeyapp.net/apps/c6f5a76f5c364ac89a98b77671ef2d63)
 + [MasjidPal](https://testflight.apple.com/join/pglWN65b)
-+ 
++ [BULVRD](https://testflight.apple.com/join/tQxoMlir)
++ [Wallet of Satoshi](https://testflight.apple.com/join/NTUFwnhR)
++ [Balance Ethereum Wallet](https://testflight.apple.com/join/QXCgM6bu)
++ [Owto](https://testflight.apple.com/join/a4jRO20r)
 
 
 
