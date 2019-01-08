@@ -68,6 +68,17 @@ categories: App
 + [Wallet of Satoshi](https://testflight.apple.com/join/NTUFwnhR)
 + [Balance Ethereum Wallet](https://testflight.apple.com/join/QXCgM6bu)
 + [Owto](https://testflight.apple.com/join/a4jRO20r)
++ [Microsoft Edge](https://testflight.apple.com/join/VtDI7uRL)
++ [Microsoft Word](https://testflight.apple.com/join/hw76phYi)
++ [Microsoft Excel](https://testflight.apple.com/join/3lIiz1eZ)
++ [Microsoft PowerPoint](https://testflight.apple.com/join/a9Ef0N3g)
++ [Microsoft OneNote](https://testflight.apple.com/join/uDgoqfGS)
++ [Microsoft To-Do](https://testflight.apple.com/join/JSq3UkAz)
++ [Outbank – 360° Banking](https://testflight.apple.com/join/ZnLxusWe)
++ [Gizer](https://testflight.apple.com/join/TR0BJdqU)
++ [World Clock Time Widget](https://testflight.apple.com/join/8wa9T053)
++ [捷径社区](https://testflight.apple.com/join/LeuKqKYX)
++ [爱阅书香](https://testflight.apple.com/join/23FPuktF)
 
 
 
