@@ -74,11 +74,15 @@ categories: App
 + [Microsoft PowerPoint](https://testflight.apple.com/join/a9Ef0N3g)
 + [Microsoft OneNote](https://testflight.apple.com/join/uDgoqfGS)
 + [Microsoft To-Do](https://testflight.apple.com/join/JSq3UkAz)
-+ [Outbank – 360° Banking](https://testflight.apple.com/join/ZnLxusWe)
++ [Outbank–360° Banking](https://testflight.apple.com/join/ZnLxusWe)
 + [Gizer](https://testflight.apple.com/join/TR0BJdqU)
 + [World Clock Time Widget](https://testflight.apple.com/join/8wa9T053)
 + [捷径社区](https://testflight.apple.com/join/LeuKqKYX)
 + [爱阅书香](https://testflight.apple.com/join/23FPuktF)
++ [Sins Raid](https://testflight.apple.com/join/4W3Kfb7j)
++ [Wraldpyk's Blackjack](https://testflight.apple.com/join/cJbVQ4HE)
++ [Budget-Your Money](https://testflight.apple.com/join/WEwS789J)
++ [Zakop-unofficial Wykop app](https://testflight.apple.com/join/ZKkTYBsm)
 
 
 
