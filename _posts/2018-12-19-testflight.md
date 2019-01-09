@@ -83,6 +83,8 @@ categories: App
 + [Wraldpyk's Blackjack](https://testflight.apple.com/join/cJbVQ4HE)
 + [Budget-Your Money](https://testflight.apple.com/join/WEwS789J)
 + [Zakop-unofficial Wykop app](https://testflight.apple.com/join/ZKkTYBsm)
++ [Close Cross](https://testflight.apple.com/join/CUClR0rD)
++ [RBVEA Web](https://testflight.apple.com/join/KgQRsv5c)
 
 
 
