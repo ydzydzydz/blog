@@ -85,6 +85,8 @@ categories: App
 + [Zakop-unofficial Wykop app](https://testflight.apple.com/join/ZKkTYBsm)
 + [Close Cross](https://testflight.apple.com/join/CUClR0rD)
 + [RBVEA Web](https://testflight.apple.com/join/KgQRsv5c)
++ [Skype for iPad](https://testflight.apple.com/join/vnSIsolv)
++ [微信](https://t.me/banyungong666/952)
 
 
 
@@ -112,3 +114,5 @@ categories: App
 [花花铺子：TestFlight 软件内测申请大全](https://zaihua.io/archives/270/)
 
 [聪聪：TestFlight 邀请链接分享](https://congcong0806.github.io/2018/11/19/TestFlight/)
+
+[TestFlight：TestFlight (Apps) Twitter](https://twitter.com/testflightapps)
