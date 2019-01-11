@@ -10,7 +10,8 @@
 
 | 序号 |  发布时间  |                             文章                             |
 | :--: | :--------: | :----------------------------------------------------------: |
-|  28  | 2018-12-31 |     [Surge去广告](http://zhuangzhuang.cf/2019-01-10/ad/)     |
+|  29  | 2019-01-11 | [Surge通过SOCKS5代理Telegram](http://zhuangzhuang.cf/2019-01-11/surgesocks5/) |
+|  28  | 2019-01-10 |     [Surge去广告](http://zhuangzhuang.cf/2019-01-10/ad/)     |
 |  27  | 2018-12-31 |    [书法代表作](http://zhuangzhuang.cf/2018-12-31/shufa/)    |
 |  26  | 2018-12-28 |   [Surge DNS配置](http://zhuangzhuang.cf/2018-12-28/dns/)    |
 |  25  | 2018-12-26 | [Surge无图模式](http://zhuangzhuang.cf/2018-12-26/noimage/)  |
@@ -38,3 +39,4 @@
 |  3   | 2018-11-14 | [GitHub Page插入网易云音乐外链](http://zhuangzhuang.cf/2018-11-14/iframe/) |
 |  2   | 2018-11-10 |    [助手软件](http://zhuangzhuang.cf/2018-09-10/zhushou/)    |
 |  1   | 2018-11-10 | [旧版软件(自用）](http://zhuangzhuang.cf/2018-09-10/guoqu/)  |
+

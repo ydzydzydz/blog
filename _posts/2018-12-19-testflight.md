@@ -7,6 +7,27 @@ categories: App
 
 **[安装TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)**
 
+---
+
++ [寒梅](https://testflight.apple.com/join/7U4YKpl2)
++ [Mume VPN](https://testflight.apple.com/join/wgXjVEh8)
++ [WireGuard](https://testflight.apple.com/join/63I19SDT)
++ [i2Ray-V2Ray Proxy Manager](https://testflight.apple.com/join/K57owAmM)
++ [Loon](https://testflight.apple.com/join/23LA2tmX)
++ [Potatso Lite](https://testflight.apple.com/join/NkF46PRd)
++ [Pharos Pro](https://testflight.apple.com/join/3i6uBkB4)
++ [Kitsunebi](https://testflight.apple.com/join/IdFRwmNy)
++ [OneProxy](https://testflight.apple.com/join/oIVZQhx1)
++ [A.BIG.T IV](https://testflight.apple.com/join/3aArQFMQ)
++ [BananaNet](https://testflight.apple.com/join/0QhRcg1c)
++ [TunSafe VPN](https://testflight.apple.com/join/9gbYAJLB)
++ [Paptter](https://testflight.apple.com/join/YiCQfQv3)
++ [SSR-SS](https://testflight.apple.com/join/EeNKSIBZ)
++ [NetShuttle-ShadowsocksR tool](https://testflight.apple.com/join/742YC03J)
+
+---
+
+
 + [Grape for GitHub](https://testflight.apple.com/join/xajXBrHT)
 + [网盘搜索](https://testflight.apple.com/join/k02d3pgQ)
 + [ttte for twitter](https://testflight.apple.com/join/YsHONy5I)
@@ -101,25 +122,28 @@ categories: App
 + [yoto: you only talk once](https://testflight.apple.com/join/NevhdobC)
 + [Vantage Calendar](https://testflight.apple.com/join/chE3dS7n)
 + [Teamup Calendar](https://testflight.apple.com/join/1X8lXUJI)
-
-
-
----
-
-+ [寒梅](https://testflight.apple.com/join/7U4YKpl2)
-+ [Mume VPN](https://testflight.apple.com/join/wgXjVEh8)
-+ [WireGuard](https://testflight.apple.com/join/63I19SDT)
-+ [i2Ray-V2Ray Proxy Manager](https://testflight.apple.com/join/K57owAmM)
-+ [Loon](https://testflight.apple.com/join/23LA2tmX)
-+ [Potatso Lite](https://testflight.apple.com/join/NkF46PRd)
-+ [Pharos Pro](https://testflight.apple.com/join/3i6uBkB4)
-+ [Kitsunebi](https://testflight.apple.com/join/IdFRwmNy)
-+ [OneProxy](https://testflight.apple.com/join/oIVZQhx1)
-+ [A.BIG.T IV](https://testflight.apple.com/join/3aArQFMQ)
-+ [BananaNet](https://testflight.apple.com/join/0QhRcg1c)
-+ [TunSafe VPN](https://testflight.apple.com/join/9gbYAJLB)
-+ [Paptter](https://testflight.apple.com/join/YiCQfQv3)
-+ [SSR-SS](https://testflight.apple.com/join/EeNKSIBZ)
++ [Cordia](https://testflight.apple.com/join/PljUX6Cv)
++ [Aethyn Physics](https://testflight.apple.com/join/fKa07bUP)
++ [Howdoo](https://testflight.apple.com/join/fyoNbvVR)
++ [Catch Benefits](https://testflight.apple.com/join/lignIX4A)
++ [Lisit](https://testflight.apple.com/join/OCwgLvSH)
++ [Hock](https://testflight.apple.com/join/cF8AmszV)
++ [Grocery-Smart Grocery List](https://testflight.apple.com/join/v29eXz9t)
++ [PokeRater](https://testflight.apple.com/join/lbhsX2dY)
++ [TRLX](https://testflight.apple.com/join/4JYxJDSY)
++ [Lucky Horoscope](https://testflight.apple.com/join/InHLjuQA)
++ [Time:Calc](https://testflight.apple.com/join/8NvVXGgp)
++ [Pocketflix-Vertical Films](https://testflight.apple.com/join/JrFLzCvU)
++ [BestOf-Private Travelogue](https://testflight.apple.com/join/avYAAwEt)
++ [ChargeDesk](https://testflight.apple.com/join/CO4pDu2I)
++ [Really Bad Chess](https://testflight.apple.com/join/aOhasBMk)
++ [Sous Vide °Celsius](https://testflight.apple.com/join/pglwyYBC)
++ [Zakop-unofficial Wykop app](https://testflight.apple.com/join/ZKkTYBsm)
++ [Juno Rocks](https://testflight.apple.com/join/Tiz07eKj)
++ [Krdz](https://testflight.apple.com/join/1qnxMTjA)
++ [Yamble](https://testflight.apple.com/join/eruM03qY)
++ [ProgTV](https://testflight.apple.com/join/RKN8upW7)
++ [Collabora Office](https://testflight.apple.com/join/TEnBWi68)
 
 
 
