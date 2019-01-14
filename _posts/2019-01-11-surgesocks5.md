@@ -19,6 +19,8 @@ categories: Surge
 
 * 连接信息：服务器`127.0.0.1`(或`0.0.0.0`)，端口`6153`
 
+<div align="center"><img src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/socks5/tg.png" width="50%"  /></div>
+
 [点击设置](https://t.me/socks?server=127.0.0.1&port=6153)
 
 > Surge Mac
@@ -27,7 +29,10 @@ categories: Surge
 
 2.设置SOCKS5代理
 
-* 打开Surge for Mac在`高级代理服务设置`查看SOCKS5监听端口(默认为`6153`)
+* 打开Surge for Mac：设置—>通用—>代理服务—>允许远程访问—>`高级代理服务设置`，查看SOCKS5监听端口(默认为`6153`)
+
+![socks5](https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/socks5/socks5.png)
+
 
 * 打开Telegram,设置SOCKS5代理：服务器`127.0.0.1`(或`0.0.0.0`)，端口`6153`(如果有自定义端口，填写为上步查看到的端口)
 
