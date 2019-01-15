@@ -125,6 +125,7 @@ body,code,pre{
 }
 
 body,.sheet,pre,code{
+    cursor: url('/static/dog.ico'), default;
     font-size: 17px;
 }
 
