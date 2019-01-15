@@ -164,6 +164,16 @@ categories: App
 + [Firewalla](https://testflight.apple.com/join/qtUnSjJp)
 + [Zap-Lightning Wallet](https://testflight.apple.com/join/P32C380R)
 + [Status-Ethereum. Anywhere.](https://testflight.apple.com/join/J8EuJmey)
++ [Spendee Budget&Money Tracker](https://testflight.apple.com/join/qsfCtbEy)
++ [Tarkeeb](https://testflight.apple.com/join/t7m9f4dR)
++ [Phosphor](https://testflight.apple.com/join/IuKvZwqy)
++ [Music Year in Review](https://testflight.apple.com/join/EIEOkKJV)
++ [FLOCK INC.](https://testflight.apple.com/join/9ZixcXRI)
++ [faced.io](https://testflight.apple.com/join/GFoIW08E)
++ [ViciniT](https://testflight.apple.com/join/ihYruvVN)
++ [RAPGOD.ai](https://testflight.apple.com/join/T9AgTf4F)
++ [AlphaWallet, by Stormbird](https://testflight.apple.com/join/HRsmubhS)
++ [Coinsafe Testnet Beta](https://testflight.apple.com/join/WNoEZnby)
 
 
 
