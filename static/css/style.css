@@ -130,10 +130,10 @@ body,.sheet,pre,code{
 }
 
 
-a:link {text-decoration: none}		/* 未访问的链接 */
-a:visited {text-decoration: none}	/* 已访问的链接 */
-a:hover {text-decoration: none}	/* 鼠标移动到链接上 */
-a:active {text-decoration: none}	/* 选定的链接 */
+a:link {text-decoration: none;     cursor: url('/static/dog.ico'), default;}	/* 未访问的链接 */
+a:visited {text-decoration: none;  cursor: url('/static/dog.ico'), default;}	/* 已访问的链接 */
+a:hover {text-decoration: none;    cursor: url('/static/dog.ico'), default;}	/* 鼠标移动到链接上 */
+a:active {text-decoration: none;   cursor: url('/static/dog.ico'), default;}	/* 选定的链接 */
 
 .main{
     min-height: 100%;
