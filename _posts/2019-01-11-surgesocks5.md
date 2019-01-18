@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Surge通过SOCKS5代理Telegram
-tags: Surge Telegram
+tags: Surge Telegram socks5
 categories: Surge
 ---
 
