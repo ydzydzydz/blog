@@ -7,7 +7,7 @@ kramdown:
   syntax_highlighter: rouge
 #excerpt_separator: <!--more-->
 
-paginate: 5
+paginate: 10
 paginate_path: ":num"
 baseurl: ""
 

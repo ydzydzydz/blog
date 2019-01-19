@@ -10,9 +10,11 @@
                 &nbsp;
                 <a href="http://zhuangzhuang.cf/"><span class="word-keep">&copy; zhuangzhuang</span></a>
 <p>                  <span id="htmer_time" style="color:auto;"></span>
+         <!-- 不蒜子统计 -->
             <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <span id="busuanzi_container_site_pv"> 总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 
+         <!-- 运行时间 -->
     <script>
         function secondToDate(second) {
             if (!second) {
@@ -69,10 +71,10 @@
     {% for script in page.scripts %}<script type="text/javascript" src="{{'/static/js/' | append:script | prepend:site.baseurl | prepend: site.url  }}"></script>
     {%endfor%}
 
-
+        <!-- 站内搜索 -->
     <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
           opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
-        <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed" placeholder="搜索：文章标题 标签" >
+        <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed" placeholder="搜索：文章标题 标签 日期" >
 
         <div style="position: fixed; top: 16px; right: 16px;">
           <li><a id="cb-close-btn"><span class="fa fa-close"></span><span>&nbsp;关闭</a></li>

@@ -1,5 +1,5 @@
 ---
-layout: post
+[layout](https://testflight.apple.com/join/Z0AU0KXC): post
 title: TestFlight
 tags: TestFlight App
 categories: App
@@ -189,6 +189,15 @@ categories: App
 + [1TouchAssist](https://testflight.apple.com/join/oYw0jTD6)
 + [SocialBuzz-Social Network](https://testflight.apple.com/join/HEZbtISZ)
 + [Spotify Music](https://testflight.apple.com/join/1SyedSId)
++ [Wikipedia](https://testflight.apple.com/join/Z0AU0KXC)
++ [Foxieee](https://testflight.apple.com/join/E5l94av3)
++ [Forecastic](https://testflight.apple.com/join/e8svukxw)
++ [Gaming for Peace-GAP](https://testflight.apple.com/join/tJu81Sch)
++ [Dog Scanner](https://testflight.apple.com/join/OOrSaq4J)
++ [AsK LaVOISiEr](https://testflight.apple.com/join/7KV7rZ88)
++ [SALY-Machine Learning](https://testflight.apple.com/join/uwrch7rF)
++ [ColdCrypto](https://testflight.apple.com/join/GolUdK05)
++ [BBM](https://testflight.apple.com/join/XwVRKYO2)
 
 ---
 
