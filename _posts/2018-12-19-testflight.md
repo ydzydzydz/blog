@@ -1,5 +1,5 @@
 ---
-[layout](https://testflight.apple.com/join/Z0AU0KXC): post
+layout: post
 title: TestFlight
 tags: TestFlight App
 categories: App
