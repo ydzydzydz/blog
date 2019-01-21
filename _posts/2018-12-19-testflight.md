@@ -7,6 +7,8 @@ categories: App
 
 **[安装TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)**
 
+<!-- more -->
+
 ---
 
 + [寒梅](https://testflight.apple.com/join/7U4YKpl2)

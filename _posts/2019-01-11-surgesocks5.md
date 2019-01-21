@@ -19,6 +19,8 @@ categories: Surge
 
 * 连接信息：服务器`127.0.0.1`(或`0.0.0.0`)，端口`6153`
 
+<!-- more -->
+
 <div align="center"><img src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/socks5/tg.png" width="50%"  /></div>
 
 [点击设置](https://t.me/socks?server=127.0.0.1&port=6153)
