@@ -5,8 +5,10 @@ tags: Surge  去水印
 categories: Surge
 ---
 
-# 修改配置
+## 修改配置
 打开Surge3,在`文本编辑模式`下对应字段复制代码如下:
+
+<!-- more -->
 
 ### [URL Rewrite]
 ```
@@ -25,7 +27,7 @@ aweme.snssdk.com,api.amemv.com
 ```
 
 ---
-# 参考配置
+## 参考配置
 
 从URL下载配置:
 [抖音微视去水印](https://raw.githubusercontent.com/ydzydzydz/Rules/master/conf/watermark.conf)
