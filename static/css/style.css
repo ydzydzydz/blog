@@ -4,12 +4,12 @@ layout: null
 
 .navbar-tiffany,
 .banner{
-    background: -webkit-linear-gradient(45deg, rgba(0 , 0, 0, 0) 48%, rgba(0 , 0, 0, 0.1) 50%, rgba(0 , 0, 0, 0) 52%),
+    /*background: -webkit-linear-gradient(45deg, rgba(0 , 0, 0, 0) 48%, rgba(0 , 0, 0, 0.1) 50%, rgba(0 , 0, 0, 0) 52%),
     -webkit-linear-gradient(135deg, rgba(0 , 0, 0, 0) 48%, rgba(0 , 0, 0, 0.1) 50%, rgba(0 , 0, 0, 0) 52%);
     background: linear-gradient(45deg, rgba(0 , 0, 0, 0) 48%, rgba(0 , 0, 0, 0.1) 50%, rgba(0 , 0, 0, 0) 52%),
     linear-gradient(-45deg, rgba(0 , 0, 0, 0) 48%, rgba(0 , 0, 0, 0.1) 50%, rgba(0 , 0, 0, 0) 52%);
     -webkit-background-size: 1em 1em;
-    background-size: 1em 1em;
+    background-size: 1em 1em;*/
 }
 
 .navbar-tiffany{
