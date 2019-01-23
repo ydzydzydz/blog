@@ -12,7 +12,7 @@ icon: fa fa-twitter
 <a href="https://ydzzzz.github.io" title="timeline"><i class="fa fa-heartbeat"></i></a>
 <a href="https://weibo.com/u/5367293800" title="weibo"><i class="fa fa-weibo"></i></a>
 <a href="https://ydzydzydz.github.io/images/weixin.png" title="wechat"><i class="fa fa-weixin"></i></a>
-<a href="mqq://im/chat?chat_type=wpa&uin=2474745326&version=1&src_type=web{{site.social.qq}}" title="qq"><i class="fa fa-qq"></i></a>
+<a href="mqq://im/chat?chat_type=wpa&uin=2474745326&version=1&src_type=web" title="qq"><i class="fa fa-qq"></i></a>
 <a href="mailto:2474745326@qq.com" title="email"><i class="fa fa-envelope"></i></a>
 </p>
 <br/><br/><br/>
