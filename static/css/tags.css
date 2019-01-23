@@ -24,14 +24,26 @@
 }
 
 .tag-box a {
-    padding: 4px 6px;
+  /*  padding: 4px 6px;
     margin: 5px;
     background-color: #e6e6e6;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 2px;
     text-decoration: none;
-    box-shadow: 3px 1px 0 0px #ad7b7b;
+    box-shadow: 3px 1px 0 0px #ad7b7b; */
+    display: inline-block;
+    border: 1px solid rgba(185,185,185,.8);
+    border-radius: 999em;
+    padding: 0 10px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 5px;
+    margin-bottom: 6px;
+    background-color: #bbbbee;
+    box-shadow: 2px 0px 7px #f5a5a5;
 }
 
 .tag-box a span {
