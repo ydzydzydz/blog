@@ -3,6 +3,7 @@ layout: post
 title: TestFlight内测
 tags: TestFlight App
 categories: App
+top: true
 ---
 
 **[安装TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)**
