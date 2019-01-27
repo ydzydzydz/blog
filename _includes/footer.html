@@ -14,7 +14,7 @@
                 <a href="http://zhuangzhuang.cf/"><span class="word-keep">&copy; zhuangzhuang</span></a>
                 <!--变色--->
                 <style type="text/css">
-                #htmer_time {
+                #htmer_time-footer {
                 animation: change 10s linear 0s infinite;
                     }
 
@@ -48,7 +48,7 @@
                     100% {color: #333;}
                    }
                  </style>
-<p>                  <span id="htmer_time"></span>
+<p>                  <span id="htmer_time-footer"></span>
          <!-- 不蒜子统计 -->
             <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <span id="busuanzi_container_site_pv"> 总访问量<span id="busuanzi_value_site_pv"></span>次</span>
@@ -97,7 +97,7 @@
             currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '月'
                     + currentTime[2] + '天' + currentTime[3] + '时' + currentTime[4]
                     + '分'+ currentTime[5] + '秒';
-            document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+            document.getElementById("htmer_time-footer").innerHTML = currentTimeHtml;
         }
         setInterval(setTime, 1000);
     </script>
