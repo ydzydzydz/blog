@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>404</title>
+<style type="text/css">
+    canvas {display: block;}
+	html
+	{
+	background:black;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	}
+</style>
+
+
+
+<Meta http-equiv="Refresh" Content="1; /welcome">
+
+<script type="text/javascript">
+/**
+* author:Bill Wang
+*
+* creat on:2015-08-12
+*
+* 向伟大的科幻电影《黑客帝国》致敬
+*
+*/
+window.onload=function(){
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+c.addEventListener('click', function(e){
+location.href="./404.html";
+}, false);
+//全屏显示
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+var txts = "ZHUANGABCDEFGHIJKLMNOPQRSTUVWXYZ123456789~!@#$%^&*()+=-?/<>";
+txts = txts.split("");
+var font_size = 20;
+var columns = c.width/font_size;
+//每行要输出数组
+var drops = [];
+for(var x = 0; x < columns; x++)
+	drops[x] = 1;
+//字符随机颜色
+var wh_color = new Array();
+wh_color[0]="#57CE13";
+wh_color[1]="#50BF7F";
+wh_color[2]="#50BF7F";
+
+//绘出字符
+function draw()
+{
+	//黑色背景，半透明显示
+	ctx.fillStyle = "rgba(0, 0, 0, 0.09)";
+	ctx.fillRect(0, 0, c.width, c.height);
+
+	//ctx.fillStyle = "#50BF7F";
+	ctx.fillStyle = wh_color[parseInt(Math.random()*100+1)%3];
+	ctx.font = font_size + "px arial";
+
+	//drops循环
+	for(var i = 0; i < drops.length; i++)
+	{
+		//随机打印字符
+		var text = txts[Math.floor(Math.random()*txts.length)];
+
+		//x = i*font_size
+		//y = value of drops[i]*font_size
+		ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+		if(drops[i]*font_size > c.height || Math.random() > 0.95)
+			drops[i] = 0;
+
+		//Y坐标增加
+		drops[i]++;
+	}
+}
+setInterval(draw, 50);
+}
+</script>
+</head>
+<body>
+  <!--<canvas id="c" height="936" width="1911"></canvas>-->
+  <canvas id="c">
+
+</body></html>
