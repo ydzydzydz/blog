@@ -234,6 +234,15 @@ top: true
 + [Happy Mail for Gmail](https://testflight.apple.com/join/Pg9PbgEw)
 + [Nimian Legends : Vandgels](https://testflight.apple.com/join/Axzxh79q)
 + [Ulysses](https://testflight.apple.com/join/RXVdMPW1)
++ [Attrct-The Story Dating App](https://testflight.apple.com/join/wLLhCLRz)
++ [Tour-Trip Planning Made Easy](https://testflight.apple.com/join/PEdzUki1)
++ [Wristruments for Guitar](https://testflight.apple.com/join/IEuDHfby)
++ [Small Talk-Idea Matters](https://testflight.apple.com/join/ArSNTmMC)
++ [YouWorth for LinkedIn™](https://testflight.apple.com/join/WkFVO020)
++ [Loiter](https://testflight.apple.com/join/KRf4e4A8)
++ [Feedelio](https://testflight.apple.com/join/ceqvetXz)
++ [Pulsr](https://testflight.apple.com/join/2Z6pGpNN)
++ [Slide for Reddit](https://testflight.apple.com/join/M7ChDyZx)
 
 ---
 
