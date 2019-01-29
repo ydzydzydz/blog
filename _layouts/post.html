@@ -254,7 +254,39 @@ layout: default
 
 
 
+                <div class="pad-min"></div>
+                <div class="shadow-bottom-center" >
+                  <div class="content-navigation-aboutme">
+                    <div class="content-navigation-header">
+                        <span class="fa fa-calendar-check-o"></span>&nbsp;计时器
+                    </div>
+                    <div align="center">
+                    <body onload="time_fun()">
+                      <h1 id="mytime">00:00:00</h1>
+                      <br/>
+                    </body>
+                   </div>
+                  </div>
+                </div>
 
 
     </div>
 </div>
+
+
+
+<script>
+    function two_char(n) {
+        return n >= 10 ? n : "0" + n;
+    }
+    function time_fun() {
+        var sec=0;
+        setInterval(function () {
+            sec++;
+            var date = new Date(0, 0)
+            date.setSeconds(sec);
+            var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
+            document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
+        }, 1000);
+    }
+</script>
