@@ -12,6 +12,7 @@ top: true
 
 ---
 
++ [Pharos Pro](https://testflight.apple.com/join/ZgnSkCjs)(新)
 + [寒梅](https://testflight.apple.com/join/7U4YKpl2)
 + [Mume VPN](https://testflight.apple.com/join/wgXjVEh8)
 + [WireGuard](https://testflight.apple.com/join/63I19SDT)
@@ -243,6 +244,8 @@ top: true
 + [Feedelio](https://testflight.apple.com/join/ceqvetXz)
 + [Pulsr](https://testflight.apple.com/join/2Z6pGpNN)
 + [Slide for Reddit](https://testflight.apple.com/join/M7ChDyZx)
++ [Bonga KE](https://testflight.apple.com/join/I15FOWfa)
++ [Pungo Wallet](https://testflight.apple.com/join/ljT6fD34)
 
 ---
 
