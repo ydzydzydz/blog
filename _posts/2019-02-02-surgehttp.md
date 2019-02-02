@@ -49,6 +49,8 @@ categories: Surge
 
 此时，设备C就已经可以通过设备B中Surge提供的HTTP代理服务器上网了。
 
+另外，Quantumult开启共享代理在`附加功能`中，`监听IP`与`监听端口`在主页显示，就不再赘述了。
+
 
 
 
@@ -90,7 +92,7 @@ categories: Surge
                 imgHeight = realHeight;  
             }  
                     $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放  
-    
+
             var w = (windowW-imgWidth)/2;//计算图片与窗口左边距  
             var h = (windowH-imgHeight)/2;//计算图片与窗口上边距  
             $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性  
