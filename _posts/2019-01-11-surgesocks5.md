@@ -17,7 +17,7 @@ categories: Surge
 
 * 设置—>数据和存储—>代理—>使用代理—>SOCKS5
 
-* 连接信息：服务器`127.0.0.1`(或`0.0.0.0`)，端口`6153`
+* 连接信息：服务器:`127.0.0.1`(或`0.0.0.0`、`localhost`)，端口:`6153`
 
 <!-- more -->
 
@@ -36,7 +36,7 @@ categories: Surge
 ![socks5](https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/socks5/socks5.png)
 
 
-* 打开Telegram,设置SOCKS5代理：服务器`127.0.0.1`(或`0.0.0.0`)，端口`6153`(如果有自定义端口，填写为上步查看到的端口)
+* 打开Telegram,设置SOCKS5代理：服务器:`127.0.0.1`(或`0.0.0.0`、`localhost`)，端口:`6153`(如果有自定义端口，填写为上步查看到的端口)
 
 [6153端口](https://t.me/socks?server=127.0.0.1&port=6153)
 
@@ -110,7 +110,7 @@ IP-CIDR,205.172.60.0/22,PROXY,no-resolve
                imgHeight = realHeight;  
            }  
                    $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放  
-
+    
            var w = (windowW-imgWidth)/2;//计算图片与窗口左边距  
            var h = (windowH-imgHeight)/2;//计算图片与窗口上边距  
            $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性  
