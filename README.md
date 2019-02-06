@@ -10,6 +10,8 @@
 
 | 序号 |  发布时间  |                             文章                             |
 | :--: | :--------: | :----------------------------------------------------------: |
+|  31  | 2019-02-02 | [Surge作HTTP代理服务器](https://zhuangzhuang.cf/2019-02-02/surgehttp/) |
+|  30  | 2019-01-29 |  [Typora快捷键](https://zhuangzhuang.cf/2019-01-29/typora/)  |
 |  29  | 2019-01-11 | [Surge通过SOCKS5代理Telegram](http://zhuangzhuang.cf/2019-01-11/surgesocks5/) |
 |  28  | 2019-01-10 |     [Surge去广告](http://zhuangzhuang.cf/2019-01-10/ad/)     |
 |  27  | 2018-12-31 |    [书法代表作](http://zhuangzhuang.cf/2018-12-31/shufa/)    |
