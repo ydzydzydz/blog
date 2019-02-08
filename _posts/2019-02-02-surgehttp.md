@@ -3,6 +3,7 @@ layout: post
 title: Surge作HTTP代理服务器
 tags: Surge HTTP 共享代理
 categories: Surge
+img: https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/surge-http/1.png
 ---
 
 
@@ -92,7 +93,7 @@ categories: Surge
                 imgHeight = realHeight;  
             }  
                     $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放  
-    
+
             var w = (windowW-imgWidth)/2;//计算图片与窗口左边距  
             var h = (windowH-imgHeight)/2;//计算图片与窗口上边距  
             $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性  
