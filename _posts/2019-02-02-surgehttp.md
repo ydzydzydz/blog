@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Surge作HTTP代理服务器
+title: Surge共享代理
 tags: Surge HTTP 共享代理
 categories: Surge
 img: https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/surge-http/1.png
