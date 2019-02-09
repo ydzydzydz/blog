@@ -19,17 +19,17 @@ isNavItem: true
 
 
 <div class="liuyanban">
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zNzQyOC8xMzk2Mg==">
-<script type="text/javascript">
-   (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-  })(document, 'script');
-  </script>
-   <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-   </div>
+<div id="vcomments"></div>
+<script>
+new Valine({
+    el: '#vcomments',
+    appId: 'edBPYFEXGjTNmYOSU6QfSs8M-gzGzoHsz',
+    appKey: 'Ak42WeKa9Fx00j5RiUXUJIhK',
+    notify: false,
+    verify: false,
+    avatar:'mm',
+    placeholder: '发表评论吧',
+    lang:'zh-cn'
+})
+</script>
    </div>
