@@ -21,7 +21,7 @@
                         {% if p.url == page.url %}
                         <li class="active">{% else %}
                         <li>{% endif %}
-                            <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" class="word-keep"><span class="octicon {{ p.icon }}" style="width:16px"></span>&nbsp;&nbsp;{{ p.title }}</a>
+                            <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" class="word-keep"><span class="{{ p.icon }}" style="width:16px"></span>&nbsp;&nbsp;{{ p.title }}</a>
                         </li>
                         {% endif %}
                         {% endfor %}
