@@ -50,8 +50,3 @@ function search(){
 
     _st('install','{{site.swiftype_searchId}}','2.0.0');
 }
-
-
-
-
-
