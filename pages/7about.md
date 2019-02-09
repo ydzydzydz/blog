@@ -2,6 +2,7 @@
 layout: page
 title: 关于我
 permalink: /about/
+icon: fa fa-user
 ---
 ### 我是谁
 
