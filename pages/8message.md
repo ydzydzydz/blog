@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 留言
-permalink: /message/
+permalink: /messages/
 icon: fa fa-edit
 isNavItem: true
 ---
@@ -28,8 +28,8 @@ new Valine({
     notify: false,
     verify: false,
     avatar:'mm',
-    placeholder: '发表评论吧',
+    placeholder: '随便说说什么吧~~~',
     lang:'zh-cn'
 })
 </script>
-   </div>
+</div>

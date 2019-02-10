@@ -24,7 +24,7 @@ icon: fa fa-user
 
 博客主题：[WakelessDragon/blog](https://github.com/WakelessDragon/blog)
 
-评论系统：来必力
+评论系统：[Valine](https://valine.js.org/)
 
 访问统计：不蒜子
 
