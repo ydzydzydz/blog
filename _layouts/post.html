@@ -113,6 +113,15 @@ layout: default
 			扫一扫即可~ 谢谢您的鼓励。<br/>
 			<br/>
 	</div>
+  <script type="text/javascript">
+		document.getElementById('btn_donate').onclick = function(){
+			$('#donate_board').addClass('hidden');
+			$('#donate_guide').removeClass('hidden');
+		}
+		function donate_on_web(){
+			$('#donate').submit();
+		}
+	</script>
 </div>
 <!-- /Donate Module -->
 
