@@ -16,7 +16,7 @@ icon: fa fa-user
 
 职     业：大四狗，即将失业，😭😭😭
 
-常用软件：[QQ](mqq://im/chat?chat_type=wpa&uin=2474745326&version=1&src_type=web)  <a class="btn btn-pop">微信</a> [Telegram](https://t.me/YDZ123456) [Twitter](https://twitter.com/YRJYJQ) [微博](https://m.weibo.cn/u/5367293800) [即刻](https://web.okjike.com/user/657C65E4-3417-4DEE-9965-71A22265973A/post)  
+常用软件：[QQ](mqq://im/chat?chat_type=wpa&uin=2474745326&version=1&src_type=web)  <a class="btn btn-pop">微信</a> [Telegram](https://t.me/YDZ123456) [Twitter](https://twitter.com/YRJYJQ) [微博](https://m.weibo.cn/u/5367293800) [即刻](http://m.okjike.com/user/657C65E4-3417-4DEE-9965-71A22265973A)  
 
 联系我：以上的各种链接都可以联系到我
 
@@ -84,7 +84,6 @@ icon: fa fa-user
 
 img {
     width: 200px;
-    box-shadow: 0px 0px 6px 1px #5bb6ff;
 }
 
 </style>
