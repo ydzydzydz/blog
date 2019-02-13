@@ -1,7 +1,8 @@
 ---
 layout: page
-title: 关于我
+title: 关于
 permalink: /about/
+isNavItem: true
 icon: fa fa-user
 ---
 ### 我是谁
@@ -26,7 +27,7 @@ icon: fa fa-user
 
 评论系统：[Valine](https://valine.js.org/)
 
-访问统计：不蒜子
+访问统计：[不蒜子](https://busuanzi.ibruce.info/)
 
 <br/><br/><br/>
 
