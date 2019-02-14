@@ -13,6 +13,7 @@ layout: default
             <header>
               <a href="{{ site.baseurl | prepend: site.url  }}/archive/#{{ post.date | date: '%Y-%m-%d' }}"><span class="fa fa-thumb-tack"></span>&nbsp;<span>置顶</span></a>
             </header>
+            <div class="wow zoomIn" data-wow-duration="1.5s">
             <div class="module">
             <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
             {{ post.title }}
@@ -28,6 +29,7 @@ layout: default
                 <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#post-share"><span class="octicon octicon-file-symlink-file"></span>&nbsp;分享</a>
                 </span>
             </footer>
+           </div>
            </div>
             </article>
           	{% endif %}
