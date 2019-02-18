@@ -78,7 +78,7 @@ IP-CIDR,205.172.60.0/22,PROXY,no-resolve
         <img id="bigimg" style="border:5px solid #fff;" src="" />
     </div>
 </div>
- <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+ <script src="{{ '/static/js/jquery.min.js' | prepend: site.baseurl | prepend: site.url}}"></script>
 <script type="text/javascript">
    $("body").on('click','img',function(){  
        var _this = $(this);//将当前的img元素作为_this传入函数  
