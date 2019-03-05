@@ -130,5 +130,3 @@ tags: 古文
 天长地久有时尽，此恨绵绵无绝期。
 
 <br/>
-<iframe height="498" width="510" src="https://player.youku.com/embed/XMzM3NDMxOTE0NA==" frameborder="0" allowfullscreen="">
-</iframe>
