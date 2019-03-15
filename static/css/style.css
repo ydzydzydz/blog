@@ -104,29 +104,15 @@ html{
 }
 body {
     /*原背景图*/
-    -moz-pointer-events: none;
-    -webkit-pointer-events: none;
-    -ms-pointer-events: none;
-    pointer-events: none;
-    -moz-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-    -webkit-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-    -ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-    transition: opacity 1.5s ease-in-out, visibility 1.5s;
-    content: '';
     background-image: url({{ "/static/bg.jpg" | prepend: site.baseurl | prepend: site.url }});
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    background-color: #9E9E9E;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    visibility: visible;
-    opacity: 1;
     /*网页必应背景
     background-image: url(https://apis.elepover.com/bing/);
     height: 100%;
