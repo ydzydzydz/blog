@@ -104,10 +104,15 @@ html{
 }
 body {
     /*原背景图*/
-     background-image: url({{ "/static/bg1.jpg" | prepend: site.baseurl | prepend: site.url }});
+     background-image: url({{ "/static/bg.jpg" | prepend: site.baseurl | prepend: site.url }});
      height: 100%;
+     width: 100%;
      padding: 0px 0px 0px 0px;
      margin: 0px 0px 0px 0px;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
      background-color: #9E9E9E;
     /*网页必应背景
     background-image: url(https://apis.elepover.com/bing/);
