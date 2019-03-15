@@ -109,6 +109,10 @@ body {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     background-color: #9E9E9E;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     /*网页必应背景
     background-image: url(https://apis.elepover.com/bing/);
     height: 100%;
@@ -116,6 +120,8 @@ body {
     margin: 0px 0px 0px 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     background-size: cover;*/
 
 }
