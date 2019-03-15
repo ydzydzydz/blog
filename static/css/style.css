@@ -128,7 +128,7 @@ body {
 }
 
 /* 移动端响应*/
-@media screen and (max-width:767px){
+@media screen and (max-width:1367px){
     body{background-position: -99999px -99999px;}
     body:before {
         content: "";
