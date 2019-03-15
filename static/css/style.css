@@ -112,7 +112,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     /*网页必应背景
     background-image: url(https://apis.elepover.com/bing/);
     height: 100%;
