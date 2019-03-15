@@ -104,10 +104,8 @@ html{
 }
 body {
     /*原背景图*/
-    background: url({{ "/static/bg.jpg" | prepend: site.baseurl | prepend: site.url }});
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    background-repeat: no-repeat 0px 0px;
+    background-image: url({{ "/static/bg.jpg" | prepend: site.baseurl | prepend: site.url }});
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
