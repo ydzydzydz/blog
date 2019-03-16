@@ -23,6 +23,12 @@ body, html {
 	/*max-width: 69em;*/
 	margin: 0 auto;
 }
+/* 移动端响应*/
+@media screen and (max-width:376px){
+    .main {
+     width: 100%;
+    }
+}
 
 @font-face {
 	font-family: 'huxico';
