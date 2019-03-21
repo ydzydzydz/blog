@@ -5,9 +5,6 @@ permalink: /comments/
 ---
 
 
-<html>
-<head>
-    <meta http-equiv="refresh" content="0;url=https://zhuangzhuang.leanapp.cn/comments"></head>
 
-</html>
 
+<iframe width="100%" height="600px"  frameborder="0" src="https://zhuangzhuang.leanapp.cn/comments"></iframe>
