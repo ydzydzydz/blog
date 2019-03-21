@@ -37,6 +37,7 @@ layout: default
 
 
           {% for post in paginator.posts %}
+          {% if post.top == null %}
             <article>
                 <header>
                     <a href="{{ site.baseurl | prepend: site.url  }}/archive/#{{ post.date | date: '%Y-%m-%d' }}"><span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span></a>
@@ -63,6 +64,7 @@ layout: default
                 </div>
                 </div>
             </article>
+            {% endif %}
           {% endfor %}
         </section>
 
