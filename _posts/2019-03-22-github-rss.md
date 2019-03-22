@@ -10,6 +10,8 @@ categories: GitHub
 
 举个例子，比如[lhie1](https://github.com/lhie1)大佬的规则仓库，仓库地址为：[https://github.com/lhie1/Rules](https://github.com/lhie1/Rules)
 
+<!-- more -->
+
 **需添加的RSS订阅源的地址就是：[https://github.com/lhie1/Rules/master.atom](https://github.com/lhie1/Rules/master.atom)**
 
 当作者提交到远程仓库之后，就会收到更新提醒。在RSS阅读器中会查看到作者的提交信息，阅读原文可以看到修改的文件及内容。
@@ -23,7 +25,6 @@ categories: GitHub
 
    <video  width="100%" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/rss/2.mp4" controls="controls">
    </video>
-
 ---
 
 此外，GitHub Wiki也内置RSS订阅功能。
