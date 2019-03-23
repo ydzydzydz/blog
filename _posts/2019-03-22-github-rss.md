@@ -16,11 +16,21 @@ categories: GitHub
 
 当作者提交到远程仓库之后，就会收到更新提醒。在RSS阅读器中会查看到作者的提交信息，阅读原文可以看到修改的文件及内容。
 
+---
+
 具体效果如下：
 
 <img width="100%" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/rss/1.jpg" />
 
+---
 
+推荐使用Telegram的rss_bot，有更新时会及时收到提醒
+
+<img width="100%" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/rss/3.jpg" />
+
+---
+
+演示视频：
 
 
    <video  width="100%" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/rss/2.mp4" controls="controls">
