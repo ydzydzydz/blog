@@ -40,9 +40,10 @@ RULE-SET,https://raw.githubusercontent.com/ydzydzydz/Rules/master/special/applen
    </video>
 
 
-
 ---
 
 **注意：尽量保持在 Wifi 网络下访问**
+
+**规则来自：[Bumped Into](https://blog.dada.li/2019/using-apple-news-in-china-mainland)**
 
 
