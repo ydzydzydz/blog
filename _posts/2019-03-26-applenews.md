@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Surge代理AppleNews
+title: Surge代理Apple News
 tags: Surge AppleNews 
 categories: Surge
 ---
