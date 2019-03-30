@@ -118,5 +118,19 @@ obfs = tls
 
 ---
 
+### 效果
+
+<img width="80%" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/snell/1.jpg" />
+
+<style> 
+    .post img{
+	 margin-left: auto;
+     margin-right: auto;
+     display: block
+}
+</style>
+
+---
+
 **Forked from：[primovist/snell.sh](https://github.com/primovist/snell.sh)**
 
