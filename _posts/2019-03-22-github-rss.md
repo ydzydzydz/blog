@@ -12,7 +12,7 @@ categories: GitHub
 
 <!-- more -->
 
-**需添加的RSS订阅源的地址就是：[https://github.com/lhie1/Rules/master.atom](https://github.com/lhie1/Rules/master.atom)**
+**需添加的RSS订阅源的地址就是：[https://github.com/lhie1/Rules/commits/master.atom](https://github.com/lhie1/Rules/commits/master.atom)**
 
 当作者提交到远程仓库之后，就会收到更新提醒。在RSS阅读器中会查看到作者的提交信息，阅读原文可以看到修改的文件及内容。
 
