@@ -4,22 +4,11 @@ title: 微博
 permalink: /weibo/
 icon: fa fa-weibo
 ---
-<br/><br/>
-<p align="right">
-<a href="https://t.me/YDZ123456" title="telegram"><i class="fa fa-send-o"></i></a>
-<a href="https://twitter.com/YRJYJQ" title="twitter"><i class="fa fa-twitter"></i></a>
-<a href="https://github.com/ydzydzydz" title="github"><i class="fa fa-github"></i></a>
-<a href="https://ydzzzz.github.io" title="timeline"><i class="fa fa-heartbeat"></i></a>
-<a href="https://weibo.com/u/5367293800" title="weibo"><i class="fa fa-weibo"></i></a>
-<a href="https://ydzydzydz.github.io/images/weixin.png" title="wechat"><i class="fa fa-weixin"></i></a>
-<a href="mqq://im/chat?chat_type=wpa&uin=2474745326&version=1&src_type=web{{site.social.qq}}" title="qq"><i class="fa fa-qq"></i></a>
-<a href="mailto:mail@zhuangzhuang.ml" title="email"><i class="fa fa-envelope"></i></a>
-</p>
-<br/><br/><br/>
+<html xmlns:wb="https://open.weibo.com/wb">
+<script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 
 <p align="right">
-<span style='color:#0c7abf'> 「In me the tiger sniffs the rose. 心有猛虎，细嗅蔷薇。」<br /></span>
-<span style='color:#0c7abf;font-size:14px'>————Sason/余光中<br /></span>
+<wb:follow-button uid="5367293800" type="red_1" width="67" height="24" >Follow @YDZ123456</wb:follow-button>
 </p>
 
 <center>

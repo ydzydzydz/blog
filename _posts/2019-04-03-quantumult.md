@@ -82,7 +82,7 @@ alert: 等我写完
 
   策略结果基于网络环境，当连接到特定的 SSID 时，SSID 行为会覆盖 Wi-Fi 行为
 
-  例如：策略组NameA，连接到普通wifi时策略结果为 ProxyA，蜂窝网络时策略结果为 ProxyB，连接到 WifiA 时策略结果为 ProxyC，连接到 WifiB 时策略结果为 ProxyD
+  例如：策略组 NameA，连接到普通wifi时策略结果为 ProxyA，蜂窝网络时策略结果为 ProxyB，连接到 WifiA 时策略结果为 ProxyC，连接到 WifiB 时策略结果为 ProxyD
 
   ```
   NameA : wifi = ProxyA, celluar = ProxyB
@@ -96,7 +96,7 @@ alert: 等我写完
 
   对于共享服务器，由于低延迟服务器拥挤程度较高，个人分配带宽可能会比较低，该策略不建议用于流媒体播放
 
-  例如：策略组NameB，策略结果为 ProxyA、ProxyB、ProxyC、ProxyD 中相对较低的
+  例如：策略组 NameB，策略结果为 ProxyA、ProxyB、ProxyC、ProxyD 中相对较低的
 
   ```
   NameB : auto
@@ -110,7 +110,7 @@ alert: 等我写完
 
   策略结果由用户指定
 
-  例如：策略组NameC，包含策略 ProxyA、ProxyB、ProxyC、ProxyD，指定使用 ProxyA
+  例如：策略组 NameC，包含策略 ProxyA、ProxyB、ProxyC、ProxyD，指定使用 ProxyA
 
   ```
   NameC : static, ProxyA
@@ -126,7 +126,7 @@ alert: 等我写完
 
   由于各服务器被等权重的使用，终点 IP 将会随着所使用的服务器而随时变换，请谨慎使用该策略。
 
-  例如：策略组NameD，ProxyA、ProxyB、ProxyC、ProxyD 将被等权重的使用
+  例如：策略组 NameD，ProxyA、ProxyB、ProxyC、ProxyD 将被等权重的使用
 
   ```
   NameD : balance, round-robin
