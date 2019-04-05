@@ -44,13 +44,13 @@ scripts: [category.js]
                         <a href="{{ site.baseurl | prepend: site.url  }}/archive/#{{ post.date | date: '%Y-%m-%d' }}"><span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span></a>
                     </header>
                     <div class="wow slideInUp" data-wow-duration="1.5s">
-                      {% for img in post.img %}
-                      <img src="{{ post.img }}" width="100%" style="box-shadow: 15px 20px 17px 0px rgba(0,0,0,0.4), 0 0 30px rgba(10,10,0,0.1) inset;">
-                      {% endfor %}
                     <div class="module">
                         <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
                             {{ post.title }}
                         </a>
+                        {% for img in post.img %}
+                        <img src="{{ post.img }}" class="zz">
+                        {% endfor %}
                          <p>{% if post.excerpt.size > 32 %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | truncate: 160 }}{% endif %}</p>
                         <a class="readmore" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">阅读全文</a>
                         <footer>
@@ -79,13 +79,13 @@ scripts: [category.js]
                         <a href="{{ site.baseurl | prepend: site.url  }}/archive/#{{ post.date | date: '%Y-%m-%d' }}"><span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span></a>
                     </header>
                     <div class="wow fadeIn" data-wow-duration="2s">
-                      {% for img in post.img %}
-                      <img src="{{ post.img }}" width="100%" style="box-shadow: 15px 20px 17px 0px rgba(0,0,0,0.4), 0 0 30px rgba(10,10,0,0.1) inset;">
-                      {% endfor %}
                     <div class="module">
                         <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
                             {{ post.title }}
                         </a>
+                        {% for img in post.img %}
+                        <img src="{{ post.img }}" class="zz">
+                        {% endfor %}
                          <p>{% if post.excerpt.size > 32 %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | truncate: 160 }}{% endif %}</p>
                         <a class="readmore" href="{{ post.url | prepend: site.baseurl | prepend: site.url  }}">阅读全文</a>
                         <footer>
