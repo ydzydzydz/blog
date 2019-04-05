@@ -186,6 +186,8 @@ system,1.2.4.8,80.80.80.80,80.80.81.81,1.1.1.1,1.0.0.1
 `重定向`
 
 > 这一段是我瞎写的，实在是没找到官方手册 😭
+>
+> 对于这一部分不是很理解，网上找了一篇相关的介绍：[『传送门』](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Redirections)
 
 重定向为一个链接（http://example.com）或 base64 编码的响应(包括header、body 和 /r/n)，用于简单响应
 
