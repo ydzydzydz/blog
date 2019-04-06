@@ -102,7 +102,16 @@ alert: 等我写完
 
 ## [BACKUP-SERVER]
 
-> 这段没搞懂，等研究明白了再填上
+`显示在 widget 中的服务器列表`
+
+写法为一行一个名称
+
+```
+ProxyA
+ProxyB
+ProxyC
+ProxyD
+```
 
 ## [SUSPEND-SSID]
 
