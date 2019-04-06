@@ -4,17 +4,17 @@ title: Quantumult配置详解
 tags: Quantumult
 categories: Quantumult
 password: zhuangzhuang
-prompt: 密码是zhuangzhuang\n也不知道写的对不对😭\n还没写完，先占个坑😂
+prompt: 密码是zhuangzhuang\n也不知道写的对不对😭
 alert: 等我写完
 ---
 
+在 Quantumult 中，很多设置在 UI 界面中操作要比直接书写配置文件要简单清晰得多。比如：订阅服务器、订阅分流规则、订阅链接阻止、自定义策略组、批量修改分流规则等等，因此不建议直接修改配置文件，直接在 UI 中操作就好了。如果想自己制作订阅链接，可以了解一下
+
+与 Surge 不同的是，在 Quantumult 中，如果配置文件中有错误的内容会直接忽略（会修改为正确写法或直接删除），不会向 Surge 一样，必须配置文件完全正确才能使用
+
+本文内容仅供参考，不保证完全正确，如有错误，欢迎留言指正
 
 
-
-
-正在准备写，emmmmm
-
-目前毫无头绪 ，先占个位置 😂😂😂
 
 <!-- more -->
 
@@ -26,7 +26,9 @@ alert: 等我写完
 
 `服务器节点`
 
-以下只做简单示例，建议在 UI 中添加
+（『设置--服务器』『设置--订阅--服务器』）
+
+以下只做简单示例，建议在 UI 中直接添加或订阅
 
 * Shadowsocks
 
@@ -62,6 +64,8 @@ alert: 等我写完
 
 `订阅链接`
 
+（『设置--订阅』）
+
 * 服务器订阅
 
   部分更新：只更新本地已有服务器信息
@@ -77,7 +81,7 @@ alert: 等我写完
   如果您是从外部导入的配置文件，建议在导入完成后更新一次服务器订阅以同步更新记录。
 
   ```
-  Server-name, server, https://server.com/server.conf, true, true, true
+  Server-name, server, https://example.com/server.conf, true, true, true
   ```
 
 * 分流规则订阅
@@ -85,7 +89,7 @@ alert: 等我写完
   个性化：更新时提供策略替换面板
 
   ```
-  Filter-name, filter, https://filter.com/filter.conf, true
+  Filter-name, filter, https://example.com/filter.conf, true
   ```
 
 * 链接阻止订阅
@@ -93,7 +97,7 @@ alert: 等我写完
   包含主机名：同时更新 HTTPS 解密配置的主机名
 
   ```
-  Blacklist-name, blacklist, https://blacklist.com/black.list.conf, true
+  Blacklist-name, blacklist, https://example.com/black.list.conf, true
   ```
 
 
@@ -109,7 +113,9 @@ WiFi-Name
 
 `自定义策略组`
 
-需要base64编码，建议在 UI 中修改
+（『设置--策略』）
+
+需要base64编码，建议在 UI 中修改或添加
 
 * 环境策略
 
@@ -173,6 +179,8 @@ WiFi-Name
 
 `域名解析服务器`
 
+（『设置--域名解析』）
+
 留空将使用设备当前网络获取的参数（非输入占位符 IP）
 
 Quantumult 将会对所有域名解析服务器进行并发查询，并使用响应最早的结果进行连接，如果您不会网络调试，请务必留空。
@@ -185,7 +193,9 @@ system,1.2.4.8,80.80.80.80,80.80.81.81,1.1.1.1,1.0.0.1
 
 `重定向`
 
-> 这一段是我瞎写的，实在是没找到官方手册 😭
+（『设置--HTTP 复写』）
+
+> 这一段是我瞎写的，大致应该差不多，实在是没找到官方手册 😭
 >
 > 对于这一部分不是很理解，网上找了一篇相关的介绍：[『传送门』](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Redirections)
 
@@ -233,6 +243,8 @@ system,1.2.4.8,80.80.80.80,80.80.81.81,1.1.1.1,1.0.0.1
 
 `链接阻止`
 
+（『设置--链接阻止』）
+
 支持正则表达式
 
 ```
@@ -244,6 +256,8 @@ system,1.2.4.8,80.80.80.80,80.80.81.81,1.1.1.1,1.0.0.1
 ## [TCP]
 
 `分流规则`
+
+（『设置--分流』）
 
 当匹配到对应类型的 TCP 流量，该流量走向将由设置中的『行为』决定
 
@@ -288,13 +302,15 @@ system,1.2.4.8,80.80.80.80,80.80.81.81,1.1.1.1,1.0.0.1
   不解析
 
   ```
-  GEOIP,CN,no-resolve
+  GEOIP,CN,DIRECT,no-resolve
   ```
 
 * NO-GEOIP
 
+  根据 IP 的国家信息匹配
+
   ```
-  
+  NO-GEOIP,CN,PROXY
   ```
 
 * IP-CIDR
@@ -327,6 +343,8 @@ SELECTED,ProxyA
 
 `域名 IP 映射`
 
+（『设置--域名解析--高级』）
+
 ```
 zhuangzhuang.cf = 1.1.1.1
 ```
@@ -334,6 +352,8 @@ zhuangzhuang.cf = 1.1.1.1
 ## [STATE]
 
 `选择运行模式`
+
+（『设置--运行模式』）
 
 * 全局代理
 
@@ -364,6 +384,8 @@ zhuangzhuang.cf = 1.1.1.1
 ## [MITM]
 
 `HTTPS 解密`
+
+（『设置--HTTPS 解密--主机名』）
 
 使用前，需要到『描述文件』中**安装**证书，『证书信任设置』中**启用**证书
 
