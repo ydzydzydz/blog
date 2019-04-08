@@ -32,8 +32,6 @@ ipconfig
 
 <img width="80%" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/clash-surge/1.jpg" />
 
-![](../../../../Pictures/Screenshots/屏幕截图(214).png)
-
 5 打开 Surge ，文本模式编辑，添加代理和策略组，将上两步所查看到的内网 IP 和端口填写到对应位置
 
 ```

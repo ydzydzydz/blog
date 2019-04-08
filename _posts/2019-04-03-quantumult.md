@@ -104,6 +104,8 @@ alert: 等我写完
 
 `显示在 widget 中的服务器列表`
 
+（『设置--策略--PROXY』）
+
 写法为一行一个名称
 
 ```
@@ -427,8 +429,3 @@ ca-p12 = MIIKPAIBAzCCCgYGCSqGSIb3DQEHAaCCCfcEggnzMIIJ7zCCBF8GCSqGSIb3DQEHBqCCBFA
 | [Hackl0us/SS-Rule-Snippet](https://github.com/Hackl0us/SS-Rule-Snippet) | [快捷指令](https://www.icloud.com/shortcuts/884f18991ad14e69b0c13a1a4e7b3aac) |
 | [lhie1/Rules](https://github.com/lhie1/Rules)                | [JSBox](https://xteko.com/redir?name=Rules-lhie1&url=https://raw.githubusercontent.com/Fndroid/jsbox_script/master/Rules-lhie1/.output/Rules-lhie1.box) |
 
-<style>
-    .post table{
-        margin:0 auto;
-    }
-</style>
