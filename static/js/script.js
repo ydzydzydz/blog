@@ -33,7 +33,7 @@ function backToTop() {
 
     //点击回到顶部
     st.click(function() {
-        $("body").animate({
+        $("html,body,window").animate({
             scrollTop: "0"
         }, 500);
     });
