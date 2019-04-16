@@ -441,9 +441,10 @@ var month = today.getMonth()+1;//查询月份
 var year = today.getFullYear();//查询年份
 var hour=today.getHours();
 var morning="";
+ if ( hour>=0& hour<8) morning="早上好";
  if ( hour>=8 & hour<12) morning="上午好";
  if ( hour>=12 & hour<20) morning="下午好";
- if ( hour>=20) morning="晚上好";
+ if ( hour>=20& hour<24) morning="晚上好";
 var week="";
 if (day==0) week='星期日';
 if (day==1) week='星期一';
