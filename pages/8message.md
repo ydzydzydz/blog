@@ -27,8 +27,8 @@ new Valine({
     appKey: 'Ak42WeKa9Fx00j5RiUXUJIhK',
     notify: false,
     verify: false,
-    avatar:'mm',
-    placeholder: '留下邮箱，回复会收到邮件提醒',
+    avatar:'wavatar',
+    placeholder: '评论前请务必留好真实邮箱，方便接收回复邮件',
     lang:'zh-cn'
 })
 </script>

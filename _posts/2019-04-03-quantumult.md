@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Quantumult配置详解
-tags: Quantumult
-categories: Quantumult
+tags: 科学上网 Quantumult Rules
+categories: Quantumult Rules
 password: zhuangzhuang
 prompt: 密码是zhuangzhuang\n也不知道写的对不对😭
 alert: 等我写完
@@ -428,4 +428,3 @@ ca-p12 = MIIKPAIBAzCCCgYGCSqGSIb3DQEHAaCCCfcEggnzMIIJ7zCCBF8GCSqGSIb3DQEHBqCCBFA
 | [ConnersHua/Profiles](https://github.com/ConnersHua/Profiles) | [快捷指令](https://www.icloud.com/shortcuts/44f0cffd3ddf422ea28fb94380cec417) |
 | [Hackl0us/SS-Rule-Snippet](https://github.com/Hackl0us/SS-Rule-Snippet) | [快捷指令](https://www.icloud.com/shortcuts/884f18991ad14e69b0c13a1a4e7b3aac) |
 | [lhie1/Rules](https://github.com/lhie1/Rules)                | [JSBox](https://xteko.com/redir?name=Rules-lhie1&url=https://raw.githubusercontent.com/Fndroid/jsbox_script/master/Rules-lhie1/.output/Rules-lhie1.box) |
-
