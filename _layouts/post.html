@@ -31,7 +31,7 @@ layout: default
           <!--上一篇 下一篇-->
           <ul class="pager">
            {% if page.previous.url %}
-              <li class="previous"style="white-space: nowrap;overflow: hidden;">
+              <li class="previous"style="white-space: nowrap;">
                <a style="overflow: hidden;text-overflow: ellipsis; max-width:49%; border: 1px solid #ff369c;" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">上一篇：<span>{{page.previous.title}}</span>
                </a>
               </li>
@@ -342,12 +342,16 @@ layout: default
                     </div>
                     <div align="center">
                       <h1 id="mytime">00:00:00</h1>
+                      <h5 id="riqi"></h5>
                       <br/>
                    </div>
                   </div>
                 </div>
                 </div>
-                <script>
+
+
+
+  <script>
   function time (){
         var timeH = $(".time").offset().top;
         var time = document.getElementById("time");
@@ -397,6 +401,28 @@ layout: default
             document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
         }, 1000);
     }
+</script>
+
+<script type="text/javascript">
+var today = new Date(); //新建一个Date对象
+var date = today.getDate();//查询当月日期
+var day = today.getDay();//查询当前星期几
+var month = today.getMonth()+1;//查询月份
+var year = today.getFullYear();//查询年份
+var hour=today.getHours();
+var morning="";
+ if ( hour>=8 & hour<12) morning="上午好";
+ if ( hour>=12 & hour<20) morning="下午好";
+ if ( hour>=20) morning="晚上好";
+var week="";
+if (day==0) week='星期日';
+if (day==1) week='星期一';
+if (day==2) week='星期二';
+if (day==3) week='星期三';
+if (day==4) week='星期四';
+if (day==5) week='星期五';
+if (day==6) week='星期六';
+document.getElementById("riqi").innerText = year+"年"+month+"月"+date+"日 "+week+" "+morning;
 </script>
 
 
