@@ -31,14 +31,14 @@ layout: default
           <!--上一篇 下一篇-->
           <ul class="pager">
            {% if page.previous.url %}
-              <li class="previous">
-               <a style="border: 1px solid #ff369c;" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">上一篇：<span>{{page.previous.title}}</span>
+              <li class="previous"style="white-space: nowrap;overflow: hidden;">
+               <a style="overflow: hidden;text-overflow: ellipsis; max-width:49%; border: 1px solid #ff369c;" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">上一篇：<span>{{page.previous.title}}</span>
                </a>
               </li>
           {% endif %}
           {% if page.next.url %}
-              <li class="next">
-               <a style="border: 1px solid #ff369c;" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">下一篇：<span>{{page.next.title}}</span>
+              <li class="next"style="white-space: nowrap;">
+               <a style="overflow: hidden;text-overflow: ellipsis; max-width:49%; border: 1px solid #ff369c;" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">下一篇：<span>{{page.next.title}}</span>
                </a>
               </li>
           {% endif %}
