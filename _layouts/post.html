@@ -334,6 +334,7 @@ layout: default
 
 
                 <div class="pad-min"></div>
+                <div class="time" id="time">
                 <div class="shadow-bottom-center" >
                   <div class="content-navigation-aboutme">
                     <div class="content-navigation-header">
@@ -345,6 +346,36 @@ layout: default
                    </div>
                   </div>
                 </div>
+                </div>
+                <script>
+  function time (){
+        var timeH = $(".time").offset().top;
+        var time = document.getElementById("time");
+        document.onscroll = function(){
+            var sTop = document.documentElement.scrollTop;
+            if(sTop>=timeH){
+              time.className = "fixed";
+            }else {
+              time.className = "time";
+            }
+	       	console.log(sTop==timeH);
+        }
+    }
+</script>
+<style>
+  .time {
+    transition: width 2s;
+-moz-transition: width 2s;	/* Firefox 4 */
+-webkit-transition: width 2s;	/* Safari 和 Chrome */
+-o-transition: width 2s;	/* Opera */
+    }
+    .fixed {
+        position: fixed;
+        top:20px;
+        width: 292px;
+        animation: slideInRight 2s;
+    }
+  </style>
 
 
     </div>
