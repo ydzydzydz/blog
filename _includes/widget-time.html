@@ -1,0 +1,88 @@
+<div class="time" id="time">
+<div class="shadow-bottom-center" >
+  <div class="content-navigation-aboutme">
+    <div class="content-navigation-header">
+        <span class="fa fa-calendar-check-o"></span>&nbsp;计时器
+    </div>
+    <div align="center">
+      <h1 id="mytime">00:00:00</h1>
+      <h5 id="riqi"></h5>
+      <br/>
+   </div>
+  </div>
+</div>
+</div>
+
+
+<style>
+  .time {
+    transition: width 2s;
+-moz-transition: width 2s;	/* Firefox 4 */
+-webkit-transition: width 2s;	/* Safari 和 Chrome */
+-o-transition: width 2s;	/* Opera */
+    }
+    .fixed {
+        position: fixed;
+        top:20px;
+        width: 292px;
+        animation: slideInRight 2s;
+    }
+  </style>
+
+
+  <script>
+  function time (){
+        var timeH = $(".time").offset().top;
+        var time = document.getElementById("time");
+        document.onscroll = function(){
+            var sTop = document.documentElement.scrollTop;
+            if(sTop>=timeH){
+              time.className = "fixed";
+            }else {
+              time.className = "time";
+            }
+          console.log(sTop==timeH);
+        }
+    }
+</script>
+
+<!--计时器-->
+<script>
+    function two_char(n) {
+        return n >= 10 ? n : "0" + n;
+    }
+    function time_fun() {
+        var sec=0;
+        setInterval(function () {
+            sec++;
+            var date = new Date(0, 0)
+            date.setSeconds(sec);
+            var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
+            document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
+        }, 1000);
+    }
+</script>
+
+
+<script type="text/javascript">
+var today = new Date(); //新建一个Date对象
+var date = today.getDate();//查询当月日期
+var day = today.getDay();//查询当前星期几
+var month = today.getMonth()+1;//查询月份
+var year = today.getFullYear();//查询年份
+var hour=today.getHours();
+var morning="";
+ if ( hour>=0& hour<8) morning="早上好";
+ if ( hour>=8 & hour<12) morning="上午好";
+ if ( hour>=12 & hour<20) morning="下午好";
+ if ( hour>=20& hour<24) morning="晚上好";
+var week="";
+if (day==0) week='星期日';
+if (day==1) week='星期一';
+if (day==2) week='星期二';
+if (day==3) week='星期三';
+if (day==4) week='星期四';
+if (day==5) week='星期五';
+if (day==6) week='星期六';
+document.getElementById("riqi").innerText = year+"年"+month+"月"+date+"日 "+week+" "+morning;
+</script>

@@ -28,21 +28,10 @@ layout: default
           </article>
           <hr class="boundary">
 
-          <!--上一篇 下一篇-->
-          <ul class="pager">
-           {% if page.previous.url %}
-              <li class="previous"style="white-space: nowrap;">
-               <a style="overflow: hidden;text-overflow: ellipsis; max-width:49%; border: 1px solid #ff369c;" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">上一篇：<span>{{page.previous.title}}</span>
-               </a>
-              </li>
-          {% endif %}
-          {% if page.next.url %}
-              <li class="next"style="white-space: nowrap;">
-               <a style="overflow: hidden;text-overflow: ellipsis; max-width:49%; border: 1px solid #ff369c;" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">下一篇：<span>{{page.next.title}}</span>
-               </a>
-              </li>
-          {% endif %}
-         </ul>
+         <!--  近期文章 -->
+         {% include new-old.html %}
+
+
           <div id="post-share" class="bdsharebuttonbox">
               <!--<a href="#" class="bds_more" data-cmd="more"></a>
               <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
@@ -52,78 +41,12 @@ layout: default
               <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>-->
           </div>
 
-          <!--https://github.com/overtrue/share.js-->
-          <link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
-          <script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js"></script>
-          <div class="social-share"></div>
+        <!--  分享 -->
+        {% include share.html %}
 
-          <br/>
+        <!--  打赏 -->
+        {% include donate.html %}
 
-		<!-- 打赏 -->
-<center><div id="donate_module">
-	<!-- css -->
-	<style type="text/css">
-		.donate_bar a.btn_donate{
-			display: inline-block;
-			width: 82px;
-			height: 82px;
-			background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
-			_background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
-			-webkit-transition: background 0s;
-			-moz-transition: background 0s;
-			-o-transition: background 0s;
-			-ms-transition: background 0s;
-			transition: background 0.2s;
-		}
-		.donate_bar a.btn_donate:hover{ background-position: 0px -82px;}
-		.donate_bar .donate_txt {
-			display: block;
-			color: #9d9d9d;
-			font: 14px/2 "Microsoft Yahei";
-		}
-		.bold{ font-weight: bold; }
-	</style>
-	<!-- btn_donate & tips -->
-	<div id="donate_board" class="donate_bar center">
-		<a id="btn_donate" class="btn_donate" target="_self" href="javascript:;" title="Donate 打赏"></a>
-		<span class="donate_txt">
-			&uarr;<br/>
-			若本文对您有帮助，<span class="bold">求打赏~</span> 谢谢您的鼓励。
-		</span>
-		<br/>
-	</div>
-	<!-- donate guide -->
-	<div id="donate_guide" class="donate_bar center hidden">
-		<form action="" method="post" target="_blank">
-			<input type="hidden" name="cmd" value="_s-xclick">
-			<input type="hidden" name="hosted_button_id" value="3MPNAMMQA4C8Y">	&nbsp; &nbsp;
-		</form>
-		<a href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/payimg/alipayimg.jpg" title="Alipay_Scan_Payment" class="fancybox" rel="article0">
-			<img src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/payimg/hongbao.png" title="扫码领红包" height="164px" width="164px"/>
-		</a> &nbsp;
-		<a href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/payimg/weipayimg.jpg" title="Alipay_Scan_Payment" class="fancybox" rel="article0">
-			<img src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/payimg/alipayimg.jpg" title="支付宝打赏" height="164px" width="164px"/>
-		</a> &nbsp;
-		<a href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/payimg/qqpayimg.jpg" title="WeChat_Scan_Payment" class="fancybox" rel="article0">
-			<img src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/payimg/weipayimg.jpg" title="微信打赏" height="164px" width="auto"/>
-		</a> &nbsp;
-		<span class="donate_txt">
-      <br/>
-      用手机 <span class="bold"><a href="alipayqr://platformapi/startapp?saId=10000007">领红包</a> / <a href="https://mobile.alipay.com/index.htm">支付宝</a> / <a href="http://weixin.qq.com/">微信</a></span>，
-			<span class="bold"><a href="/donate/">打赏</a></span> 是对壮壮最大的支持<br/>
-			<br/>
-	</div>
-  <script type="text/javascript">
-		document.getElementById('btn_donate').onclick = function(){
-			$('#donate_board').addClass('hidden');
-			$('#donate_guide').removeClass('hidden');
-		}
-		function donate_on_web(){
-			$('#donate').submit();
-		}
-	</script>
-</div>
-<!-- /Donate Module -->
 
         </div>
         <div class="pad-min"></div>
@@ -131,50 +54,9 @@ layout: default
           <!--  多说评论 -->
         <!--  <div id="disqus_thread"></div>-->
         <div style="height:20px;"></div>
+        <!--  valine评论 -->
+        {% include valine.html %}
 
-        <div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'edBPYFEXGjTNmYOSU6QfSs8M-gzGzoHsz',
-            appKey: 'Ak42WeKa9Fx00j5RiUXUJIhK',
-            notify: false,
-            verify: false,
-            avatar:'wavatar',
-            placeholder: '评论前请务必留好真实邮箱，方便接收回复邮件',
-            lang:'zh-cn'
-        })
-    </script>
-
-    <style>
-      .v .vwrap .vheader .vinput {
-      border-bottom: 1.5px solid #52c5e8;
-  }
-  .v .vwrap .vheader .vinput:focus {
-    border-bottom-color: #ff0000;
-}
-    .v .vwrap{
-        border: 1px solid #00adff;
-        background-color: #ffffff38;
-        box-shadow: 0 0 5px 0px #30c5be;
-
-    }
-    .v .vlist .vcard .vh .vmeta .vat {
-        margin-right: 5px;
-    }
-    .v .vlist .vcard{
-      border: 1px solid #00adff;
-      border-radius: 5px;
-      margin-top: 10px;
-      padding-left: 5px;
-      padding-right: 1px;
-      background-color: #ffffff38;
-      box-shadow: 0 0 5px 0px #30c5be;
-    }
-    .v .vlist .vcard .vquote {
-        padding-left: 0rem;
-    }
-    </style>
 
 
       <!--  <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzQyOC8xMzk2Mg==">
@@ -194,315 +76,33 @@ layout: default
 
         </div>
     </div>
+
+
+
+
+    <!--  右侧挂件 -->
     <div class="content-navigation col-lg-3">
       <div class="shadow-bottom-center" >
-        <div class="content-navigation-toc">
-            <div class="content-navigation-header">
-                <span class="octicon octicon-list-unordered"></span>&nbsp;文章索引
-            </div>
-            <div class="content-navigation-list toc"></div>
-        </div>
-        <div class="content-navigation-tag">
-            <div class="content-navigation-header">
-                <span class="octicon octicon-list-unordered"></span>&nbsp;文章标签
-            </div>
-            <div class="content-navigation-list">
-                <ul>
-                    {% for tag in page.tags %}
-                    <li>
-                        <a href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}#{{ tag }}"><span class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-        <div class="content-navigation-related">
-            <div class="content-navigation-header">
-                <span class="octicon octicon-list-unordered"></span>&nbsp;相关文章
-            </div>
-            <div class="content-navigation-list">
-                <ul>
-                    {% assign postsAfterFilter = '-' | split: "-" %}
-
-                    {% for p in site.posts %}
-                        {%if p.url != page.url %}
-                            {% assign commonTagCount = 0 %}
-
-                            {% for tag in p.tags %}
-                                {% if page.tags contains tag %}
-                                    {% assign commonTagCount = commonTagCount | plus: 1 %}
-                                {% endif %}
-                            {% endfor %}
-
-                            {% for cat in p.categories %}
-                                {% if page.categories contains cat %}
-                                    {% assign commonTagCount = commonTagCount | plus: 1 %}
-                                {% endif %}
-                            {% endfor %}
-
-                            {% if commonTagCount > 0 %}
-                                {% assign postsAfterFilter = postsAfterFilter | push: p %}
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-
-                    {% if postsAfterFilter.size > 0 %}
-                        {% for p in postsAfterFilter limit: 15 %}
-                            <li>
-                                <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a>
-                            </li>
-                        {% endfor %}
-                    {% endif %}
-                </ul>
-            </div>
-        </div>
+        {% include widget-toc.html %}
+        {% include widget-tag.html %}
+        {% include widget-related.html %}
       </div>
+      <div class="pad-min"></div>
+      <div class="shadow-bottom-center" >
+        {% include widget-aboutme.html %}
+        {% include widget-friends.html %}
+     </div>
+     <div class="pad-min"></div>
+     <div class="shadow-bottom-center" >
+        {% include widget-sub-rss.html %}
+        {% include widget-sub-mail.html %}
+     </div>
+     <div class="pad-min"></div>
+        {% include widget-time.html %}
 
-
-              <div class="pad-min"></div>
-              <div class="shadow-bottom-center" >
-                <div class="content-navigation-aboutme">
-                  <div class="content-navigation-header">
-                      <span class="	fa fa-user"></span>&nbsp;<a href="/about">关于我</a>
-                  </div>
-                  <a href="/about">
-                  <img title="点击查看" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/logo.png" align="center" style="width:75%; height:75%; margin-left:11.25%" /></a>
-                  <br/>
-                  <div align="center">
-                    <a href="/about">
-                  <span style='color:#788287'> ZHUANGZHUANG<br /></span></a>
-                  </div>
-                </div>
-                <br/>
-                  <div align="center">
-                  <a href="mailto:mail@zhuangzhuang.ml" title="email"><i class="fa fa-envelope" style="color:#57585a; font-size:22px"></i></a>&nbsp;
-                  <a href="https://t.me/YDZ123456" title="telegram" style="color:#57585a; font-size:22px""><i class="fa fa-send"></i></a>&nbsp;
-                  <a href="mqq://im/chat?chat_type=wpa&uin=2474745326&version=1&src_type=web" title="qq" style="color:#57585a; font-size:22px""><i class="fa fa-qq"></i></a>&nbsp;
-                  <a href="https://ydzydzydz.github.io/images/weixin.png" title="wechat" style="color:#57585a; font-size:22px""><i class="fa fa-weixin"></i></a>
-                  <br />
-                  </div>
-
-                  <div class="content-navigation-me">
-                    <div class="content-navigation-header">
-                        <span class="	fa fa-chain"></span>&nbsp;<a href="/friends">友情链接</a>
-                    </div>
-                    <div class="content-navigation-list">
-                    <br/>
-                      <div align="center">
-                    <a href="https://withdewhua.space/blog/" style="display: inline-block; border: 1px solid rgba(185,185,185,.8); border-radius: 999em; padding: 0 10px; color: #fff; line-height: 24px; font-size: 16px; text-decoration: none; margin: 0 5px; margin-bottom: 6px; background-color: #bbbbee; box-shadow: 2px 0px 7px #f5a5a5;">方寸间</a>
-                    <a href="https://gxzyzd.tk/" style="display: inline-block; border: 1px solid rgba(185,185,185,.8); border-radius: 999em; padding: 0 10px; color: #fff; line-height: 24px; font-size: 16px; text-decoration: none; margin: 0 5px; margin-bottom: 6px; background-color: #bbbbee; box-shadow: 2px 0px 7px #f5a5a5;">共享资源站点</a>
-                    <a href="https://www.newlearner.site/" style="display: inline-block; border: 1px solid rgba(185,185,185,.8); border-radius: 999em; padding: 0 10px; color: #fff; line-height: 24px; font-size: 16px; text-decoration: none; margin: 0 5px; margin-bottom: 6px; background-color: #bbbbee; box-shadow: 2px 0px 7px #f5a5a5;">Newlearnerの小站</a>
-
-                  </div>
-
-                  </div>
-                  </div>
-
-                </div>
-
-
-
-                <div class="pad-min"></div>
-                <div class="shadow-bottom-center" >
-                  <div class="content-navigation-aboutme">
-                    <div class="content-navigation-header">
-                        <span class="fa fa-rss"></span>&nbsp;RSS订阅
-                    </div>
-                    <div align="center">
-                      <br/>
-                      <div style="clear: left;position: relative;width: 96%;padding-bottom: 3%;min-height: 50px;">
-                      <input type="text" value="https://zhuangzhuang.cf/feed.xml"style=" font: 14px Helvetica,Arial,sans-serif;border: 1px solid #ABB0B2;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display: block;width: 100%;padding: 8px 0;text-indent: 2%;">
-                      </div>
-                      <div style="float:right;margin-right: 10px;margin-top: 15px; ">
-                     <a href="/feed.xml"><button type="button" name="button" style="clear: both;background-color: #aaa;border: 0 none;border-radius: 4px;transition: all 0.23s ease-in-out 0s;color: #FFFFFF;cursor: pointer;display: inline-block;font-size: 15px;font-weight: normal;height: 32px;line-height: 32px;margin: 0 5px 10px 0;padding: 0 22px;text-align: center;text-decoration: none;vertical-align: top;white-space: nowrap;width: auto;">订阅</button></a>
-                   </div>
-                   </div>
-                  </div>
-                  <br/>
-                  <br/>
-                  <div class="content-navigation-aboutme">
-                    <div class="content-navigation-header">
-                        <span class="fa fa-envelope-o"></span>&nbsp;邮件订阅
-                    </div>
-                    <div align="center">
-                      <!-- Begin Mailchimp Signup Form -->
-
-<style type="text/css">
-	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<style type="text/css">
-	#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
-	#mergeRow-gdpr {margin-top: 30px;}
-	#mergeRow-gdpr fieldset label {font-weight: normal;}
-	#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
-</style>
-<div id="mc_embed_signup">
-<form action="https://zhuangzhuang.us20.list-manage.com/subscribe/post?u=fa706eb169f47d0fc5be49da9&amp;id=7ebfbe44d2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL"style="margin-top: 20px;"></label>
-  <div style="clear: left;position: relative;width: 96%;padding-bottom: 3%;min-height: 50px;">
-	<input type="email" style="border: 1px solid #ABB0B2;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display: block;width: 100%;padding: 8px 0;text-indent: 2%;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="邮箱地址" required>
   </div>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fa706eb169f47d0fc5be49da9_7ebfbe44d2" tabindex="-1" value=""></div>
-  <br/>
-  <div style="float:right;margin-right: 10px; ">
-    <div class="clear"><input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="button" style="clear: both;background-color: #aaa;border: 0 none;border-radius: 4px;transition: all 0.23s ease-in-out 0s;color: #FFFFFF;cursor: pointer;display: inline-block;font-size: 15px;font-weight: normal;height: 32px;line-height: 32px;margin: 0 5px 10px 0;padding: 0 22px;text-align: center;text-decoration: none;vertical-align: top;white-space: nowrap;width: auto;"></div>
-</div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-                      <br/>
-                      <br/>
-                   </div>
-                  </div>
-                </div>
-
-
-                <div class="pad-min"></div>
-                <div class="time" id="time">
-                <div class="shadow-bottom-center" >
-                  <div class="content-navigation-aboutme">
-                    <div class="content-navigation-header">
-                        <span class="fa fa-calendar-check-o"></span>&nbsp;计时器
-                    </div>
-                    <div align="center">
-                      <h1 id="mytime">00:00:00</h1>
-                      <h5 id="riqi"></h5>
-                      <br/>
-                   </div>
-                  </div>
-                </div>
-                </div>
-
-
-
-  <script>
-  function time (){
-        var timeH = $(".time").offset().top;
-        var time = document.getElementById("time");
-        document.onscroll = function(){
-            var sTop = document.documentElement.scrollTop;
-            if(sTop>=timeH){
-              time.className = "fixed";
-            }else {
-              time.className = "time";
-            }
-	       	console.log(sTop==timeH);
-        }
-    }
-</script>
-<style>
-  .time {
-    transition: width 2s;
--moz-transition: width 2s;	/* Firefox 4 */
--webkit-transition: width 2s;	/* Safari 和 Chrome */
--o-transition: width 2s;	/* Opera */
-    }
-    .fixed {
-        position: fixed;
-        top:20px;
-        width: 292px;
-        animation: slideInRight 2s;
-    }
-  </style>
-
-
-    </div>
 </div>
 
 
-<!--计时器-->
-<script>
-    function two_char(n) {
-        return n >= 10 ? n : "0" + n;
-    }
-    function time_fun() {
-        var sec=0;
-        setInterval(function () {
-            sec++;
-            var date = new Date(0, 0)
-            date.setSeconds(sec);
-            var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
-            document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
-        }, 1000);
-    }
-</script>
-
-<script type="text/javascript">
-var today = new Date(); //新建一个Date对象
-var date = today.getDate();//查询当月日期
-var day = today.getDay();//查询当前星期几
-var month = today.getMonth()+1;//查询月份
-var year = today.getFullYear();//查询年份
-var hour=today.getHours();
-var morning="";
- if ( hour>=0& hour<8) morning="早上好";
- if ( hour>=8 & hour<12) morning="上午好";
- if ( hour>=12 & hour<20) morning="下午好";
- if ( hour>=20& hour<24) morning="晚上好";
-var week="";
-if (day==0) week='星期日';
-if (day==1) week='星期一';
-if (day==2) week='星期二';
-if (day==3) week='星期三';
-if (day==4) week='星期四';
-if (day==5) week='星期五';
-if (day==6) week='星期六';
-document.getElementById("riqi").innerText = year+"年"+month+"月"+date+"日 "+week+" "+morning;
-</script>
-
-
-<!--图片灯箱效果-->
-<div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
-    <div id="innerdiv" style="position:absolute;">
-        <img id="bigimg" style="border:5px solid #fff;" src="" />
-    </div>
-</div>
- <script src="{{ '/static/js/jquery.min.js' | prepend: site.baseurl | prepend: site.url}}"></script>
-<script type="text/javascript">
-   $("body").on('click','img',function(){
-       var _this = $(this);//将当前的img元素作为_this传入函数
-       imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
-   });
-   function imgShow(outerdiv, innerdiv, bigimg, _this){
-       var src = _this.attr("src");//获取当前点击的pimg元素中的src属性
-       $(bigimg).attr("src", src);//设置#bigimg元素的src属性
-           /*获取当前点击图片的真实大小，并显示弹出层及大图*/
-       $("<img/>").attr("src", src).load(function(){
-           var windowW = $(window).width();//获取当前窗口宽度
-           var windowH = $(window).height();//获取当前窗口高度
-           var realWidth = this.width;//获取图片真实宽度
-           var realHeight = this.height;//获取图片真实高度
-           var imgWidth, imgHeight;
-           var scale = 0.8;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
-
-           if(realHeight>windowH*scale) {//判断图片高度
-               imgHeight = windowH*scale;//如大于窗口高度，图片高度进行缩放
-               imgWidth = imgHeight/realHeight*realWidth;//等比例缩放宽度
-               if(imgWidth>windowW*scale) {//如宽度扔大于窗口宽度
-                   imgWidth = windowW*scale;//再对宽度进行缩放
-               }
-           } else if(realWidth>windowW*scale) {//如图片高度合适，判断图片宽度
-               imgWidth = windowW*scale;//如大于窗口宽度，图片宽度进行缩放
-                           imgHeight = imgWidth/realWidth*realHeight;//等比例缩放高度
-           } else {//如果图片真实高度和宽度都符合要求，高宽不变
-               imgWidth = realWidth;
-               imgHeight = realHeight;
-           }
-                   $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放
-
-           var w = (windowW-imgWidth)/2;//计算图片与窗口左边距
-           var h = (windowH-imgHeight)/2;//计算图片与窗口上边距
-           $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性
-           $(outerdiv).fadeIn("fast");//淡入显示#outerdiv及.pimg
-       });
-       $(outerdiv).click(function(){//再次点击淡出消失弹出层
-           $(this).fadeOut("fast");
-       });
-   }
-</script>
+    <!--  图片灯箱 -->
+    {% include image.html %}
