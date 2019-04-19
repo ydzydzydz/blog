@@ -21,3 +21,10 @@ isNavItem: true
 <div class="liuyanban">
 {% include valine.html %}
 </div>
+
+<script src="../static/js/activate-power-mode.js"></script>
+<script>
+POWERMODE.colorful = true; // 控制开启/关闭礼花特效  
+POWERMODE.shake = false; // 控制开启/关闭屏幕震动特效  
+document.body.addEventListener('input', POWERMODE);
+</script>
