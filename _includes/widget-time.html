@@ -70,7 +70,9 @@ var date = today.getDate();//查询当月日期
 var day = today.getDay();//查询当前星期几
 var month = today.getMonth()+1;//查询月份
 var year = today.getFullYear();//查询年份
-var hour=today.getHours();
+var hour=today.getHours();//查询时
+var minutes=today.getMinutes();//查询分
+var seconds=today.getSeconds();//查询秒
 var morning="";
  if ( hour>=0& hour<8) morning="早上好";
  if ( hour>=8 & hour<12) morning="上午好";
@@ -85,4 +87,5 @@ if (day==4) week='星期四';
 if (day==5) week='星期五';
 if (day==6) week='星期六';
 document.getElementById("riqi").innerText = year+"年"+month+"月"+date+"日 "+week+" "+morning;
+// document.getElementById("riqi").innerText = year+"年"+month+"月"+date+"日 "+hour+":"+minutes+":"+seconds+" "+week+" "+morning;
 </script>
