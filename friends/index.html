@@ -21,59 +21,25 @@ layout: default
 			<div class="main">
 				<ul class="cbp_tmtimeline">
 
+				{% for friends in site.friends %}
 					<li>
 						<div class="cbp_tmlabel">
-							<h2 id="boxoffice">共享资源站点</h2>
-							<time>2019.01</time>
-							<a target="_blank" href="https://gxzyzd.tk/">
-							<img src="https://gxzyzd.tk/images/slider4.jpg"></a>
+							<h2 id="boxoffice">{{ friends.tittle }}</h2>
+							<time>{{ friends.time }}</time>
+							<a target="_blank" href="{{ friends.url }}">
+							<img src="{{ friends.img }}"></a>
 							<ul>
 								<li>
-								因缘而遇，且行且珍惜
+								{{ friends.description }}
 								</li>
 								<li class="skill">
 									<span><b> </b></span>
-									<span class="link"><a target="_blank" href="https://gxzyzd.tk/">点击跳转</a></span>
+									<span class="link"><a target="_blank" href="{{ friends.url }}">点击跳转</a></span>
 								</li>
 							</ul>
 						</div>
 					</li>
-
-					<li>
-						<div class="cbp_tmlabel">
-							<h2 id="boxoffice">Newlearnerの小站</h2>
-							<time>2019.03.16</time>
-							<a target="_blank" href="https://www.newlearner.site/">
-							<img src="https://www.newlearner.site/“wp-content/uploads”/2018/12/QQ20181226-001616@2x.jpg"></a>
-							<ul>
-								<li>
-								探索未知，记录点滴
-								</li>
-								<li class="skill">
-									<span><b> </b></span>
-									<span class="link"><a target="_blank" href="https://www.newlearner.site/">点击跳转</a></span>
-								</li>
-							</ul>
-						</div>
-					</li>
-
-					<li>
-						<div class="cbp_tmlabel">
-							<h2 id="boxoffice">方寸间</h2>
-							<time>2019.04</time>
-							<a target="_blank" href="https://withdewhua.space/blog/">
-							<img src="img/1.png"></a>
-							<ul>
-								<li>
-								花开堪折直须折，莫待无花空折枝
-								</li>
-								<li class="skill">
-									<span><b> </b></span>
-									<span class="link"><a target="_blank" href="https://withdewhua.space/blog/">点击跳转</a></span>
-								</li>
-							</ul>
-						</div>
-					</li>
+      {% endfor %}
 
 				</ul>
 			</div>
