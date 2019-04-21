@@ -8,7 +8,8 @@
 				}
 
 	.cb-search-tool ul{
-						 width: 70% ;
+						 width: 50% ;
+						 margin: 0 25%;
 						 white-space:nowrap;
 						 overflow:hidden;
 						 text-overflow: ellipsis;

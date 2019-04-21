@@ -81,16 +81,6 @@ systemctl stop snell
 
 ---
 
-### 捷径
-
-照着大佬的脚本撸了个[捷径](https://github.com/ydzydzydz/snell.sh/raw/master/Snell%E5%AE%89%E8%A3%85%26%E5%8D%B8%E8%BD%BD%26%E7%AE%A1%E7%90%86.shortcut)，直接运行即可安装&卸载&查看&管理状态
-
-**但是不能安装时自定义端口，默认端口为`13254`，安装结束后会将 Snell 配置导出到备忘录，复制到 Surge 中即可使用**
-
-
-
----
-
 ### 修改
 
 查看 Snell 配置文件
@@ -122,14 +112,25 @@ obfs = tls
 
 <img width="80%" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/snell/1.jpg" />
 
-<style> 
+<style>
     .post img{
 	 margin-left: auto;
      margin-right: auto;
      display: block
 }
 </style>
+
+
+
+---
+
+### 捷径
+
+照着大佬的脚本撸了个[捷径](https://github.com/ydzydzydz/snell.sh/raw/master/Snell%E5%AE%89%E8%A3%85%26%E5%8D%B8%E8%BD%BD%26%E7%AE%A1%E7%90%86.shortcut)，直接运行即可安装&卸载&查看&管理状态
+
+**但是不能安装时自定义端口，默认端口为`13254`，安装结束后会将 Snell 配置导出到备忘录，复制到 Surge 中即可使用**
+
+
 ---
 
 **Forked from：[primovist/snell.sh](https://github.com/primovist/snell.sh)**
-
