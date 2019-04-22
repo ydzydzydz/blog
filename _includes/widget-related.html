@@ -1,6 +1,6 @@
 <div class="content-navigation-related">
     <div class="content-navigation-header">
-        <span class="octicon octicon-list-unordered"></span>&nbsp;相关文章
+        <span class="fa fa-folder-open"></span>&nbsp;相关文章
     </div>
     <div class="content-navigation-list">
         <ul>
@@ -31,7 +31,7 @@
             {% if postsAfterFilter.size > 0 %}
                 {% for p in postsAfterFilter limit: 15 %}
                     <li>
-                        <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}">{{ p.title }}</a>
+                        <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}"><span class="fa fa-file-text-o"></span>&nbsp;{{ p.title }}</a>
                     </li>
                 {% endfor %}
             {% endif %}

@@ -15,18 +15,18 @@
                         {% if page.url == "/index.html" %}
                         <li class="active">{% else %}
                         <li>{% endif %}
-                        <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep"><span class="octicon octicon-book" style="width:16px"></span><span>&nbsp;&nbsp;主页</a>
+                        <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep"><span class="fa fa-home" style="width:16px"></span><span>&nbsp;主页</a>
                         </li>
                         {% for p in site.pages %}{% if p.isNavItem %}
                         {% if p.url == page.url %}
                         <li class="active">{% else %}
                         <li>{% endif %}
-                            <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" class="word-keep"><span class="{{ p.icon }}" style="width:16px"></span>&nbsp;&nbsp;{{ p.title }}</a>
+                            <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" class="word-keep"><span class="{{ p.icon }}" style="width:16px"></span>&nbsp;{{ p.title }}</a>
                         </li>
                         {% endif %}
                         {% endfor %}
-                        <li><a href="/friends/" class="word-keep"><span class="fa fa-users" style="width:16px"></span><span>&nbsp;&nbsp;友链</a></li>
-                        <li><a id="cb-search-btn"><span class="octicon octicon-search" style="width:16px"></span><span>&nbsp;&nbsp;搜索</a></li>
+                        <li><a href="/friends/" class="word-keep"><span class="fa fa-chain" style="width:16px"></span><span>&nbsp;友链</a></li>
+                        <li><a id="cb-search-btn" class="word-keep"><span class="fa fa-search" style="width:16px"></span><span>&nbsp;搜索</a></li>
                     </ul>
                 </div>
             </div>

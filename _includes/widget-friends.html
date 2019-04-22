@@ -1,6 +1,6 @@
 <div class="content-navigation-me">
   <div class="content-navigation-header">
-     <span class="	fa fa-chain"></span>&nbsp;<a href="/friends">友情链接</a>
+     <span class="fa fa-chain"></span>&nbsp;<a href="/friends">友情链接</a>
   </div>
   <div class="content-navigation-list">
 
@@ -8,7 +8,7 @@
 
     {% for friends in site.friends %}
     <li>
-    <a href="{{ friends.url }}" style="display: inline-block; border: 1px solid rgba(185,185,185,.8); border-radius: 999em; padding: 0 10px; color: #fff; line-height: 24px; font-size: 16px; text-decoration: none; margin: 0 5px; margin-bottom: 6px; background-color: #bbbbee; box-shadow: 2px 0px 7px #f5a5a5;">{{ friends.tittle }}</a>
+        <a target="_blank" href="{{ friends.url }}"><span class="fa fa-user-o"></span>&nbsp;{{ friends.tittle }}</a>
     </li>
     {% endfor %}
 
