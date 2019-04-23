@@ -5,7 +5,7 @@ tags: Telegram blog 瞎折腾
 categories: blog
 ---
 
-壮壮看到很多文章分享到 Telegram 中会有一个及时预览的按键，点进去也不用跳转到浏览器打开，直接就可以查看文章，比如 [medium.com](https://instantview.telegram.org/samples/medium.com/)、[telegra.ph](https://instantview.telegram.org/samples/telegra.ph/)，就忍不住躁动的心，也想整一个。然后就找教程，昨天 Google 了一下午，啥也没找到，找到的看不懂。😂
+壮壮看到很多文章分享到 Telegram 中会有一个即时预览的按键，点进去也不用跳转到浏览器打开，直接就可以查看文章，比如 [medium.com](https://instantview.telegram.org/samples/medium.com/)、[telegra.ph](https://instantview.telegram.org/samples/telegra.ph/)，就忍不住躁动的心，也想整一个。然后就找教程，昨天 Google 了一下午，啥也没找到，找到的看不懂。😂
 
 <!-- more -->
 
