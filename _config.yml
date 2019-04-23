@@ -64,3 +64,18 @@ friends:
     img: img/2.png
     time: 2019.04
     description: 咸鱼博主，不定期更新一些有意思的内容
+
+
+
+
+
+share: true
+donate: true
+
+
+
+valine:
+  -
+    appid: edBPYFEXGjTNmYOSU6QfSs8M-gzGzoHsz
+    appkey: Ak42WeKa9Fx00j5RiUXUJIhK
+    placeholder: 评论前请务必留下真实邮箱，方便接收回复邮件 😘

@@ -34,22 +34,25 @@ layout: default
 
           <div id="post-share" class="bdsharebuttonbox">
           </div>
-
+    {% if site.donate == true %}
         <!--  分享 -->
         {% include share.html %}
+    {% endif %}
 
+    {% if site.donate == true %}
         <!--  打赏 -->
         {% include donate.html %}
+    {% endif %}
 
 
         </div>
+
+
         <div class="pad-min"></div>
         <div id="post-comment" class="sheet post">
         <div style="height:20px;"></div>
-
         <!--  valine评论 -->
         {% include valine.html %}
-
 
         </div>
     </div>

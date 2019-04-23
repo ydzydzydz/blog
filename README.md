@@ -14,7 +14,7 @@
 
 随机背景：[岁月小筑](http://img.xjh.me/)
 
-动画效果：[daneden/animate.css](https://github.com/daneden/animate.css)
+动画效果：[daneden/animate.css](https://github.com/daneden/animate.css) + [matthieua/WOW](https://github.com/matthieua/WOW)
 
 搜索插件：[androiddevelop/jekyll-search](https://github.com/androiddevelop/jekyll-search)
 
