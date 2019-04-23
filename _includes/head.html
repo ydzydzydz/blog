@@ -142,15 +142,20 @@ function disableInfo() {
 </script>
 
 
-<!-- telegram -->
+<!-- og标签-->
 <meta property="og:site_name" content="ZHUANGZHUANG">
 <meta property="og:type" content="article">
-<meta property="og:title" content="{{ post.title }}">
-<meta property="og:description" content=" ">
-<meta property="og:image" content=" ">
-<meta property="article:published_time" content="{{ page.date | date: "%b %-d, %Y" }}">
-<meta property="article:modified_time" content="{{ page.date | date: "%b %-d, %Y" }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.title }}, {% for category in page.categories %}{{ category }},{% endfor %} {% for tag in page.tags %}{{ tag }},{% endfor %} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:image" content="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302">
 
+<!-- twitter card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.title }}, {% for category in page.categories %}{{ category }},{% endfor %} {% for tag in page.tags %}{{ tag }},{% endfor %} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302">
+<meta name="twitter:creator" content="@YDZ123456">
 
 
 
