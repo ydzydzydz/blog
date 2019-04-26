@@ -9,11 +9,56 @@ isNavItem: true
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>关于</title>
+		<title>壮壮博客</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta name="keywords" content="壮壮博客" />
+    <meta name="description" content="壮壮博客" />
+    <!-- ios桌面图标 -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <!-- iOS全屏-->
+    <meta name ="apple-mobile-web-app-capable" content ="yes">
+    <!-- iOS状态栏颜色-->
+    <meta name ="apple-mobile-web-app-status-bar-style" content ="black-translucent">
+    <!-- 设置启动画面 -->
+    <link rel="apple-touch-startup-image"  href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/1.jpg" />
+    <link rel="apple-touch-startup-image" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/start-up/640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/start-up/750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/start-up/1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/start-up/1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/start-up/1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/start-up/1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/start-up/2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <!-- 设置竖屏启动画面 -->
+    <link rel="apple-touch-startup-image" media="screen and (orientation: portrait)" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/2.jpg" /> <!--竖-->
+    <!-- 设置横屏启动画面 -->
+    <link rel="apple-touch-startup-image" media="screen and (orientation: landscape)" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/3.jpg" /> <!--横-->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- Generic Icon -->
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <!-- og标签-->
+    <meta property="og:site_name" content="ZHUANGZHUANG">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="壮壮博客">
+    <meta property="og:description" content="壮壮博客">
+    <meta property="og:url" content="https://zhuangzhuang.cf/about/">
+    <meta property="og:image" content="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302">
+    <!-- twitter card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="壮壮博客">
+    <meta name="twitter:description" content="壮壮博客">
+    <meta name="twitter:image" content="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302">
+    <meta name="twitter:creator" content="@YDZ123456">
 	</head>
 	<body onload="disableInfo()">
 
@@ -24,7 +69,7 @@ isNavItem: true
 					<div id="wrapper">
 
 						<!-- Panel (Banner) -->
-							<section class="panel banner right">
+							<section class="panel banner right" id="top">
 								<div class="content color0 span-3-75">
 									<h1 class="major"><!--[-->ZHUANGZHUANG<!--]--></h1>
 									<table class="alt">
@@ -117,7 +162,7 @@ isNavItem: true
 								<section class="panel color2">
 									<div class="intro joined">
 										<h2 class="major">如何联系我</h2>
-										<p>可以通过以下方式联系到ZHUANGZHUANG</p>
+										<p>可以通过以下方式联系到 ZHUANGZHUANG</p>
 									</div>
 									<div class="inner">
 										<ul class="grid-icons three connected">
@@ -131,12 +176,47 @@ isNavItem: true
 									</div>
 								</section>
 
+								<!-- Panel -->
+								<section class="panel color4-alt">
+										<div class="inner columns divided">
+											<div class="span-1-5">
+												<ul class="contact-icons color1">
+													<li title="关注@ZHUANGZHUANG" class="icon fa-twitter"><a href="https://twitter.com/YDZ123456" target="_blank">@ZHUANGZHUANG</a></li>
+													<li title="关注@ZHUANGZHUANG" class="icon fa-facebook"><a href="https://www.facebook.com/profile.php?id=100026185933405" target="_blank">@ZHUANGZHUANG</a></li>
+													<li title="关注@ZHUANGZHUANG" class="icon fa-weibo"><a href="https://weibo.com/u/5367293800" target="_blank">@ZHUANGZHUANG</a></li>
+													<li title="关注@ZHUANGZHUANG" class="icon fa-github"><a href="https://github.com/ydzydzydz" target="_blank">@ZHUANGZHUANG</a></li>
+												</ul>
+											</div>
+											<style type="text/css"> #sub_menu_1{display: none;} </style>
+                       <ul class="contact-icons color1">
+	                       <li class="contact-icons color1" onclick = "f('sub_menu_1')"><a title="展开" class="button special color1 circle icon fa-angle-down">Next</a>
+			                   <ul class="contact-icons color1" id="sub_menu_1">
+				                    <li><a title="返回博客" href="https://zhuangzhuang.cf/"class="button special color1 circle icon fa-home">返回主页</a></li>
+				                    <li><a title="返回顶部" href="#top" class="button special color1 circle icon fa-angle-double-left">Back</a></li>
+			                   </ul>
+	                       </li>
+	                     </ul>
+											 <script type="text/javascript">
+	 											function f(str){
+	 									                var sub_menu = document.getElementById(str);
+	 									                var dis_v = sub_menu.style.display;
+
+	 									                if(dis_v == "block")
+	 									                    sub_menu.style.display = "none";
+	 									                else
+	 									                    sub_menu.style.display = "block";
+
+	 									            }
+	 										</script>
+										</div>
+								</section>
+
 
 
 						<!-- Panel -->
-						<!--	<section class="panel">
+					<!--	<section class="panel">
 								<div class="intro color2">
-									<h2 class="major"></h2>
+									<h2 class="major">图库</h2>
 								</div>
 								<div class="gallery">
 									<div class="group span-3">
@@ -427,19 +507,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 
 
-							<!-- Panel -->
-							<section class="panel color4-alt">
-									<div class="inner columns divided">
-										<div class="span-1-5">
-											<ul class="contact-icons color1">
-												<li class="icon fa-twitter"><a href="https://twitter.com/YDZ123456" target="_blank">@ZHUANGZHUANG</a></li>
-												<li class="icon fa-facebook"><a href="https://www.facebook.com/profile.php?id=100026185933405" target="_blank">@ZHUANGZHUANG</a></li>
-												<li class="icon fa-weibo"><a href="https://weibo.com/u/5367293800" target="_blank">@ZHUANGZHUANG</a></li>
-												<li class="icon fa-github"><a href="https://github.com/ydzydzydz" target="_blank">@ZHUANGZHUANG</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
+
 
 						<!-- Copyright -->
 							<div class="copyright">&copy;<a href="https://zhuangzhuang.cf">ZHUANGZHUANG</a>.</div>
@@ -452,27 +520,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-			function disableInfo() {
-			    document.onkeydown = function() {
-			        var e = window.event || arguments[0];
-			        //屏蔽F12
-			        if(e.keyCode == 123) {
-			            return false;
-			            //屏蔽Ctrl+Shift+I
-			        } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
-			            return false;
-			            //屏蔽Shift+F10
-			        } else if((e.shiftKey) && (e.keyCode == 121)){
-			            return false;
-			        }
-			    };
-			    //屏蔽右键单击
-			    document.oncontextmenu = function() {
-			        return false;
-			    }
-			}
-			</script>
-
+			<script src="assets/js/blockf12.js"></script>
 	</body>
 </html>
