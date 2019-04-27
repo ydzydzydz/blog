@@ -42,7 +42,7 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-	
+
 	.copyrights{
 	text-indent:-9999px;
 	height:0;
@@ -768,7 +768,7 @@
 
 		input[type="checkbox"].color3 + label:before,
 		input[type="radio"].color3 + label:before {
-			color: #ffe4b4;
+			color: #636f6fbf;
 		}
 
 		input[type="checkbox"].color4 + label:before,
@@ -1191,7 +1191,7 @@
 			}
 
 			ul.contact-icons.color3 > li:before {
-				color: #ffe4b4;
+				color: #636f6fbf;
 			}
 
 			ul.contact-icons.color4 > li:before {
@@ -1630,7 +1630,7 @@
 			input[type="button"].special.color3,
 			button.special.color3,
 			.button.special.color3 {
-				color: #ffe4b4 !important;
+				color: #636f6fbf !important;
 			}
 
 			input[type="submit"].special.color4,
@@ -2197,7 +2197,7 @@
 			.panel > *.color3 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #ffe4b4;
+				background-color: #636f6fbf;
 			}
 
 			.panel > *.color4 {
@@ -2221,7 +2221,7 @@
 			.panel > *.color3-alt {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
 				background-size: 128px 128px, auto;
-				background-color: #fedea6;
+				background-color: #636f6fbf;
 			}
 
 			.panel > *.color4-alt {
@@ -2738,7 +2738,7 @@
 		.panel.color3-alt {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
 			background-size: 128px 128px, auto;
-			background-color: #fedea6;
+			background-color: #636f6fbf;
 		}
 
 		.panel.color4-alt {
@@ -2772,7 +2772,7 @@
 			.panel > *.color3 {
 				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #ffe4b4;
+				background-color: #636f6fbf;
 			}
 
 			.panel > *.color4 {
@@ -2796,7 +2796,7 @@
 			.panel > *.color3-alt {
 				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
 				background-size: 128px 128px, auto;
-				background-color: #fedea6;
+				background-color: #636f6fbf;
 			}
 
 			.panel > *.color4-alt {
@@ -3199,7 +3199,7 @@
 			.panel.color3 {
 				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #ffe4b4;
+				background-color: #636f6fbf;
 			}
 
 			.panel.color4 {
@@ -3223,7 +3223,7 @@
 			.panel.color3-alt {
 				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
 				background-size: 128px 128px, auto;
-				background-color: #fedea6;
+				background-color: #636f6fbf;
 			}
 
 			.panel.color4-alt {
