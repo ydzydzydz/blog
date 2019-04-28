@@ -190,15 +190,15 @@ result;
         ├── zhuangzhuang.conf
         ├── lhie1.conf
         ├── sconper.conf
-        └── resources
-            ├── policy
+        └── resources                           // 用于存放外部资源
+            ├── policy                          // 用于存放策略组
             │   ├── auto.list
             │   ├── all.list
             │   └── clash.list
-            ├── ruleset
+            ├── ruleset                         // 用于存放规则集
             │   ├── ad.list
             │   └── cn.list
-            └── js
+            └── js                              // 用于存放脚本
                 ├── wb_rm_ad.js
                 └── fang-ju-tou.js
 ```
