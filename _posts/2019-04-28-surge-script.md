@@ -170,3 +170,38 @@ result;
 >
 > + 可使用 console.log 将日志输出到 Surge 的日志中，方便调试。
 > + Dashboard 中抓到的 response header 和 response body 为修改后的结果，在 Notes 中可看到脚本的执行情况。
+
+---
+
+**补充一点**
+
+在 iOS 系统中本地 js时，`.js文件`无法像`.list文件`一样通过拷贝粘贴到 iCloud 云盘 Surge文件夹中
+
+解决方法：
+
+* 通过 **MAC** 系统保存文件到相应路径
+* 不使用`.js`作为文件后缀名，`.txt`、`.list`都可以，在 Surge 中引用时注意后缀名需一致
+
+另外，若是 Surge 文件夹中的外部资源较多，可以在 Surge 文件夹中建立专用的文件夹，引用时注意路径即可。如：
+
+```
+└── iCloud云盘
+    └── Surge
+        ├── zhuangzhuang.conf
+        ├── lhie1.conf
+        ├── sconper.conf
+        └── resources
+            ├── policy
+            │   ├── auto.list
+            │   ├── all.list
+            │   └── clash.list
+            ├── ruleset
+            │   ├── ad.list
+            │   └── cn.list
+            └── js
+                ├── wb_rm_ad.js
+                └── fang-ju-tou.js
+```
+
+
+
