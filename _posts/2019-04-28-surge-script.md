@@ -167,6 +167,87 @@ if (url.indexOf(path) != -1) {
 result;
 ```
 
+## 微信阅读小程序
+
+```ini
+[Script]
+
+# 微信阅读小程序
+http-response ^https?://i\.weread\.qq\.com/pay/memberCard script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/resources/js/WeRead.js 
+```
+
+主机名添加：`i.weiread.qq.com`
+
+```ini
+hostname = i.weiread.qq.com
+```
+
+Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Choler/Surge](https://raw.githubusercontent.com/Choler/Surge/master/WeRead.js)
+
+```javascript
+var result = body
+
+let path = '/pay/memberCardSummary';
+
+if (url.indexOf(path) != -1) {
+    var jsbody = JSON.parse(body);
+    jsbody.remainTime = 86313600;
+    result = JSON.stringify(jsbody);
+}
+result;
+```
+
+## RRtv
+
+```ini
+[Script]
+
+# RRtv
+http-response ^https?://api\.rr\.tv/ script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/resources/js/RRtv.js
+```
+
+主机名添加：`api.rr.tv`
+
+```ini
+hostname = api.rr.tv
+```
+
+Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Choler/Surge](https://raw.githubusercontent.com/Choler/Surge/master/RRtv.js)
+
+```javascript
+var result = body
+
+let path1 = '/user/profile';
+let path2 = '/v3plus/user/detail';
+let path3 = '/ad/getAll';
+
+if (url.indexOf(path1) != -1) {
+    var jsbody = JSON.parse(body);
+    jsbody.data.user.medalList = JSON.parse('[{"name":"原画","endTime":"2022-12-22 22:22:22","imgUrl":"http://img.rr.tv/screenshot/20171108/o_1510128764030.png","id":1}]');
+    jsbody.data.user.privilegeList = JSON.parse('[{"effectObject":"video","action":"play","func":"originalPainting","description":"解锁原画","icon":"jiesuoyuanhua","endTime":1671718942000},{"effectObject":"coin","action":"sign","func":"5","description":"签到额外银币+5","icon":"qiandaoyinbi","endTime":1671718942000},{"effectObject":"growth","action":"play","func":"0.4","description":"经验值加成+40%","icon":"jingyanzhijiacheng","endTime":1671718942000},{"effectObject":"video","action":"play","func":"noLimit","description":"看剧无限制","icon":"kanjuwuxianzhi","endTime":1671718942000},{"effectObject":"video","action":"play","func":"noAd","description":"看剧无广告","icon":"kanjuwuguanggao","endTime":1671718942000}]');
+    jsbody.data.user.createTime = 1671718942000;
+    jsbody.data.user.newUser = true;
+    jsbody.data.user.level = 30;
+    jsbody.data.user.nickName = 'Choler';
+    jsbody.data.user.achievementCount = 9999;
+    result = JSON.stringify(jsbody);
+}
+
+if (url.indexOf(path2) != -1) {
+    var jsbody = JSON.parse(body);
+    jsbody.data.user.medalList = JSON.parse('[{"name":"yel","endTime":"2022-12-22 22:22:22","imgUrl":"http://img.rr.tv/screenshot/20171108/o_1510128764030.png","id":1}]');
+    result = JSON.stringify(jsbody);
+}
+
+if (url.indexOf(path3) != -1) {
+    var jsbody = JSON.parse(body);
+    jsbody.data.adList = [];
+    result = JSON.stringify(jsbody);
+}
+
+result;
+```
+
 ## 知音漫客
 
 ```ini
