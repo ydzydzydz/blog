@@ -175,7 +175,7 @@ result;
 
 **补充一点**
 
-在 iOS 系统中本地 js时，`.js文件`无法像`.list文件`一样通过拷贝粘贴到 iCloud 云盘 Surge文件夹中
+在 iOS 系统中本地 js时，`.js文件`无法像`.list文件`一样通过拷贝粘贴到 iCloud 云盘 Surge 文件夹中
 
 解决方法：
 
