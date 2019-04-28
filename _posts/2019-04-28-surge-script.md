@@ -359,7 +359,7 @@ JSON.stringify(obj);
 
 **补充一点**
 
-在 iOS 系统中本地 js时，`.js文件`无法像`.list文件`一样通过拷贝粘贴到 iCloud 云盘 Surge 文件夹中
+在 iOS 系统中使用本地 js 时，`.js文件`无法像`.list文件`一样通过拷贝粘贴到 iCloud 云盘 Surge 文件夹中
 
 解决方法：
 
@@ -385,6 +385,19 @@ JSON.stringify(obj);
             └── js              // 用于存放js脚本
                 ├── wb_rm_ad.js
                 └── fang-ju-tou.js
+```
+
+在 Surge 中引用
+
+```
+[Proxy Group]
+🛥 Select = select, policy-path=resources/policy/all.list
+
+[Rule]
+RULE-SET,resources/ruleset/cn.list,🛥 Select
+
+[Script]
+http-response api.weibo.cn script-path=resources/js/wb_rm_ad.js
 ```
 
 
