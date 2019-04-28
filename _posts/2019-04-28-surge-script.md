@@ -106,6 +106,109 @@ keywords.forEach(function(k) {
 result;
 ```
 
+## 酷我音乐
+
+```ini
+[Script]
+
+# 酷我音乐
+http-response ^http://vip1\.kuwo\.cn/vip/ script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/resources/js/Music.js
+```
+
+Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Choler/Surge](https://raw.githubusercontent.com/Choler/Surge/master/Music.js)
+
+```javascript
+var result = body
+
+let path = '/vip/v2/user/vip';
+
+if (url.indexOf(path) != -1) {
+    var jsbody = JSON.parse(body);
+    jsbody.data.isNewUser = 2;
+    jsbody.data.vipLuxuryExpire = 1738717749000;
+    jsbody.data.isYearUser = 2;
+    jsbody.data.vipmExpire = 1738717749000;
+    jsbody.data.vipOverSeasExpire = 1738717749000;
+    jsbody.data.vipExpire = 1738717749000;
+    jsbody.data.vip3Expire = 1738717749000;
+    result = JSON.stringify(jsbody);
+}
+result;
+```
+
+## 去微信广告
+
+```ini
+[Script]
+
+# 去微信广告
+http-response ^https?://mp\.weixin\.qq\.com/ script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/resources/js/WeChat.js
+```
+
+主机名添加：`mp.weixin.qq.com`
+
+```
+hostname = mp.weixin.qq.com
+```
+
+Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Choler/Surge](https://raw.githubusercontent.com/Choler/Surge/master/WeChat.js)
+
+```javascript
+var result = body
+
+let path = '/mp/getappmsgad?f=';
+
+if (url.indexOf(path) != -1) {
+    var jsbody = JSON.parse(body);
+    jsbody.advertisement_info = [];
+    result = JSON.stringify(jsbody);
+}
+
+result;
+```
+
+## 知音漫客
+
+```ini
+[Script]
+
+# 知音漫客
+http-response getuserinfo-globalapi.zymk.cn script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/zymk.js
+```
+
+主机名添加：`*.zymk.cn`
+
+```
+hostname = *.zymk.cn
+```
+
+Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[mieqq/mieqq](https://github.com/mieqq/mieqq/blob/master/zymk.js)
+
+```javascript
+let user_info = '/app_api/v5/getuserinfo/';
+let coin_account = '/app_api/v5/coin_account/';
+let ticket = '/app_api/v5/getuserinfo_ticket/';
+var obj = JSON.parse(body);
+
+if (url.indexOf(user_info) != -1) {
+	obj['data']['coins'] = 999;
+	obj['data']['isvip'] = 1;
+	obj['data']['vipdays'] = 999;
+	obj['data']['recommend'] = 999;
+	obj['data']['Cticket'] = 999;
+	obj['data']['Cgold'] = 999;
+} else if (url.indexOf(coin_account) != -1) {
+	obj['data']['coins'] = 999;
+	obj['data']['golds'] = 999;
+} else if (url.indexOf(ticket) != -1) {
+	obj['data']['Cticket'] = 999;
+	obj['data']['recommend'] = 999;
+	
+}
+
+JSON.stringify(obj);
+```
+
 ---
 
 下面是官方文档的介绍。emmm，居然是中文的。。。
