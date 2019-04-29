@@ -374,7 +374,15 @@ JSON.stringify(obj);
 解决方法：
 
 * 通过 **MAC** 系统保存文件到相应路径
+
 * 不使用`.js`作为文件后缀名，`.txt`、`.list`都可以，在 Surge 中引用时注意后缀名需一致
+
+* 壮壮又发现可以移动整个文件夹到 Surge 文件夹中，真是迷呀
+
+  <center>
+  <video  width="50%" src="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/surge-script/1.mp4" controls="controls">
+  </video>
+  </center>
 
 另外，若是 Surge 文件夹中的外部资源较多，可以在 Surge 文件夹中建立专用的文件夹，引用时注意路径即可。如：
 
