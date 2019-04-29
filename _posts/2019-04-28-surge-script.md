@@ -29,6 +29,8 @@ http-response api.weibo.cn script-path=https://raw.githubusercontent.com/yichahu
 主机名添加：`api.weibo.cn`
 
 ```ini
+[MITM]
+
 hostname = api.weibo.cn
 ```
 
@@ -147,7 +149,9 @@ http-response ^https?://mp\.weixin\.qq\.com/ script-path=https://raw.githubuserc
 
 主机名添加：`mp.weixin.qq.com`
 
-```
+```ini
+[MITM]
+
 hostname = mp.weixin.qq.com
 ```
 
@@ -179,6 +183,8 @@ http-response ^https?://i\.weread\.qq\.com/pay/memberCard script-path=https://ra
 主机名添加：`i.weiread.qq.com`
 
 ```ini
+[MITM]
+
 hostname = i.weiread.qq.com
 ```
 
@@ -209,6 +215,8 @@ http-response ^https?://api\.rr\.tv/ script-path=https://raw.githubusercontent.c
 主机名添加：`api.rr.tv`
 
 ```ini
+[MITM]
+
 hostname = api.rr.tv
 ```
 
@@ -259,7 +267,9 @@ http-response getuserinfo-globalapi.zymk.cn script-path=https://raw.githubuserco
 
 主机名添加：`*.zymk.cn`
 
-```
+```ini
+[MITM]
+
 hostname = *.zymk.cn
 ```
 
