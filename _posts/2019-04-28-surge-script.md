@@ -23,7 +23,7 @@ categories: Surge
 [Script]
 
 # 去微博应用内广告
-http-response api.weibo.cn script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_rm_ad.js
+http-response api.weibo.cn script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 ```
 
 主机名添加：`api.weibo.cn`
