@@ -439,6 +439,28 @@ http-response https://app.bilibili.com/x/v2/account/mine script-path=https://raw
 hostname = app.bilibili.com
 ```
 
+## 简体转换为繁体
+
+**代码来源：[mieqq/mieqq](https://github.com/mieqq/mieqq)**
+
+```ini
+[Script]
+
+# 简体转换为繁体
+http-response .* script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/SimplifiedToTraditional.js
+```
+
+主机名
+
+```ini
+[MITM]
+
+# 全局转换
+hostname = *
+```
+
+
+
 ---
 
 下面是官方文档的介绍。emmm，居然是中文的。。。
