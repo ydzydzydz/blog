@@ -203,6 +203,104 @@ hostname = zhuangzhuang.cf,google.com
 
 ---
 
+# [Filter]
+
+`add script filter`
+
++ rule.conf
+
+```ini
+[Rule]
+DOMAIN,baidu.com,DIRECT,script-filter
+FINAL,DIRECT
+
+[URL Rewrite]
+^http://baidu.com/robots.txt _ direct script-filter
+
+[Filter]
+enable=true
+script=LyogdGVzdCBmaWx0ZXIgYXBpICovCnZhciBsb2NhbFN0b3JhZ2UgPSB7fTsKCmZ1bmN0aW9uIHRlc3RGaWx0ZXJSZXNwb25zZSh0eXBlLCBpZCwgdXJsLCBkYXRhLCByZXNwb25zZSkgewogICAgdmFyIHBhcnNlciA9IGxvY2FsU3RvcmFnZVtpZF0gfHwgKGxvY2FsU3RvcmFnZVtpZF0gPSBuZXcgSFRUUFBhcnNlcih0eXBlKSk7CiAgICBwYXJzZXIub25IZWFkZXJzQ29tcGxldGUgPSBmdW5jdGlvbihpbmZvKSB7CiAgICAgICAgY29uc29sZS5sb2coJ29uSGVhZGVyc0NvbXBsZXRlJywgaW5mbyk7CiAgICB9OwogICAgcGFyc2VyLm9uQm9keSA9IGZ1bmN0aW9uKGNodW5rLCBvZmZzZXQsIGxlbmd0aCkgewogICAgICAgIGNvbnNvbGUubG9nKCdvbkJvZHknLCBjaHVuaywgb2Zmc2V0LCBsZW5ndGgpOwogICAgfTsKICAgIHBhcnNlci5vbk1lc3NhZ2VDb21wbGV0ZSA9IGZ1bmN0aW9uKCkgewogICAgICAgIGNvbnNvbGUubG9nKCdvbk1lc3NhZ2VDb21wbGV0ZScpOwogICAgfTsKICAgIHBhcnNlci5leGVjdXRlKGRhdGEpOwp9CgpmdW5jdGlvbiB0ZXN0TW9ja1Jlc3BvbnNlKHR5cGUsIGlkLCB1cmwsIGRhdGEsIHJlc3BvbnNlKSB7CiAgICBpZiAoIWxvY2FsU3RvcmFnZVtpZF0pIHsKICAgICAgICBsb2NhbFN0b3JhZ2VbaWRdID0ge30KICAgIH0KICAgIHZhciBwYXJzZXIgPSBsb2NhbFN0b3JhZ2VbaWRdW3R5cGVdOwogICAgaWYgKCFwYXJzZXIpIHsKICAgICAgICBwYXJzZXIgPSBsb2NhbFN0b3JhZ2VbaWRdW3R5cGVdID0gbmV3IEhUVFBQYXJzZXIodHlwZSk7CiAgICAgICAgcGFyc2VyLm9uSGVhZGVyc0NvbXBsZXRlID0gZnVuY3Rpb24oaW5mbykgewogICAgICAgICAgICBjb25zb2xlLmxvZygnb25IZWFkZXJzQ29tcGxldGUnLCBpbmZvKTsKICAgICAgICB9OwogICAgICAgIHBhcnNlci5vbkJvZHkgPSBmdW5jdGlvbihjaHVuaywgb2Zmc2V0LCBsZW5ndGgpIHsKICAgICAgICAgICAgY29uc29sZS5sb2coJ29uQm9keSA9PicsIGNodW5rLCBvZmZzZXQsIGxlbmd0aCk7CiAgICAgICAgfTsKICAgICAgICBwYXJzZXIub25NZXNzYWdlQ29tcGxldGUgPSBmdW5jdGlvbigpIHsKICAgICAgICAgICAgY29uc29sZS5sb2coJ29uTWVzc2FnZUNvbXBsZXRlJyk7CiAgICAgICAgfTsKICAgIH0KICAgIHBhcnNlci5leGVjdXRlKGRhdGEpOwogICAgY29uc29sZS5sb2cocGFyc2VyLmluZm8pOwogICAgdmFyIHRpbWUgPSBuZXcgRGF0ZSgpLnRvR01UU3RyaW5nKCk7CiAgICByZXNwb25zZSgnSFRUUC8xLjEgMjAwIE9LDQpDb250ZW50LVR5cGU6IHRleHQvaHRtbA0KQ29udGVudC1MZW5ndGg6ICcgKyB0aW1lLmxlbmd0aCArICcNCg0KJyArIHRpbWUpOwp9CgovKioKICogRmlsdGVyIEhUVFAgcmVxdWVzdCBhbmQgcmVzcG9uc2UuCiAqIEBwYXJhbSB7c3RyaW5nfTogaHR0cCB0eXBlLCBSRVFVRVNUIG9yIFJFU1BPTlNFCiAqIEBwYXJhbSB7c3RyaW5nfTogaHR0cCByZXF1ZXN0IFVVSUQKICogQHBhcmFtIHtzdHJpbmd9OiBodHRwIHJlcXVlc3QgdXJsCiAqIEBwYXJhbSB7c3RyaW5nfTogaHR0cCByYXcgZGF0YQogKiBAcGFyYW0ge2Z1bmN0aW9ufTogZnVuY3Rpb24oZGF0YSl7fQogKiBAcmV0dXJucyB7c3RyaW5nfGJvb2xlYW58dW5kZWZpbmVkfQogKi8KZnVuY3Rpb24gc2NyaXB0RmlsdGVyRXhlY3V0ZSh0eXBlLCBpZCwgdXJsLCBkYXRhLCByZXNwb25zZSkgewogICAgY29uc29sZS5sb2coJ2ZpbHRlciAnICsgaWQpOwogICAgY29uc29sZS5sb2coJ3VybCAnICsgdXJsKTsKICAgIGlmICh1cmwuaW5kZXhPZignaHR0cDovL2JhaWR1LmNvbS9yb2JvdHMudHh0PycpID09PSAwKSB7CiAgICAgICAgaWYgKHR5cGUgPT0gJ1JFU1BPTlNFJykgewogICAgICAgICAgICB0ZXN0RmlsdGVyUmVzcG9uc2UodHlwZSwgaWQsIHVybCwgZGF0YSwgcmVzcG9uc2UpOwogICAgICAgIH0KICAgIH0gZWxzZSBpZiAodXJsLmluZGV4T2YoJ2h0dHA6Ly9iYWlkdS5jb20vcm9ib3RzLnR4dCcpID09PSAwKSB7CiAgICAgICAgdGVzdE1vY2tSZXNwb25zZSh0eXBlLCBpZCwgdXJsLCBkYXRhLCByZXNwb25zZSk7CiAgICAgICAgcmV0dXJuIHRydWU7CiAgICB9Cn0KCi8qCiAqIFJlbGVhc2UgZmlsdGVyIHZhbHVlcy4KICogQHBhcmFtIHtzdHJpbmd9OiBodHRwIHJlcXVlc3QgVVVJRAogKi8KZnVuY3Rpb24gc2NyaXB0RmlsdGVyRnJlZShpZCkgewogICAgY29uc29sZS5sb2coJ2ZyZWUgJyArIGlkKTsKICAgIGRlbGV0ZSBsb2NhbFN0b3JhZ2VbaWRdOwp9Cg==
+```
+
++ script-filter.js
+
+```javascript
+/* test filter api */
+const localStorage = {};
+
+function testFilterResponse(type, id, url, data, response) {
+    var parser = localStorage[id] || (localStorage[id] = new HTTPParser(type));
+    parser.onHeadersComplete = function(info) {
+        console.log('onHeadersComplete', info);
+    };
+    parser.onBody = function(chunk, offset, length) {
+        console.log('onBody', chunk, offset, length);
+    };
+    parser.onMessageComplete = function() {
+        console.log('onMessageComplete');
+    };
+    parser.execute(data);
+}
+
+function testMockResponse(type, id, url, data, response) {
+    if (!localStorage[id]) {
+        localStorage[id] = {}
+    }
+    var parser = localStorage[id][type];
+    if (!parser) {
+        parser = localStorage[id][type] = new HTTPParser(type);
+        parser.onHeadersComplete = function(info) {
+            console.log('onHeadersComplete', info);
+        };
+        parser.onBody = function(chunk, offset, length) {
+            console.log('onBody =>', chunk, offset, length);
+        };
+        parser.onMessageComplete = function() {
+            console.log('onMessageComplete');
+        };
+    }
+    parser.execute(data);
+    console.log(parser.info);
+    var time = new Date().toGMTString();
+    response('HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nContent-Length: ' + time.length + '\r\n\r\n' + time);
+}
+
+/**
+ * Filter HTTP request and response.
+ * @param {string}: http type, REQUEST or RESPONSE
+ * @param {string}: http request UUID
+ * @param {string}: http request url
+ * @param {string}: http raw data
+ * @param {function}: function(data){}
+ * @returns {string|boolean|undefined} string:return modified data, boolean:close connection, undefined:do not modify data
+ */
+function scriptFilterExecute(type, id, url, data, response) {
+    console.log('filter ' + id);
+    console.log('url ' + url);
+    if (url.indexOf('http://baidu.com/robots.txt?') === 0) {
+        if (type == 'RESPONSE') {
+            testFilterResponse(type, id, url, data, response);
+        }
+    } else if (url.indexOf('http://baidu.com/robots.txt') === 0) {
+        testMockResponse(type, id, url, data, response);
+        return true;
+    }
+}
+
+/*
+ * Release filter values.
+ * @param {string}: http request UUID
+ */
+function scriptFilterFree(id) {
+    console.log('free ' + id);
+    delete localStorage[id];
+}
+```
+
+[官方示例](https://gist.github.com/cute/be3dbae265e982d1ff002384eae00149)
+
+---
+
 ## 大佬们的规则
 
 * [Shadowrocket@lhie1](https://raw.githubusercontent.com/lhie1/Rules/master/Shadowrocket.conf)
