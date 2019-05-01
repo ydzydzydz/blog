@@ -411,7 +411,7 @@ http-response https://api.zhihu.com/v4/questions script-path=https://raw.githubu
 
 主机名添加：`api.zhihu.com`
 
-```
+```ini
 [MITM]
 
 hostname = api.zhihu.com
@@ -568,7 +568,7 @@ hostname = *
 
 在 Surge 中引用
 
-```
+```ini
 [Proxy Group]
 🛥 Select = select, policy-path=resources/policy/all.list
 
