@@ -24,6 +24,14 @@
     border: 1px solid #25d1d9;
 }
 
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #ff8300;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
 /* post
  * post articles area
  */
