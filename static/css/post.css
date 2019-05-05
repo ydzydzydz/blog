@@ -88,6 +88,31 @@
     white-space: pre;
 }
 
+.post pre::-webkit-scrollbar {
+  height: 10px;
+}
+
+.post pre::-webkit-scrollbar-button {
+  display: none;
+}
+
+.post pre::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.post pre::-webkit-scrollbar-thumb {
+  min-height: 1rem;
+  background-color: #cccccc;
+  background-clip: padding-box;
+  border: 3px solid #f5f5f5;
+  border-radius: 5px;
+}
+
+.post pre::-webkit-scrollbar-thumb:active {
+  background-color: #f00;
+  border-width: 2px;
+}
+
 .post pre code{
     white-space: pre;
 }
