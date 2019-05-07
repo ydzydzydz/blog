@@ -3,6 +3,9 @@ layout: post
 title: Surge支持Javascript
 tags: Surge 
 categories: Surge
+password: zhuangzhuang
+prompt: 请输入密码
+alert: 密码错误
 ---
 
 最近 Surge 又更新了，支持 Javascript 了，更强大了。

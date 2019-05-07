@@ -9,7 +9,7 @@ categories: Surge
 
 2 修改 Clash 配置文件
 
-```
+```yaml
 allow-lan: true
 ```
 
@@ -17,7 +17,7 @@ allow-lan: true
 
 3 查看 Clash 配置文件中的 HTTP 端口和 SOCKS5 端口
 
-```
+```yaml
 port: 8888
 socks-port: 8889
 ```
@@ -34,7 +34,7 @@ ipconfig
 
 5 打开 Surge ，文本模式编辑，添加代理和策略组，将上两步所查看到的内网 IP 和端口填写到对应位置
 
-```
+```ini
 [Proxy]
 ⏸ OFF = direct
 ▶️ HTTP = http, [SERVER ADDRESS], 8888
