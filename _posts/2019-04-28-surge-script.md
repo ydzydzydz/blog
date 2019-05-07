@@ -19,6 +19,8 @@ categories: Surge
 
 ## 去微博应用内广告
 
+**代码来源：[yichahucha/surge](https://github.com/yichahucha/surge)**
+
 ```ini
 [Script]
 
@@ -37,135 +39,9 @@ http-response ^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(\/interface\/sdk\/sdkad.p
 hostname = api.weibo.cn, *.uve.weibo.com
 ```
 
-Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[yichahucha/surge](https://github.com/yichahucha/surge/blob/master/wb_rm_ad.js)
+## 借助Surge防剧透
 
-```javascript
-const path1 = "/groups/timeline";
-const path2 = "/statuses/unread";
-const path3 = "/statuses/extend";
-const path4 = "/comments/build_comments";
-const path5 = "/photo/recommend_list";
-const path6 = "/stories/video_stream";
-const path7 = "/statuses/positives/get";
-const path8 = "/stories/home_list";
-var result = body;
-
-function is_likerecommend(title) {
-    if (title && title.type && title.type == "likerecommend") {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function filter_timeline() {
-    let json_body = JSON.parse(body);
-    let statuses = json_body.statuses;
-    if (statuses && statuses.length > 0) {
-        let ad = json_body.ad;
-        if (ad && ad.length > 0) {
-            for (let i = 0; i < ad.length; i++) {
-                const element = ad[i];
-                let ad_id = element.id;
-                for (let j = 0; j < statuses.length; j++) {
-                    const element = statuses[j];
-                    let statuses_id = element.id;
-                    if (statuses_id == parseInt(ad_id)) {
-                        statuses.splice(j, 1);
-                        break;
-                    }
-                }
-            }
-        }
-
-        let i = statuses.length;
-        while (i--) {
-            const element = statuses[i];
-            if (is_likerecommend(element.title)) {
-                statuses.splice(i, 1);
-            }
-        }
-
-        if (json_body.num) {
-            json_body.num = json_body.statuses.length + ad.length;
-            json_body.original_num = json_body.statuses.length;
-        }
-    }
-
-    if (json_body.trends) {
-        json_body.trends = [];
-    }
-
-    result = JSON.stringify(json_body);
-}
-
-if (url.indexOf(path1) != -1) {
-    filter_timeline();
-}
-
-if (url.indexOf(path2) != -1) {
-    filter_timeline();
-}
-
-if (url.indexOf(path3) != -1) {
-    let json_body = JSON.parse(body);
-    delete json_body.trend;
-    result = JSON.stringify(json_body);
-}
-
-if (url.indexOf(path4) != -1) {
-    let json_body = JSON.parse(body);
-    let datas = json_body.datas;
-    if (datas && datas.length > 0) {
-        let i = datas.length;
-        while (i--) {
-            const element = datas[i];
-            let type = element.type;
-            if (type == 5 || type == 1 || type == 6) {
-                datas.splice(i, 1);
-            }
-        }
-    }
-    result = JSON.stringify(json_body);
-}
-
-if (url.indexOf(path5) != -1) {
-    let json_body = JSON.parse(body);
-    json_body.data = {};
-    result = JSON.stringify(json_body);
-}
-
-if (url.indexOf(path6) != -1) {
-    let json_body = JSON.parse(body);
-    let segments = json_body.segments;
-    if (segments && segments.length > 0) {
-        let i = segments.length;
-        while (i--) {
-            const element = segments[i];
-            let is_ad = element.is_ad;
-            if (typeof is_ad != "undefined" && is_ad == true) {
-                segments.splice(i, 1);
-            }
-        }
-    }
-    result = JSON.stringify(json_body);
-}
-
-if (url.indexOf(path7) != -1) {
-    let json_body = JSON.parse(body);
-    json_body.datas = [];
-    result = JSON.stringify(json_body);
-}
-
-if (url.indexOf(path8) != -1) {
-    let json_body = JSON.parse(body);
-    json_body.story_list = [];
-    result = JSON.stringify(json_body);
-}
-result;
-```
-
-## 借助 Surge 防剧透
+**代码来源：[Blankwonder](https://gist.github.com/Blankwonder/72fcdd46d1d9148f5461c6b59d859551)**
 
 ```ini
 [Script]
@@ -174,40 +50,18 @@ result;
 http-response .* script-path=https://gist.githubusercontent.com/Blankwonder/72fcdd46d1d9148f5461c6b59d859551/raw/12fd2c6b1be806596766f5fab825d1bd5f770cb2/anti-spoiler.js
 ```
 
-Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Blankwonder](https://gist.github.com/Blankwonder/72fcdd46d1d9148f5461c6b59d859551)
+主机名
 
-```javascript
-function replaceAll(str, find, replace) {
-    return str.replace(new RegExp(find, 'g'), replace);
-}
+```ini
+[MITM]
 
-function dec2hex(dec, padding){
-  return parseInt(dec, 10).toString(16).padStart(padding, '0');
-}
-
-function utf8StringToUtf16String(str) {
-  var utf16 = [];
-  for (var i=0, strLen=str.length; i < strLen; i++) {
-    utf16.push('\\\\u')
-    utf16.push(dec2hex(str.charCodeAt(i), 4));
-  }
-  return utf16.join('');
-}
-
-
-var keywords = ['复联4', '复联', '复仇者联盟4', '复仇者联盟', '钢铁侠', '托尼', '美国队长', '美队', '黑寡妇', '寡姐', '蜘蛛侠', '浩克', '绿巨人', '鹰眼', '灭霸', '雷神', '惊奇队长', '惊奇', '蚁人', '银河护卫队', '银队'];
-
-var result = body;
-
-keywords.forEach(function(k) {
-  result = replaceAll(result, k, '喵喵喵');
-  result = replaceAll(result, utf8StringToUtf16String(k), "\u55b5\u55b5\u55b5");  
-});
-
-result;
+# 全局生效
+hostname = *
 ```
 
 ## 酷我音乐
+
+**代码来源：[Choler/Surge](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -216,28 +70,9 @@ result;
 http-response ^http://vip1\.kuwo\.cn/vip/ script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/resources/js/Music.js
 ```
 
-Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Choler/Surge](https://raw.githubusercontent.com/Choler/Surge/master/Music.js)
-
-```javascript
-var result = body
-
-let path = '/vip/v2/user/vip';
-
-if (url.indexOf(path) != -1) {
-    var jsbody = JSON.parse(body);
-    jsbody.data.isNewUser = 2;
-    jsbody.data.vipLuxuryExpire = 1738717749000;
-    jsbody.data.isYearUser = 2;
-    jsbody.data.vipmExpire = 1738717749000;
-    jsbody.data.vipOverSeasExpire = 1738717749000;
-    jsbody.data.vipExpire = 1738717749000;
-    jsbody.data.vip3Expire = 1738717749000;
-    result = JSON.stringify(jsbody);
-}
-result;
-```
-
 ## 去微信广告
+
+**代码来源：[Choler/Surge](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -254,23 +89,9 @@ http-response ^https?://mp\.weixin\.qq\.com/ script-path=https://raw.githubuserc
 hostname = mp.weixin.qq.com
 ```
 
-Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Choler/Surge](https://raw.githubusercontent.com/Choler/Surge/master/WeChat.js)
-
-```javascript
-var result = body
-
-let path = '/mp/getappmsgad?f=';
-
-if (url.indexOf(path) != -1) {
-    var jsbody = JSON.parse(body);
-    jsbody.advertisement_info = [];
-    result = JSON.stringify(jsbody);
-}
-
-result;
-```
-
 ## 微信阅读小程序
+
+**代码来源：[Choler/Surge](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -287,22 +108,9 @@ http-response ^https?://i\.weread\.qq\.com/pay/memberCard script-path=https://ra
 hostname = i.weiread.qq.com
 ```
 
-Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Choler/Surge](https://raw.githubusercontent.com/Choler/Surge/master/WeRead.js)
-
-```javascript
-var result = body
-
-let path = '/pay/memberCardSummary';
-
-if (url.indexOf(path) != -1) {
-    var jsbody = JSON.parse(body);
-    jsbody.remainTime = 86313600;
-    result = JSON.stringify(jsbody);
-}
-result;
-```
-
 ## RRtv
+
+**代码来源：[Choler/Surge](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -319,43 +127,9 @@ http-response ^https?://api\.rr\.tv/ script-path=https://raw.githubusercontent.c
 hostname = api.rr.tv
 ```
 
-Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[Choler/Surge](https://raw.githubusercontent.com/Choler/Surge/master/RRtv.js)
-
-```javascript
-var result = body
-
-let path1 = '/user/profile';
-let path2 = '/v3plus/user/detail';
-let path3 = '/ad/getAll';
-
-if (url.indexOf(path1) != -1) {
-    var jsbody = JSON.parse(body);
-    jsbody.data.user.medalList = JSON.parse('[{"name":"原画","endTime":"2022-12-22 22:22:22","imgUrl":"http://img.rr.tv/screenshot/20171108/o_1510128764030.png","id":1}]');
-    jsbody.data.user.privilegeList = JSON.parse('[{"effectObject":"video","action":"play","func":"originalPainting","description":"解锁原画","icon":"jiesuoyuanhua","endTime":1671718942000},{"effectObject":"coin","action":"sign","func":"5","description":"签到额外银币+5","icon":"qiandaoyinbi","endTime":1671718942000},{"effectObject":"growth","action":"play","func":"0.4","description":"经验值加成+40%","icon":"jingyanzhijiacheng","endTime":1671718942000},{"effectObject":"video","action":"play","func":"noLimit","description":"看剧无限制","icon":"kanjuwuxianzhi","endTime":1671718942000},{"effectObject":"video","action":"play","func":"noAd","description":"看剧无广告","icon":"kanjuwuguanggao","endTime":1671718942000}]');
-    jsbody.data.user.createTime = 1671718942000;
-    jsbody.data.user.newUser = true;
-    jsbody.data.user.level = 30;
-    jsbody.data.user.nickName = 'Choler';
-    jsbody.data.user.achievementCount = 9999;
-    result = JSON.stringify(jsbody);
-}
-
-if (url.indexOf(path2) != -1) {
-    var jsbody = JSON.parse(body);
-    jsbody.data.user.medalList = JSON.parse('[{"name":"yel","endTime":"2022-12-22 22:22:22","imgUrl":"http://img.rr.tv/screenshot/20171108/o_1510128764030.png","id":1}]');
-    result = JSON.stringify(jsbody);
-}
-
-if (url.indexOf(path3) != -1) {
-    var jsbody = JSON.parse(body);
-    jsbody.data.adList = [];
-    result = JSON.stringify(jsbody);
-}
-
-result;
-```
-
 ## 知音漫客
+
+**代码来源：[mieqq/mieqq](https://github.com/mieqq/mieqq)**
 
 ```ini
 [Script]
@@ -370,33 +144,6 @@ http-response getuserinfo-globalapi.zymk.cn script-path=https://raw.githubuserco
 [MITM]
 
 hostname = *.zymk.cn
-```
-
-Javascript 源文件 (**不在 Surge 中填写**)  代码来源：[mieqq/mieqq](https://github.com/mieqq/mieqq/blob/master/zymk.js)
-
-```javascript
-let user_info = '/app_api/v5/getuserinfo/';
-let coin_account = '/app_api/v5/coin_account/';
-let ticket = '/app_api/v5/getuserinfo_ticket/';
-var obj = JSON.parse(body);
-
-if (url.indexOf(user_info) != -1) {
-	obj['data']['coins'] = 999;
-	obj['data']['isvip'] = 1;
-	obj['data']['vipdays'] = 999;
-	obj['data']['recommend'] = 999;
-	obj['data']['Cticket'] = 999;
-	obj['data']['Cgold'] = 999;
-} else if (url.indexOf(coin_account) != -1) {
-	obj['data']['coins'] = 999;
-	obj['data']['golds'] = 999;
-} else if (url.indexOf(ticket) != -1) {
-	obj['data']['Cticket'] = 999;
-	obj['data']['recommend'] = 999;
-	
-}
-
-JSON.stringify(obj);
 ```
 
 ## 知乎去广告
@@ -463,8 +210,6 @@ http-response .* script-path=https://raw.githubusercontent.com/mieqq/mieqq/maste
 # 全局转换
 hostname = *
 ```
-
-
 
 ---
 
