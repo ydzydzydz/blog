@@ -1,15 +1,21 @@
 .post table{
-    border-top:2px solid #67dde4;
-    border-bottom: 2px solid #67dde4;
     margin: 8px 0;
 }
 .post table {
-    margin: 0 auto;
+  display: inline-block;
+  overflow-x: auto;
+  margin:0 auto;
+  max-width: 100%;
+  width: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  white-space: nowrap;
+  vertical-align: top;
 }
 .post table thead{
     border-bottom: 1px dashed #777;
-    background-color: #52d5b0;
-    color:#fff;
+    background-color: #e5eaed;
+    color:#1c1c1c;
 }
 .post table th{
     padding: 15px 10px;
