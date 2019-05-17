@@ -214,6 +214,46 @@ http-response .* script-path=https://raw.githubusercontent.com/mieqq/mieqq/maste
 hostname = *
 ```
 
+## Meeta (石头阅读）
+
+**代码来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+```ini
+[Script]
+
+# Meeta (石头阅读）
+http-response https?:\/\/app\.stoneread\.com/api\/apiClient\/index\?data script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/StoneRead.js
+```
+
+主机名添加：`app.stoneread.com`
+
+```ini
+[MITM]
+
+hostname = app.stoneread.com
+```
+
+##  Meeta （网易漫画）
+
+**代码来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+```ini
+[Script]
+
+# Meeta （网易漫画）
+http-response https?:\/\/api\.mh\.163.com\/getUserProfile script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/wymh.js
+```
+
+主机名添加：`api.mh.163.com`
+
+```ini
+[MITM]
+
+hostname = api.mh.163.com
+```
+
+
+
 ---
 
 下面是官方文档的介绍。emmm，居然是中文的。。。
