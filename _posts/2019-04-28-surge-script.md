@@ -240,7 +240,7 @@ hostname = app.stoneread.com
 ```ini
 [Script]
 
-# Meeta （网易漫画）
+# Meeta（网易漫画）
 http-response https?:\/\/api\.mh\.163.com\/getUserProfile script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/wymh.js
 ```
 
@@ -250,6 +250,63 @@ http-response https?:\/\/api\.mh\.163.com\/getUserProfile script-path=https://ra
 [MITM]
 
 hostname = api.mh.163.com
+```
+
+## Meeta（爱美剧下载）
+
+**代码来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+```ini
+[Script]
+
+# Meeta（爱美剧下载）
+http-response https?:\/\/mjappaz.yefu365.com\/index.php\/app\/ios\/ script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/aimeiju.js
+```
+
+主机名添加：`mjappaz.yefu365.com`
+
+```ini
+[MITM]
+
+hostname = mjappaz.yefu365.com
+```
+
+## Meeta（微信读书）
+
+**代码来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+```ini
+[Script]
+
+# Meeta（微信读书）
+http-response https?:\/\/i\.weread\.qq.com\/pay\/memberCardSummary\?pf script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/wechatread.js
+```
+
+主机名添加：`i.weread.qq.com`
+
+```ini
+[MITM]
+
+hostname = i.weread.qq.com
+```
+
+## Meeta（西瓜视频）
+
+**代码来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+```ini
+[Script]
+
+# Meeta（西瓜视频）
+http-response https?://api.gkaorlz.com/api/user/get script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/watermelonvideo.js
+```
+
+主机名添加：`api.gkaorlz.com`
+
+```ini
+[MITM]
+
+hostname = api.gkaorlz.com
 ```
 
 
