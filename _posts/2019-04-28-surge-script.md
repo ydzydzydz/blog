@@ -429,5 +429,5 @@ RULE-SET,resources/ruleset/cn.list,🛥 Select
 http-response api.weibo.cn script-path=resources/js/wb_rm_ad.js
 ```
 
-
+> **壮壮不维护规则和脚本！！！**
 
