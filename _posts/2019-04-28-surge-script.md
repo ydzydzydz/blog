@@ -309,7 +309,24 @@ http-response https?://api.gkaorlz.com/api/user/get script-path=https://raw.gith
 hostname = api.gkaorlz.com
 ```
 
+## Meeta（哔哩哔哩）
 
+**代码来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+```ini
+[Script]
+
+# Meeta（哔哩哔哩）
+http-response https?://app.bilibili.com/x/ script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/bili.js
+```
+
+主机名添加：`app.bilibili.com`
+
+```ini
+[MITM]
+
+hostname = app.bilibili.com
+```
 
 ---
 
