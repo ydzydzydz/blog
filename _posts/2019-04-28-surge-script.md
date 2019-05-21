@@ -157,7 +157,7 @@ hostname = *.zymk.cn
 [Script]
 
 # 知乎去广告
-http-response https://api.zhihu.com/topstory/follow script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
+http-response https://api.zhihu.com/(topstory/follow|moments) script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
 http-response https://api.zhihu.com/topstory/recommend script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
 http-response https://api.zhihu.com/v4/questions script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
 http-response https://api.zhihu.com/market/header script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20market.js
@@ -327,6 +327,8 @@ http-response https?://app.bilibili.com/x/ script-path=https://raw.githubusercon
 
 hostname = app.bilibili.com
 ```
+
+
 
 ---
 
