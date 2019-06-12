@@ -49,7 +49,7 @@
 <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
- 
+
  <!-- 设置竖屏启动画面 -->
  <link rel="apple-touch-startup-image" media="screen and (orientation: portrait)" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/2.jpg" /> <!--竖-->
  <!-- 设置横屏启动画面 -->
@@ -153,21 +153,16 @@ function disableInfo() {
 <meta property="og:site_name" content="ZHUANGZHUANG">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ page.title }}">
-<meta property="og:description" content="{{ page.title }}, {% for category in page.categories %}{{ category }},{% endfor %} {% for tag in page.tags %}{{ tag }},{% endfor %} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:description" content="壮壮博客">
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:image" content="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302">
 
 <!-- twitter card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title }}">
-<meta name="twitter:description" content="{{ page.title }}, {% for category in page.categories %}{{ category }},{% endfor %} {% for tag in page.tags %}{{ tag }},{% endfor %} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:description" content="壮壮博客">
 <meta name="twitter:image" content="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302">
 <meta name="twitter:creator" content="@YDZ123456">
-
-
-
-
-
 
 
 
