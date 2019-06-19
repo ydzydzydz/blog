@@ -1,3 +1,9 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+
 /*
 	Aerial by HTML5 UP
 	html5up.net | @ajlkn
@@ -20,8 +26,10 @@
 
 	#header {
 		opacity: 1 !important;
-	}
 
-		#header nav li {
-			opacity: 1 !important;
+		nav {
+			li {
+				opacity: 1 !important;
+			}
 		}
+	}
