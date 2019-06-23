@@ -3,9 +3,6 @@ layout: post
 title: 适用于Surge4的Script
 tags: Surge 
 categories: Surge
-password: zhuangzhuang
-prompt: 请输入密码
-alert: 密码错误
 ---
 
 最近 Surge 的测试版已经更新到 4.0.0 版本了，曾经的 Script 功能又回来了，支持的种类也变多了，但是旧版的脚本基本上都是不能使用的，新开一篇文章写一下收集到的脚本，感谢各位制作脚本的大佬。
@@ -28,22 +25,35 @@ alert: 密码错误
 cron "0 * * * *" script-path=resources/js/checkin.js
 ```
 
-```javascript
-/**********************************************
-* checkin.js 内容
-* 由于脚本内包含登陆账号密码，须将脚本放置在本地，请勿随意分享
-* 需要修改的信息有域名、邮箱、密码，域名必须直连可访问，否则可能会发生错误
-* 此脚本不保证对所有脚本有效
-**********************************************/
+下面是壮壮自己改的，亲测 CrodCloud 有效
 
+```javascript
+/*****************************************************************
+* 由于脚本内包含登陆账号密码，须将脚本放置在本地，请勿随意分享
+* 需要修改的信息有名称、域名、邮箱、密码，域名必须直连可访问，否则可能会发生错误
+* 此脚本不保证对所有机场有效
+*****************************************************************/
+
+
+/****************************************************************/
+
+const sitename = "老板娘";                        //站点名称
+const site = "https://www.cordcloud.fun";        //站点首页
+const email = "mail@zhuangzhuang.ml";            //登录邮箱
+const passwd = "12345678";                       //登录密码
+
+/****************************************************************/
+
+const login= site + "/auth/login"
+const checkin = site + "/user/checkin"
+const user = site + "/user"
 const table = {
-    url: "https://www.cordcloud.fun/auth/login",   // 替换机场域名
+    url: login,
     header: {
          "Content-Type": "application/json"
     },
     body: {
-        "email": "mail@zhuangzhuang.ml",  // 替换登录邮箱
-        "passwd": "12345678",             // 替换登陆密码
+        email,passwd,
         "rumber-me": "week"
     }
 }
@@ -51,18 +61,19 @@ const table = {
 $httpClient.post(table, function (error, response, data) {
     if (error) {
         console.log(error);
-        $notification.post('签到', error, "");
+        $notification.post('机场签到', error, "");
         $done();
     } else {
-        $httpClient.post("https://www.cordcloud.fun/user/checkin", function (error, response, data) { // 替换机场域名
+        $httpClient.post(checkin, function (error, response, data) {
             var checkinMsg = JSON.parse(data).msg
-            $httpClient.get("https://www.cordcloud.fun/user", function (error, response, data) { // 替换机场域名
+            $httpClient.get(user, function (error, response, data) {
                 var usedData = data.match(/(已用\s\d.+?%|>已用(里程|流量)|>\s已用流量)[^B]+/)
                 if (usedData) {
                     usedData = usedData[0].match(/\d\S*(K|G|M|T)/)
                     var restData = data.match(/(剩余\s\d.+?%|>剩余(里程|流量)|>\s剩余流量)[^B]+/)
                     restData = restData[0].match(/\d\S*(K|G|M|T)/)
-                    $notification.post('CordCloud', checkinMsg, "已用流量：" + usedData[0] + "B" + "\n剩余流量：" + restData[0] + "B");    // 不需要通知请将此行注释
+                    //var allData = checkinMsg + "已用流量：" + usedData[0] + "B" + "剩余流量：" + restData[0] + "B"
+                    $notification.post(sitename, checkinMsg, "已用流量：" + usedData[0] + "B" + "\n剩余流量：" + restData[0] + "B");
                 }
                 $done();
             });
