@@ -20,77 +20,10 @@ categories: Surge
 ```ini
 [Script]
 
-# 将 checkin.js 放入到 iCloud云盘/Surge/resources/js 中
-# "* * * * *" 表示每分钟触发
-# "0 * * * *" 表示每小时 0 分触发
-# "0 0 * * *" 表示每天 00:00 触发
+# 壮壮修改版： https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/checkin.js
+# 将 checkin.js 放入到 iCloud云盘/Surge/resources/js 中，自行修改站点信息
+# "* * * * *" 表示每分钟触发、"0 * * * *" 表示每小时 0 分触发、"0 0 * * *" 表示每天 00:00 触发
 cron "0 0 * * *" script-path=resources/js/checkin.js
-```
-
-下面是壮壮自己改的，亲测 CrodCloud 有效
-
-```javascript
-/*****************************************************************
-* 由于脚本内包含登陆账号密码，须将脚本放置在本地，请勿随意分享
-* 需要修改的信息有名称、域名、邮箱、密码，域名必须直连可访问，否则可能会发生错误
-* 此脚本不保证对所有机场有效
-*****************************************************************/
-
-
-/****************************************************************/
-
-const sitename = "老板娘";                        //站点名称
-const site = "https://www.cordcloud.fun";        //站点首页
-const email = "mail@zhuangzhuang.ml";            //登录邮箱
-const passwd = "12345678";                       //登录密码
-
-/****************************************************************/
-
-const login = site + "/auth/login"
-const checkin = site + "/user/checkin"
-const user = site + "/user"
-const table = {
-    url: login,
-    header: {
-        "Content-Type": "application/json"
-    },
-    body: {
-        "email": "email",
-        "passwd": "passwd",
-        "rumber-me": "week"
-    }
-}
-
-$httpClient.post(table, function (error, response, data) {
-    if (error) {
-        console.log(error);
-        $notification.post('机场签到', error, "");
-        $done();
-    } else {
-        $httpClient.post(checkin, function (error, response, data) {
-            var checkinMsg = JSON.parse(data).msg
-            $httpClient.get(user, function (error, response, data) {
-                var usedData = data.match(/(已用\s\d.+?%|>已用(里程|流量)|>\s已用流量)[^B]+/)
-                if (usedData) {
-                    usedData = usedData[0].match(/\d\S*(K|G|M|T)/)
-                    var restData = data.match(/(剩余\s\d.+?%|>剩余(里程|流量)|>\s剩余流量)[^B]+/)
-                    restData = restData[0].match(/\d\S*(K|G|M|T)/)
-                    $notification.post(sitename, checkinMsg, "已用流量：" + usedData[0] + "B" + "\n剩余流量：" + restData[0] + "B");
-                }
-                $done();
-            });
-        });
-    }
-}
-);
-
-
-/*****************************************************************
-[Script]
-
-# 在每天 00:00:00 执行签到脚本
-cron "0 0 * * *" script-path=resources/js/checkin.js
-*****************************************************************/
 ```
 
 
@@ -121,8 +54,9 @@ http-response https?:\/\/.*\.kuwo\.cn script-path=https://raw.githubusercontent.
 
 # 网易漫画
 http-response https?:\/\/api-163\.biliapi\.net\/getUserProfile script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/wymh.js,requires-body=true
+```
 
-
+```ini
 [MITM]
 
 # 添加主机名：api-163.biliapi.net
@@ -142,8 +76,9 @@ hostname = api-163.biliapi.net
 
 # 西瓜视频
 http-response https?://api.gkaorlz.com/api/user/get script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/watermelonvideo.js,requires-body=true
+```
 
-
+```ini
 [MITM]
 
 # 添加主机名：api.gkaorlz.com
@@ -158,6 +93,8 @@ hostname = api.gkaorlz.com
 
 **作者频道：[「Meeta」share](https://t.me/meetashare)**
 
+这个天气 api 定位不是很准，一天就帮壮壮换了三个地方，秦皇岛、石家庄、沧州，然而都不对，玩玩就好。
+
 ```ini
 [Script]
 
@@ -169,6 +106,29 @@ cron "0 8-20 * * *" script-path=https://raw.githubusercontent.com/ydzydzydz/Rule
 ```
 
 
+
+## 6 去微博广告
+
+**代码来源：[yichahucha/surge](https://github.com/yichahucha/surge/)**
+
+```ini
+[Script]
+
+# 去微博广告
+http-response ^https?:\/\/(api|mapi)\.weibo\.(cn|com)\/2(\/groups\/timeline|\/statuses\/unread|\/statuses\/extend|\/comments\/build_comments|\/photo\/recommend_list|\/stories\/video_stream|\/statuses\/positives\/get|\/stories\/home_list|\/profile\/statuses|\/statuses\/friends\/timeline|\/service\/picfeed) script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js,requires-body=true
+http-response ^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(\/interface\/sdk\/sdkad.php|\/wbapplua\/wbpullad.lua) script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,requires-body=true
+```
+
+```ini
+[MITM]
+
+# 添加主机名：api.weibo.cn、mapi.weibo.com、*.uve.weibo.com
+hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
+```
+
+
+
+## 7 去知乎广告
 
 
 
