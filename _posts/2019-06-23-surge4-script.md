@@ -152,6 +152,24 @@ hostname = api.gkaorlz.com
 
 
 
+## 5 每时天气
+
+**代码来源：[meetagit/MeetaRules](https://github.com/meetagit/MeetaRules)**
+
+**作者频道：[「Meeta」share](https://t.me/meetashare)**
+
+```ini
+[Script]
+
+# 整点报天气
+cron "0 * * * *" script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/hourlyWeather.js
+
+# 每天 8:00-20:00 整点预报天气 （壮壮修改版）
+cron "0 8-20 * * *" script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/weather.js
+```
+
+
+
 
 
 > 不行了，学校网太烂了，过两天回家再写吧。。。
