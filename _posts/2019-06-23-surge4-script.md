@@ -52,11 +52,11 @@ const user = site + "/user"
 const table = {
     url: login,
     header: {
-         "Content-Type": "application/json"
+        "Content-Type": "application/json"
     },
     body: {
-        "email": email,
-        "passwd": passwd,
+        "email": "email",
+        "passwd": "passwd",
         "rumber-me": "week"
     }
 }
