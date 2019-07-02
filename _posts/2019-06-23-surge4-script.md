@@ -8,6 +8,8 @@ categories: Surge
 最近 Surge 的测试版已经更新到 4.0.0 版本了，曾经的 Script 功能又回来了，支持的种类也变多了，但是旧版的脚本基本上都是不能使用的，新开一篇文章写一下收集到的脚本，感谢各位制作脚本的大佬。
 
 > **壮壮不维护规则和脚本！！！**
+>
+> 大部分脚本壮壮未测试，点击脚本来源查看原作者详细教程
 
 <!-- more -->
 
@@ -318,5 +320,20 @@ http-response getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account
 
 [MITM]
 hostname = getuserinfo-globalapi.zymk.cn
+```
+
+## 23 人人影视字幕组
+
+**来源：** Telegram 群组
+
+**作者：** 佚名
+
+```ini
+[Script]
+# 人人影视字幕组，应用有广告缓存,可能需要重装
+http-response http://ctrl.playcvn.com/app/(init|ads) requires-body=true,script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/YYeTs.js
+
+[MITM]
+hostname = ctrl.playcvn.com
 ```
 
