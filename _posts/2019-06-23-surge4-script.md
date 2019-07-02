@@ -331,7 +331,7 @@ hostname = getuserinfo-globalapi.zymk.cn
 ```ini
 [Script]
 # 人人影视字幕组，应用有广告缓存,可能需要重装
-http-response http://ctrl.playcvn.com/app/(init|ads) requires-body=true,script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/YYeTs.js
+http-response http://ctrl.playcvn.com/app/(init|ads) script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/YYeTs.js,requires-body=true
 
 [MITM]
 hostname = ctrl.playcvn.com
