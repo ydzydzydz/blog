@@ -17,9 +17,9 @@ categories: Surge
 
 ## 1 机场签到
 
-**来源： [Neurogram-R/Surge](https://github.com/Neurogram-R/Surge)**
+**来源：[Neurogram-R/Surge](https://github.com/Neurogram-R/Surge)**
 
-**作者： [Neurogram](https://github.com/Neurogram-R)、[pysta](https://github.com/mieqq)**
+**作者：[Neurogram](https://github.com/Neurogram-R)、[pysta](https://github.com/mieqq)**
 
 ```ini
 [Script]
@@ -29,9 +29,9 @@ cron "0 0 * * *" script-path=resources/js/checkin.js
 
 ## 2 每时天气
 
-**来源： [MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
 
-**作者： [Meeta](https://github.com/MeetaGit)**
+**作者：[Meeta](https://github.com/MeetaGit)**
 
 ```ini
 [Script]
@@ -41,9 +41,9 @@ cron "0 8-20 * * *" script-path=https://raw.githubusercontent.com/ydzydzydz/Rule
 
 ## 3 世界时间
 
-**来源： [congcong0806/surge-list](https://github.com/congcong0806/surge-list)**
+**来源：[congcong0806/surge-list](https://github.com/congcong0806/surge-list)**
 
-**作者： [congcong](https://github.com/congcong0806)**
+**作者：[congcong](https://github.com/congcong0806)**
 
 ```ini
 [Script]
@@ -53,9 +53,9 @@ cron "0 7-23 * * *" script-path=https://github.com/congcong0806/surge-list/raw/m
 
 ## 4 每时天气，和风天气api
 
-**来源： [MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
 
-**作者： [Meeta](https://github.com/MeetaGit)**
+**作者：[Meeta](https://github.com/MeetaGit)**
 
 ```ini
 [Script]
@@ -65,9 +65,9 @@ cron "0 0 8-20/1 * * *" script-path=https://meetagit.github.io/MeetaRules/Surge/
 
 ## 5 酷我音乐SVIP
 
-**来源： [MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
 
-**作者： [Meeta](https://github.com/MeetaGit)**
+**作者：[Meeta](https://github.com/MeetaGit)**
 
 ```ini
 [Script]
@@ -77,9 +77,9 @@ http-response https?:\/\/.*\.kuwo\.cn script-path=https://meetagit.github.io/Mee
 
 ## 6 网易漫画
 
-**来源： [MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
 
-**作者： [Meeta](https://github.com/MeetaGit)**
+**作者：[Meeta](https://github.com/MeetaGit)**
 
 ```ini
 [Script]
@@ -92,9 +92,9 @@ hostname = api-163.biliapi.net
 
 ## 7 西瓜视频
 
-**来源： [MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
 
-**作者： [Meeta](https://github.com/MeetaGit)**
+**作者：[Meeta](https://github.com/MeetaGit)**
 
 ```ini
 [Script]
@@ -107,9 +107,9 @@ hostname = api.gkaorlz.com
 
 ## 8 爱美剧 
 
-**来源： [MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
 
-**作者： [Meeta](https://github.com/MeetaGit)**
+**作者：[Meeta](https://github.com/MeetaGit)**
 
 ```ini
 [Script]
@@ -122,9 +122,9 @@ hostname = mjappaz.yefu365.com
 
 ## 9 快递追踪
 
-**来源： [MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
 
-**作者： [Meeta](https://github.com/MeetaGit)**
+**作者：[Meeta](https://github.com/MeetaGit)**
 
 ```ini
 [Script]
@@ -133,9 +133,9 @@ cron "* * * *" script-path=resources/js/mkdzz.js
 ```
 ## 10 微信公众号去广告
 
-**来源： [Choler/Surge](https://github.com/Choler/Surge)**
+**来源：[Choler/Surge](https://github.com/Choler/Surge)**
 
-**作者： [Choler](https://github.com/Choler)**
+**作者：[Choler](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -148,9 +148,9 @@ hostname = mp.weixin.qq.com
 
 ## 11 人人视频
 
-**来源： [Choler/Surge](https://github.com/Choler/Surge)**
+**来源：[Choler/Surge](https://github.com/Choler/Surge)**
 
-**作者： [Choler](https://github.com/Choler)**
+**作者：[Choler](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -163,9 +163,9 @@ hostname = api.rr.tv
 ```
 ## 12 抖音、Tiktok去水印
 
-**来源： [Choler/Surge](https://github.com/Choler/Surge)**
+**来源：[Choler/Surge](https://github.com/Choler/Surge)**
 
-**作者： [Choler](https://github.com/Choler)**
+**作者：[Choler](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -177,9 +177,9 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com
 ```
 ## 13 火山去水印
 
-**来源： [Choler/Surge](https://github.com/Choler/Surge)**
+**来源：[Choler/Surge](https://github.com/Choler/Surge)**
 
-**作者： [Choler](https://github.com/Choler)**
+**作者：[Choler](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -191,9 +191,9 @@ hostname = api.huoshan.com
 ```
 ## 14 微视去水印
 
-**来源： [Choler/Surge](https://github.com/Choler/Surge)**
+**来源：[Choler/Surge](https://github.com/Choler/Surge)**
 
-**作者： [Choler](https://github.com/Choler)**
+**作者：[Choler](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -202,9 +202,9 @@ http-request ^http:\/\/v\.weishi\.qq\.com/\w+\.f7\d{2}\.mp4 script-path=https://
 ```
 ## 15 抖音短视频
 
-**来源： [Choler/Surge](https://github.com/Choler/Surge)**
+**来源：[Choler/Surge](https://github.com/Choler/Surge)**
 
-**作者： [Choler](https://github.com/Choler)**
+**作者：[Choler](https://github.com/Choler)**
 
 ```ini
 [Script]
@@ -216,9 +216,9 @@ hostname = aweme*.snssdk.com
 ```
 ## 16 看漫画极速版
 
-**来源： [imxh/js](https://github.com/imxh/js)**
+**来源：[imxh/js](https://github.com/imxh/js)**
 
-**作者： [HoGer](https://github.com/imxh)**
+**作者：[HoGer](https://github.com/imxh)**
 
 ```ini
 [Script]
@@ -230,9 +230,9 @@ hostname = getuserinfo.321mh.com
 ```
 ## 17 微信阅读
 
-**来源： [imxh/js](https://github.com/imxh/js)**
+**来源：[imxh/js](https://github.com/imxh/js)**
 
-**作者： [HoGer](https://github.com/imxh)**
+**作者：[HoGer](https://github.com/imxh)**
 
 ```ini
 [Script]
@@ -244,9 +244,9 @@ hostname = i.weread.qq.com
 ```
 ## 18 微博去广告
 
-**来源： [yichahucha/surge](https://github.com/yichahucha/surge)**
+**来源：[yichahucha/surge](https://github.com/yichahucha/surge)**
 
-**作者： [yichahucha](https://github.com/yichahucha)**
+**作者：[yichahucha](https://github.com/yichahucha)**
 
 ```ini
 [Script]
@@ -259,9 +259,9 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 ```
 ## 19 毒去广告
 
-**来源： [ConnersHua/Profiles](https://github.com/ConnersHua/Profiles)**
+**来源：[ConnersHua/Profiles](https://github.com/ConnersHua/Profiles)**
 
-**作者： [ConnersHua](https://github.com/ConnersHua)**
+**作者：[ConnersHua](https://github.com/ConnersHua)**
 
 ```ini
 [Script]
@@ -273,9 +273,9 @@ hostname = m.poizon.com
 ```
 ## 20 知乎去广告
 
-**来源： [onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)**
+**来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)**
 
-**作者： [onewayticket255](https://github.com/onewayticket255)**
+**作者：[onewayticket255](https://github.com/onewayticket255)**
 
 ```ini
 [Script]
@@ -290,9 +290,9 @@ hostname = api.zhihu.com
 ```
 ## 21 哔哩哔哩去广告
 
-**来源： [onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)**
+**来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)**
 
-**作者： [onewayticket255](https://github.com/onewayticket255)**
+**作者：[onewayticket255](https://github.com/onewayticket255)**
 
 ```ini
 [Script]
@@ -309,9 +309,9 @@ hostname = app.bilibili.com, api.bilibili.com
 
 ## 22 知音漫客
 
-**来源： [mieqq/mieqq](https://github.com/mieqq/mieqq)**
+**来源：[mieqq/mieqq](https://github.com/mieqq/mieqq)**
 
-**作者： [pysta](https://github.com/mieqq)**
+**作者：[pysta](https://github.com/mieqq)**
 
 ```ini
 [Script]
@@ -324,9 +324,9 @@ hostname = getuserinfo-globalapi.zymk.cn
 
 ## 23 人人影视字幕组
 
-**来源：** Telegram 群组
+**来源：**Telegram 群组
 
-**作者：** 佚名
+**作者：**佚名
 
 ```ini
 [Script]
@@ -335,5 +335,17 @@ http-response http://ctrl.playcvn.com/app/(init|ads) script-path=https://raw.git
 
 [MITM]
 hostname = ctrl.playcvn.com
+```
+
+## 24 监控App价格变化
+
+**来源：[Neurogram-R/Surge](https://github.com/Neurogram-R/Surge)**
+
+**作者：[Neurogram](https://github.com/Neurogram-R)**
+
+```ini
+[Script]
+# 监控App价格变化 (地址：https://raw.githubusercontent.com/Neurogram-R/Surge/master/AppPricer.js)
+cron "0 * * * *" script-path=resources/js/AppPricer.js
 ```
 
