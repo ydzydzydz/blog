@@ -349,3 +349,17 @@ hostname = ctrl.playcvn.com
 cron "0 * * * *" script-path=resources/js/AppPricer.js
 ```
 
+## 25 人人视频去广告+原画(勋章列表)
+
+**来源：[popeyelau/Surge](https://github.com/popeyelau/Surge)**
+
+**作者：[popeyelau](https://github.com/popeyelau)**
+
+```ini
+[Script]
+http-response ^https:\/\/api\.rr\.tv(\/user\/profile|\/ad\/getAll) script-path=https://raw.githubusercontent.com/popeyelau/Surge/master/rrtv.js
+
+[MITM]
+hostname = api.rr.tv
+```
+
