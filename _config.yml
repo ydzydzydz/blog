@@ -45,8 +45,8 @@ imgrepo: "https://zhuangzhuang.cf/static/img"
 
 friends:
   - tittle: 共享资源站点
-    url: https://gxzyzd.tk/
-    img: https://gxzyzd.tk/images/slider4.jpg
+    url: http://www.gxzyzd.com/
+    img: http://www.gxzyzd.com/images/slider4.jpg
     time: 2019.01
     description: 因缘而遇，且行且珍惜
   - tittle: Newlearnerの小站
@@ -64,6 +64,11 @@ friends:
     img: img/2.png
     time: 2019.04
     description: 咸鱼博主，不定期更新一些有意思的内容
+  - tittle: 共享资源站点论坛
+    url: https://bbs.gxzyzd.com/
+    img: http://www.gxzyzd.com/images/slider1.jpg
+    time: 2019.07.08
+    description: 咸鱼阿永，还没写简介
 
 
 
