@@ -357,9 +357,22 @@ cron "0 * * * *" script-path=resources/js/AppPricer.js
 
 ```ini
 [Script]
+# 人人视频去广告+原画(勋章列表)
 http-response ^https:\/\/api\.rr\.tv(\/user\/profile|\/ad\/getAll) script-path=https://raw.githubusercontent.com/popeyelau/Surge/master/rrtv.js
 
 [MITM]
 hostname = api.rr.tv
+```
+
+## 26 彩票开奖助手
+
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+**作者：[Meeta](https://github.com/MeetaGit)**
+
+```ini
+[Script]
+# 彩票开奖助手
+cron "0 22 * * *" script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/mlottery.js
 ```
 
