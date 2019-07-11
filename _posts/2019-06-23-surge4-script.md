@@ -3,6 +3,9 @@ layout: post
 title: 适用于Surge4的Script
 tags: Surge 
 categories: Surge
+password: zhuangzhuang
+prompt: 请输入密码
+alert: 密码是：zhuangzhuang
 ---
 
 最近 Surge 的测试版已经更新到 4.0.0 版本了，曾经的 Script 功能又回来了，支持的种类也变多了，但是旧版的脚本基本上都是不能使用的，新开一篇文章写一下收集到的脚本，感谢各位制作脚本的大佬。
@@ -100,9 +103,10 @@ hostname = api-163.biliapi.net
 [Script]
 # 西瓜视频 （作者：Meeta）
 http-response https?://api.gkaorlz.com/api/user/get script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/watermelonvideo.js,requires-body=true
+http-response https?:\/\/api2\.gkaorlz\.com\:8080\/api\/user\/ script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/watermelonvideo.js,requires-body=true
 
 [MITM]
-hostname = api.gkaorlz.com
+hostname = api.gkaorlz.com, api2.gkaorlz.com
 ```
 
 ## 8 爱美剧 
