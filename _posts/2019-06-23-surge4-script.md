@@ -3,9 +3,9 @@ layout: post
 title: 适用于Surge4的Script
 tags: Surge 
 categories: Surge
-password: zhuangzhuang
+password: 旺仔是猪
 prompt: 请输入密码
-alert: 密码是：zhuangzhuang
+alert: 密码是：旺仔是猪
 ---
 
 最近 Surge 的测试版已经更新到 4.0.0 版本了，曾经的 Script 功能又回来了，支持的种类也变多了，但是旧版的脚本基本上都是不能使用的，新开一篇文章写一下收集到的脚本，感谢各位制作脚本的大佬。
