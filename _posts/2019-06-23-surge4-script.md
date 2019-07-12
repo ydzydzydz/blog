@@ -380,3 +380,17 @@ hostname = api.rr.tv
 cron "0 22 * * *" script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/mlottery.js
 ```
 
+## 27 南瓜电影
+
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+**作者：[Meeta](https://github.com/MeetaGit)**
+
+```ini
+[Script]
+# 南瓜电影
+http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/cushawmovie.js,requires-body=true
+
+[MITM]
+hostname = *.api.vcinema.cn
+```
