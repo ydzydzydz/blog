@@ -319,7 +319,7 @@ hostname = app.bilibili.com, api.bilibili.com
 
 ```ini
 [Script]
-# 知音漫客
+# 知音漫客 （作者：pysta）
 http-response getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket)/ script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/zymk.js,requires-body = true
 
 [MITM]
@@ -334,7 +334,7 @@ hostname = getuserinfo-globalapi.zymk.cn
 
 ```ini
 [Script]
-# 人人影视字幕组，应用有广告缓存,可能需要重装
+# 人人影视字幕组，应用有广告缓存,可能需要重装 （作者：Kaya）
 http-response http://ctrl.playcvn.com/app/(init|ads) script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/YYeTs.js,requires-body=true
 
 [MITM]
@@ -349,7 +349,7 @@ hostname = ctrl.playcvn.com
 
 ```ini
 [Script]
-# 监控App价格变化 (地址：https://raw.githubusercontent.com/Neurogram-R/Surge/master/AppPricer.js)
+# 监控App价格变化 （作者：Neurogram）(地址：https://raw.githubusercontent.com/Neurogram-R/Surge/master/AppPricer.js)
 cron "0 * * * *" script-path=resources/js/AppPricer.js
 ```
 
@@ -361,7 +361,7 @@ cron "0 * * * *" script-path=resources/js/AppPricer.js
 
 ```ini
 [Script]
-# 人人视频去广告+原画(勋章列表)
+# 人人视频去广告+原画(勋章列表) （作者：popeyelau）
 http-response ^https:\/\/api\.rr\.tv(\/user\/profile|\/ad\/getAll) script-path=https://raw.githubusercontent.com/popeyelau/Surge/master/rrtv.js
 
 [MITM]
@@ -376,7 +376,7 @@ hostname = api.rr.tv
 
 ```ini
 [Script]
-# 彩票开奖助手
+# 彩票开奖助手 （作者：Meeta）
 cron "0 22 * * *" script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/mlottery.js
 ```
 
@@ -388,9 +388,24 @@ cron "0 22 * * *" script-path=https://meetagit.github.io/MeetaRules/Surge/Script
 
 ```ini
 [Script]
-# 南瓜电影
+# 南瓜电影 （作者：Meeta）
 http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/cushawmovie.js,requires-body=true
 
 [MITM]
 hostname = *.api.vcinema.cn
+```
+
+## 28 小小影视
+
+**来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)**
+
+**作者：[Meeta](https://github.com/MeetaGit)**
+
+```ini
+[Script]
+# 小小影视 （作者：Meeta）
+http-response https?:\/\/ios\.xiaoxiaoapps\.com\/ script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/smallvideo.js,requires-body=true
+
+[MITM]
+hostname = ios.xiaoxiaoapps.com
 ```
