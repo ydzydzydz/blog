@@ -409,3 +409,34 @@ http-response https?:\/\/ios\.xiaoxiaoapps\.com\/ script-path=https://meetagit.g
 [MITM]
 hostname = ios.xiaoxiaoapps.com
 ```
+
+## 29 起点APP去启动广告
+
+**来源：[LarkinZero/Surge](https://github.com/LarkinZero/Surge)**
+
+**作者：[LarkinZero](https://github.com/LarkinZero)**
+
+```ini
+[Script]
+# 起点APP去启动广告 （作者：LarkinZero）
+http-response https:\/\/mage\.if\.qidian\.com\/argus\/api\/v3\/client\/getsplashscreen\?localLabels=100 script-path=https://raw.githubusercontent.com/LarkinZero/Surge/master/qidian_anti_ad.js,requires-body=true
+
+[MITM]
+hostname = *.qidian.com
+```
+
+## 30 A岛去帖内广告
+
+**来源：[LarkinZero/Surge](https://github.com/LarkinZero/Surge)**
+
+**作者：[LarkinZero](https://github.com/LarkinZero)**
+
+```ini
+[Script]
+# A岛去帖内广告 （作者：LarkinZero）
+http-response https:\/\/nmb\.fastmirror\.org\/Api\/thread.* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/LarkinZero/Surge/master/nmb_no_ad.js,script-update-interval=0
+
+[MITM]
+hostname = nmb.fastmirror.org
+```
+
