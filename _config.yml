@@ -33,7 +33,7 @@ logo: "https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/avatar.png"
 github_username:  "ydzydzydz"
 
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 
 url: "https://zhuangzhuang.cf"
