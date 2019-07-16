@@ -35,18 +35,20 @@ github_username:  "ydzydzydz"
 
 plugins: [jekyll-paginate]
 
+# 分享文章
+share: true
+# 打赏文章
+donate: true
 
+# 域名
 url: "https://zhuangzhuang.cf"
 imgrepo: "https://zhuangzhuang.cf/static/img"
 
-
-#url: "http://127.0.0.1:4000"
-#imgrepo: "http://127.0.0.1:4000/static/img"
-
+# 友链
 friends:
   - tittle: 共享资源站点
-    url: http://www.gxzyzd.com/
-    img: http://www.gxzyzd.com/images/slider4.jpg
+    url: https://www.gxzyzd.com/
+    img: https://www.gxzyzd.com/images/slider4.jpg
     time: 2019.01
     description: 因缘而遇，且行且珍惜
   - tittle: Newlearnerの小站
@@ -71,14 +73,7 @@ friends:
     description: 咸鱼阿永，还没写简介
 
 
-
-
-
-share: true
-donate: true
-
-
-
+# Valine评论
 valine:
   -
     appid: edBPYFEXGjTNmYOSU6QfSs8M-gzGzoHsz
