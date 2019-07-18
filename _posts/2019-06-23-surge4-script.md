@@ -39,7 +39,7 @@ cron "0 0 * * *" script-path=resources/js/checkin.js
 ```ini
 [Script]
 # 在每天 8:00-20:00 整点预报天气 （作者：Meeta、ZHUANGZHUANG）
-cron "0 8-20 * * *" script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/weather.js
+cron "0 8-20 * * *" script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/Surge/resources/script/weather.js
 ```
 
 ## 3 世界时间
@@ -335,7 +335,7 @@ hostname = getuserinfo-globalapi.zymk.cn
 ```ini
 [Script]
 # 人人影视字幕组，应用有广告缓存,可能需要重装 （作者：Kaya）
-http-response http://ctrl.playcvn.com/app/(init|ads) script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/YYeTs.js,requires-body=true
+http-response http://ctrl.playcvn.com/app/(init|ads) script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/Surge/resources/script/YYeTs.js,requires-body=true
 
 [MITM]
 hostname = ctrl.playcvn.com
