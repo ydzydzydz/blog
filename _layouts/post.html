@@ -1,0 +1,119 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="content col-lg-9">
+    <div class="sheet post">
+      <header>
+        <h2>{{ page.title }}</h2>
+        <p class="post-meta">
+          <span class="octicon octicon-clock"></span> {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} •
+          {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+        </p>
+        <p class="post-tag">
+          <span>{% for cat in page.categories %}<a
+              href="{{ '/category' | prepend: site.baseurl | prepend: site.url }}/#{{ cat }}"><span
+                class="octicon octicon-list-unordered"></span>&nbsp;{{ cat }}</a>{% endfor %}</span>
+          <span>{% for tag in page.tags %}
+            <a class="word-keep" href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}/#{{ tag }}"><span
+                class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
+            {% endfor %}
+          </span>
+          <span>
+              <a class="word-keep" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><span
+                class="fa fa-font"></span>&nbsp;共{{ page.content | strip_html | strip_newlines | remove: " " | size }}字</a>
+          </span>
+          <span>
+              <a class="word-keep" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><span
+                class="	fa fa-smile-o"></span>&nbsp;约{{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }}分钟</a>
+          </span>
+          
+ 
+          <span id="busuanzi_container_page_pv">
+            <div class="busuanzi" style='color:#00b548;float:right'>
+              <span class="fa fa-eye"></span>&nbsp;阅读<span id="busuanzi_value_page_pv"></span>次</div>
+          </span>
+          <br />
+        </p>
+      </header>
+      <hr class="boundary">
+      <article>
+        {{content}}
+      </article>
+      {% if page.license == true %}
+      {% include license.html %}
+      {% endif %}
+      <hr class="boundary">
+
+      <!--  近期文章 -->
+      {% include new-old.html %}
+
+
+      <div id="post-share" class="bdsharebuttonbox">
+      </div>
+      {% if site.donate == true %}
+      <!--  分享 -->
+      {% include share.html %}
+      {% endif %}
+
+      {% if site.donate == true %}
+      <!--  打赏 -->
+      {% include donate.html %}
+      {% endif %}
+
+
+    </div>
+
+    <div class="pad-min"></div>
+    {% if site.Valine == true %}
+    <div id="post-comment" class="sheet post">
+      <div style="height:20px;"></div>
+      <!--  valine评论 -->
+      {% include valine.html %}
+    </div>
+    {% endif %}
+  </div>
+
+
+
+
+  <!--  右侧挂件 -->
+  <div class="content-navigation col-lg-3">
+  {% if site.xinguanmap == true %}
+    <div class="shadow-bottom-center">
+      {% include xinguan-map.html %}
+    </div>
+    <div class="pad-min"></div>
+  {% endif %}
+    <div class="shadow-bottom-center">
+      {% include widget-toc.html %}
+      {% include widget-tag.html %}
+      {% include widget-related.html %}
+    </div>
+    <div class="pad-min"></div>
+    <div class="shadow-bottom-center">
+      {% include widget-aboutme.html %}
+      {% include widget-friends.html %}
+    </div>
+    <div class="pad-min"></div>
+    <div class="shadow-bottom-center">
+      {% include widget-sub-rss.html %}
+      {% include widget-sub-mail.html %}
+    </div>
+    <div class="pad-min"></div>
+    {% include widget-time.html %}
+
+  </div>
+</div>
+
+
+<!--  图片灯箱 -->
+{% include image.html %}
+
+<!--  评论特效 -->
+<script src="../../static/js/activate-power-mode.js"></script>
+<script>
+  POWERMODE.colorful = true; // 控制开启/关闭礼花特效
+  POWERMODE.shake = false; // 控制开启/关闭屏幕震动特效
+  document.body.addEventListener('input', POWERMODE);
+</script>

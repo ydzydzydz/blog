@@ -1,0 +1,26 @@
+.donate_bar a.btn_donate {
+    display: inline-block;
+    width: 82px;
+    height: 82px;
+    background: url("https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/payimg/shang.gif") no-repeat;
+    _background: url("https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/payimg/shang.gif") no-repeat;
+    -webkit-transition: background 0s;
+    -moz-transition: background 0s;
+    -o-transition: background 0s;
+    -ms-transition: background 0s;
+    transition: background 0.2s;
+}
+
+.donate_bar a.btn_donate:hover {
+    background-position: 0px -82px;
+}
+
+.donate_bar .donate_txt {
+    display: block;
+    color: #9d9d9d;
+    font: 14px/2 "Microsoft Yahei";
+}
+
+.bold {
+    font-weight: bold;
+}

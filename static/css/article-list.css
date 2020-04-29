@@ -1,0 +1,106 @@
+.zz{
+    width: 100%;
+    height: 100%;
+    min-height: 8rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+article{
+    padding:6px 0px 8px 0px;
+    margin-top: 3em;
+}
+article header{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+    margin-left: 5px;
+    line-height: 1em;
+    /*text-shadow: 0 1px #fff;*/
+    font-weight: bold;
+    display: block;
+    -webkit-animation: zoomIn 2s;
+    animation: zoomIn 2s;
+}
+
+article header a{
+    color: #00E3FF;
+}
+
+
+
+article .module{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 25px;
+    border-bottom: 1px solid #b1b1b1;
+    background: #fff;
+
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+    -o-box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+    box-shadow: 15px 20px 17px 0px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+    /*-webkit-animation: zoomIn 2s;
+    animation: zoomIn 2s;*/
+}
+article .title{
+    font-size: 1.6em;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+
+    margin-left: -25px;
+    padding-left: 20px;
+    border-left: 5px solid #2ca6cb;
+}
+
+article .readmore{
+    display: inline-block;
+    line-height: 1em;
+    padding: 6px 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: #eee;
+    color: #999;
+    text-shadow: 0 1px #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+article .readmore:hover{
+    background: #258fb8;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px #1e7293;
+}
+
+article footer{
+    font-size: .85em;
+    line-height: 1.6em;
+    border-top: 1px solid #ddd;
+    padding-top: 1.6em;
+    margin: 0;
+}
+article footer a{
+    color: #999;
+    margin-right: 15px;
+}
+
+
+article blockquote {
+    border-left: 5px solid #34a8cd;
+    background: rgba(112,138,153,.1);
+    font-size: 100%;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}

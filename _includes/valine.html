@@ -1,0 +1,25 @@
+<!-- Valine 评论 -->
+<link rel="stylesheet" type="text/css" href="{{ '/static/css/valine.css' | prepend: site.baseurl | prepend: site.url}}" />
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+{% if site.Valine == true %}
+{% for valine in site.data.valine %}
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '{{ valine.appid }}',
+        appKey: '{{ valine.appkey }}',
+        notify: false,
+        verify: false,
+        avatar: '{{ valine.avatar }}',
+        placeholder: '{{ valine.placeholder }}',
+        lang: '{{ valine.lang }}',
+        highlight: true,
+        recordIP: true,
+        meta: ['nick','mail','link']
+    })
+</script>
+{% endfor %}
+{% endif %}

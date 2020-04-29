@@ -1,0 +1,49 @@
+<header>
+    <nav class="navbar navbar-tiffany rectangle" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ site.baseurl | prepend: site.url }}/"><img style="display: inline-block; vertical-align: middle; width:50px;" src="{{ site.logo }}" />&nbsp;<span style="display: inline-block;">{{ site.title }}</span></a>
+                <p class="navbar-text">{{ site.description }}</p>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    {% if page.url == "/index.html" %}
+                    <li class="active">{% else %}
+                    <li>{% endif %}
+                        <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep"><span class="fa fa-home" style="width:16px"></span><span>&nbsp;主页</a>
+                    </li>
+                    {% for p in site.pages %}{% if p.isNavItem %}
+                    {% if p.url == page.url %}
+                    <li class="active">{% else %}
+                    <li>{% endif %}
+                        <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" class="word-keep"><span class="{{ p.icon }}" style="width:16px"></span>&nbsp;{{ p.title }}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                    <li><a href="/friends/" class="word-keep"><span class="fa fa-chain" style="width:16px"></span><span>&nbsp;友链</a></li>
+                    <li><a id="cb-search-btn" class="word-keep"><span class="fa fa-search" style="width:16px"></span><span>&nbsp;搜索</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--
+    <style type="text/css">
+        html{ 
+            filter: grayscale(100%);
+            -webkit-filter: 
+            grayscale(100%); 
+            -moz-filter: grayscale(100%); 
+            -ms-filter: grayscale(100%); 
+            -o-filter: grayscale(100%); 
+            filter: url("data:image/svg+xml;utf8,#grayscale"); 
+            filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
+            -webkit-filter: grayscale(1);
+        } 
+    </style>
+    -->
+</header>

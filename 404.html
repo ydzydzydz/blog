@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>404</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <meta http-equiv="refresh" content="10;url=https://zhuangzhuang.cf/welcome">
+  <style type="text/css">
+
+  body {
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #000000;
+    background-image: radial-gradient(#333, #111);
+    font-family: 'Inconsolata', Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: rgba(128, 128, 128, 0.8);
+    text-shadow: 0 0 1ex rgba(51, 51, 51, 1), 0 0 2px rgba(255, 255, 255, 0.8);
+  }
+
+  .overlay {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+    background-size: auto 4px;
+    z-index: 99;
+  }
+
+  .overlay::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg,
+        transparent 0%,
+        rgba(128, 128, 128, 0.2) 2%,
+        rgba(128, 128, 128, 0.8) 3%,
+        rgba(128, 128, 128, 0.2) 3%,
+        transparent 100%);
+    background-repeat: no-repeat;
+    animation: scan 7.5s linear 0s infinite;
+  }
+
+  @keyframes scan {
+    0% { background-position: 0 -100vh; }
+    35%, 100% { background-position: 0 100vh; }
+  }
+
+  .terminal {
+    box-sizing: inherit;
+    position: absolute;
+    height: 100%;
+    width: 1000px;
+    max-width: 100%;
+    padding: 4rem;
+    text-transform: uppercase;
+  }
+
+  .output {
+    color: rgba(128, 128, 128, 0.8);
+    text-shadow: 0 0 1ex rgba(51, 51, 51, 0.8),
+        0 0 2px rgba(255, 255, 255, 0.8);
+  }
+
+  .output::before {
+    content: "> ";
+  }
+
+
+  .input {
+    color: rgba(192, 255, 192, 0.8);
+    text-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255, 255, 255, 0.8);
+  }
+
+  input {
+    color: rgba(192, 255, 192, 0.8);
+    text-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+  }
+
+  .input::before {
+    content: "$ ";
+    -webkit-animation: 	flipInY 2s;
+    animation: 	flipInY 2s;
+    animation-iteration-count: infinite;
+  }
+
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a::before {
+    content: "[";
+  }
+
+  a::after {
+    content: "]";
+  }
+
+  .errorcode {
+    color: white;
+  }
+
+  .kong {
+  height: 10%;
+}
+  </style>
+
+</head>
+
+<body>
+
+
+<div class="overlay"></div>
+<div class="terminal">
+
+  <div class="kong"></div>
+  <h1>错误 <span class="errorcode">404</span></h1>
+
+  <div id="autotype"></div>
+</div>
+</body>
+
+<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $.fn.autotype = function (str, speed) {
+        var self = this,
+                defaultStr = '<p class="output"> 您要查找的页面可能已被删除，名称已更改或暂时不可用</p>'
+                          +'<p class="output">请尝试 <a href="https://zhuangzhuang.cf/"> 此链接 </a> 或者 <a href="https://zhuangzhuang.cf/welcome/"> 此链接 </a></p>'
+                          +'<p class="output">5 秒后将自动跳转</p>'
+                          +'<p class="output">祝好运</p>'
+                          +'<!-- <p class="input"><input style="background-color:transparent; border:0px; height:30px;"></p> -->',//将要添加的元素的默认内容
+                defaultSpeed = 100,
+                str = str || defaultStr,
+                speed = speed || defaultSpeed,
+                index = 0,
+                timer = setInterval(function () {
+                    var current = str.substr(index, 1);
+                    if (current == '<') {
+                        index = str.indexOf('>', index) + 1;
+                    } else {
+                        index++;
+                    }
+                    self.html(str.substring(0, index) + ( (index & 1) && (index != str.length) ? '_' : ''));
+                    if (index >= str.length) {
+                        clearInterval(timer);
+                    }
+                }, speed);
+    };
+    $("#autotype").autotype();
+</script>
+
+
+</html>

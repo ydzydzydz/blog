@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body onload="disableInfo();time_fun();time()">
+
+    {% include header.html %}
+
+    <div class="main">
+        <div class="container">
+            {{ content }}
+        </div>
+        <div class="page-scrollTop" data-toggle="tooltip" data-placement="top" title="回到顶部">
+            <a href="javascript:void(0);">
+                <div class="arrow"></div>
+            </a>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

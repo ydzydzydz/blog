@@ -1,0 +1,74 @@
+---
+title: 友链
+layout: default
+---
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ZHUANGZHUANG</title>
+		<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/highlight.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container" style="margin:0;padding:0;width:100%;">
+		<!--<header>
+				<img width="175" height="175" style="border-radius:50%;" src="/img/avatar-hux-ny.jpg">
+			</header> -->
+			<div class="main">
+				<ul class="cbp_tmtimeline">
+
+					<li>
+						<div class="cbp_tmlabel">
+							<h2 id="boxoffice">互换友链</h2>
+							<time>2019.05.08</time>
+							<ul>
+								<li>
+									 	<p><span style="color:#9929ec;">Name:</span><span style="color:#4579f2"> ZHUANGZHUANG</span></p>
+										<p><span style="color:#9929ec;">Site:</span><span style="color:#4579f2"> https://zhuangzhuang.cf</span></p>
+										<p><span style="color:#9929ec;">Image:</span><span style="color:#4579f2"> ^https?://.*(jpg|png)</span></p>
+										<p><span style="color:#9929ec;">Desc:</span><span style="color:#f2009b"> 有朋自远方来，不亦乐乎？</span></p>
+								</li>
+								<li class="skill">
+									<span><b> </b></span>
+									<span class="link"><a target="_blank" href="mailto:mail@zhuangzhuang.ml
+										?subject=互换友链
+										&body=Site-name: ZHUANGZHUANG
+										%0d%0aSite-url: https://zhuangzhuang.cf
+										%0d%0aBackground: ^https?://.*(jpg|png)
+										%0d%0aDescription: stay hungry • stay foolish">互换友链</a></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+				{% for friends in site.data.friends %}
+					<li>
+						<div class="cbp_tmlabel">
+							<h2 id="boxoffice">{{ friends.tittle }}</h2>
+							<time>{{ friends.time }}</time>
+							<a target="_blank" href="{{ friends.url }}">
+							<img src="{{ friends.img }}"></a>
+							<ul>
+								<li>
+								{{ friends.description }}
+								</li>
+								<li class="skill">
+									<span><b> </b></span>
+									<span class="link"><a target="_blank" href="{{ friends.url }}">点击跳转</a></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+      {% endfor %}
+
+				</ul>
+			</div>
+		</div>
+		<div style="height:60px"></div>
+	</body>
+</html>

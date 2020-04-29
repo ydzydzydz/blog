@@ -1,0 +1,50 @@
+<footer class="footnote footnote-tiffany">
+    <div class="container">
+        <!--    
+        <a title="微信" class="foot-item" style="background:#3cb034" href="https://ydzydzydz.github.io/images/weixin.png" target="_blank"><span class="fa fa-weixin"></span></a>
+        <a title="QQ" class="foot-item" style="background:#00c0ff" href="mqq://im/chat?chat_type=wpa&uin=2474745326&version=1&src_type=web" target="_blank"><span class="fa fa-qq"></span></a>
+        <a title="GitHub" class="foot-item" style="background:#000000" href="https://github.com/{{ site.github_username }}" target="_blank"><span class="fa fa-github"></span></a>  
+        <a title="关于我" class="foot-item" style="background:#972fff" href="{{ '/about/' | prepend: site.baseurl | prepend: site.url }}"><span class="fa fa-user"></span></a>                  
+        -->
+        <a title="邮箱" class="foot-item" style="background:#1a78b5" href="mailto:{{ site.email }}" target="_blank"><span class="fa fa-envelope"></span></a>       
+        <a title="Telegram" class="foot-item" style="background:#3d9ddc" href="https://t.me/YDZ123456" target="_blank"><span class="fa fa-send"></span></a>
+        <a title="微博" class="foot-item" style="background:#ff3200" href="{{ '/weibo/' | prepend: site.baseurl | prepend: site.url }}"><span class="fa fa-weibo"></span></a>
+        <a title="Twitter" class="foot-item" style="background:#1da1f2" href="{{ '/twitter/' | prepend: site.baseurl | prepend: site.url }}"><span class="fa fa-twitter"></span></a>
+        <a title="RSS订阅" class="foot-item" style="background:#ff9b08" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" target="_blank"><span class="fa fa-rss"></span></a>
+        <a title="" class="foot-item" style="background:#ff3030" href="{{ '/kaspersky/' | prepend: site.baseurl | prepend: site.url }}"><span class="fa fa-warning"></span></a>
+        <a title="友情链接" class="foot-item" style="background:#07bf92" href="{{ '/friends/' | prepend: site.baseurl | prepend: site.url }}"><span class="fa fa-address-card"></span></a> &nbsp;
+        <a href="http://zhuangzhuang.cf/"><span class="word-keep">&copy; zhuangzhuang</span></a>
+
+        <p style="word-break: keep-all;">
+            <!-- 网站运行时间 -->
+            <script src="{{ '/static/js/yxtime.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+            <span id="htmer_time-footer"></span>
+
+            <!-- 不蒜子统计 -->
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv"> 总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+        </p>
+    </div>
+</footer>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{'/static/js/script.js' | prepend:site.baseurl | prepend: site.url  }}"></script>
+{% for script in page.scripts %}
+<script type="text/javascript" src="{{'/static/js/' | append:script | prepend:site.baseurl | prepend: site.url  }}"></script>
+{%endfor%}
+
+<!-- 站内搜索 -->
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed" placeholder="搜索：文章标题 标签 日期">
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <li><a id="cb-close-btn"><span class="fa fa-close"></span><span>&nbsp;关闭</a></li>
+    </div>
+</div>
+<link rel="stylesheet" href="{{ "/search/css/cb-search.css" | prepend: site.baseurl }}">
+<script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
+
+<!-- 条纹背景 -->
+<!--
+<script type="text/javascript" color="93,172,129" opacity='1' zIndex="-2" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+-->

@@ -1,0 +1,135 @@
+<head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="{{ page.title }}, {% for category in page.categories %}{{ category }},{% endfor %} {% for tag in page.tags %}{{ tag }},{% endfor %} {{ site.title }}" />
+    <meta name="description" content="{{ page.title }}, {% for category in page.categories %}{{ category }},{% endfor %} {% for tag in page.tags %}{{ tag }},{% endfor %} {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="theme-color" content="#2CA6CB" />
+    <link rel="shortcut icon" type="image/x-icon" media="screen" href="{{ '/static/favicon.ico' | prepend: site.baseurl | prepend: site.url}}" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/octicons/3.5.0/octicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/style.css' | prepend: site.baseurl | prepend: site.url}}" />
+
+    <!-- ios桌面图标 -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <!-- iOS全屏-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- iOS状态栏颜色-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 设置启动画面 没什么用 也许是我不会-->
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <!-- 设置竖屏启动画面 -->
+    <link rel="apple-touch-startup-image" media="screen and (orientation: portrait)" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/2.jpg" />
+    <!-- 设置横屏启动画面 -->
+    <link rel="apple-touch-startup-image" media="screen and (orientation: landscape)" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/3.jpg" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <mate name="theme-color" content="#000000">
+    <link rel="shortcut icon" sizes="196x196" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- Generic Icon -->
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/icon.png">
+
+    {% for style in page.styles %}
+    <link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl | prepend: site.url}}" />
+    {%endfor%}
+    
+
+        <script>
+            if (('standalone' in window.navigator) && window.navigator.standalone) {
+                var noddy, remotes = false;
+                document.addEventListener('click', function (event) {
+                    noddy = event.target;
+                    while (noddy.nodeName !== 'A' && noddy.nodeName !== 'HTML') noddy = noddy.parentNode;
+                    if ('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes)) {
+                        event.preventDefault();
+                        document.location.href = noddy.href;
+                    }
+                }, false);
+            }
+        </script>
+
+        <!-- og标签-->
+        <meta property="og:site_name" content="ZHUANGZHUANG">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:description" content="壮壮博客">
+        <meta property="og:url"
+            content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <meta property="og:image" content="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302">
+
+        <!-- twitter card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="壮壮博客">
+        <meta name="twitter:image" content="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302">
+        <meta name="twitter:creator" content="@YDZ123456">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138746522-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-138746522-1');
+        </script>
+
+        <!-- 百度统计 -->
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?71faebb5cec7df1f7ca9fced0b2d9e1f";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+
+        <!-- WOW.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script>
+            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+                new WOW().init();
+            };
+        </script>
+
+        <!-- 文章加密 -->
+        <script>
+            (function () {
+                if ('{{ page.password }}') {
+                    if (prompt('{{ page.prompt }}') !== '{{ page.password }}') {
+                        alert('{{ page.alert }}');
+                        window.location.href="https://m.baidu.com/?tn=simple"; //跳转到百度
+                        //document.body.innerHTML = ""; // 空白页
+                        /*
+                        var element = document.body;
+                        var text = element.innerText || element.textContent;
+                        var base64 = window.btoa(encodeURIComponent(text));
+                        document.body.innerHTML = base64;  //Base64编码
+                        */
+                    }
+                }
+            })();
+        </script>
+</head>

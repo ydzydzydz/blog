@@ -1,0 +1,53 @@
+permalink: /:year-:month-:day/:title/
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input:  GFM
+  syntax_highlighter: rouge
+
+excerpt_separator: "<!-- more -->"
+
+paginate: 10
+paginate_path: ":num"
+baseurl: ""
+
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      styles : [highlight.css,post.css]
+      scripts : [post.js]
+
+
+
+title: "ZHUANGZHUANG"
+email: "mail@zhuangzhuang.ml"
+description: ""
+logo: "https://raw.githubusercontent.com/ydzydzydz/blogphoto/master/avatar.png"
+github_username:  "ydzydzydz"
+
+
+plugins: [jekyll-paginate]
+
+
+# 域名
+url: "https://zhuangzhuang.cf"
+imgrepo: "https://zhuangzhuang.cf/static/img"
+
+
+# 分享文章
+share: true
+# 打赏文章
+donate: true
+# 一言挂件
+yiyan: true
+# Valine 评论
+Valine: true
+# 2020 新冠实时疫情图
+xinguanmap: true

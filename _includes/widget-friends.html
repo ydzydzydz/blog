@@ -1,0 +1,15 @@
+<div class="content-navigation-me">
+  <div class="content-navigation-header">
+    <span class="fa fa-chain"></span>&nbsp;<a href="/friends">友情链接</a>
+  </div>
+  <div class="content-navigation-list">
+
+    <ul>
+      {% for friends in site.data.friends %}
+      <li>
+        <a target="_blank" href="{{ friends.url }}"><span class="fa fa-user-o"></span>&nbsp;{{ friends.tittle }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

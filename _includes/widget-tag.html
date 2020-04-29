@@ -1,0 +1,15 @@
+<div class="content-navigation-tag">
+    <div class="content-navigation-header">
+        <span class="fa fa-tags"></span>&nbsp;文章标签
+    </div>
+    <div class="content-navigation-list">
+        <ul>
+            {% for tag in page.tags %}
+            <li>
+                <a href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}#{{ tag }}"><span
+                        class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

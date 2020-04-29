@@ -1,0 +1,41 @@
+<div class="content-navigation-related">
+    <div class="content-navigation-header">
+        <span class="fa fa-folder-open"></span>&nbsp;相关文章
+    </div>
+    <div class="content-navigation-list">
+        <ul>
+            {% assign postsAfterFilter = '-' | split: "-" %}
+
+            {% for p in site.posts %}
+            {%if p.url != page.url %}
+            {% assign commonTagCount = 0 %}
+
+            {% for tag in p.tags %}
+            {% if page.tags contains tag %}
+            {% assign commonTagCount = commonTagCount | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+
+            {% for cat in p.categories %}
+            {% if page.categories contains cat %}
+            {% assign commonTagCount = commonTagCount | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+
+            {% if commonTagCount > 0 %}
+            {% assign postsAfterFilter = postsAfterFilter | push: p %}
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+            {% if postsAfterFilter.size > 0 %}
+            {% for p in postsAfterFilter limit: 15 %}
+            <li>
+                <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}"><span
+                        class="fa fa-file-text-o"></span>&nbsp;{{ p.title }}</a>
+            </li>
+            {% endfor %}
+            {% endif %}
+        </ul>
+    </div>
+</div>
