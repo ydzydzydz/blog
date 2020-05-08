@@ -303,3 +303,7 @@ service sftpd status
 ssh -p 20022 sftpuser@localhost          # 无法登陆
 sftp -oPort=20022 sftpuser@localhost     # 可以登陆
 ```
+
+###  其它
+
+[https://github.com/ydzydzydz/sshd-sftpd/](https://github.com/ydzydzydz/sshd-sftpd/)
