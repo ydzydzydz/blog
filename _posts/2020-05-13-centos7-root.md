@@ -38,15 +38,15 @@ categories: Linux
 1. 重启机器报错，`Failed to load SELinux policy. Freezing`，无法正常进入系统
 
    ```bash
-# 方法一：关闭 SELinux
+   # 方法一：关闭 SELinux
    sh-4.2# sed -i 's/SELINUX=enforcing/SELINUX=disabled/g'/etc/sysconfig/selinux
-   
+
    # 方法二：修复 SELinux 安全上下文
    sh-4.2# genhomedircon
    sh-4.2# fixfiles -f relabel
    sh-4.2# touch /.autorelabel
    ```
-   
+
 2. 可以正常重启机器，但输入正确密码后无法登陆系统
 
    临时禁用 SELinux，修改 /etc/shadow 的安全上下文
