@@ -12,6 +12,7 @@ categories: Surge
 yum -y update
 yum -y install wget gcc make 
 wget http://downloads.es.net/pub/iperf/iperf-3.7.tar.gz
+tar -xvf iperf-3.7.tar.gz
 cd iperf-3.7
 ./configure
 make && make install
