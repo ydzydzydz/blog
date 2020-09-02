@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-color: #000;
+    overflow: hidden;
+}
+#clock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-image: url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302);
+}
+.label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display:inline-block;
+    color:#8e8e8e;
+    text-align: center;
+    padding:0 5px;
+    font-size:19px;
+    transition:all 1s;
+    transform: translate(-50%,-50%);
+    transform-origin: 0% 0%;
+}
+.now{
+    color: #fff;
+}
