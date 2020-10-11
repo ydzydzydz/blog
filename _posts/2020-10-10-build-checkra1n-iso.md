@@ -122,6 +122,8 @@ livecd-creator -c checkra1n.cfg -f checkra1n -d
 ls -lh checkra1n.iso
 ```
 
+![](https://github.com/ydzydzydz/blogphoto/raw/master/checkra1n/1.png)
+
 > 本来阿永说用 Ubuntu 做 Live CD 的
 >
 > 找到两个项目 remastersys 和 respin，但是已经不维护了
