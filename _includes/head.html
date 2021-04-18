@@ -54,7 +54,14 @@
     <link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl | prepend: site.url}}" />
     {%endfor%}
     
-
+        <script>
+            (function () {
+                var con = confirm('搬家了！https://zhuangzhuang.io')
+                if(con == true){
+                    window.location.href="https://zhuangzhuang.io";
+                }
+            })();
+        </script>
         <script>
             if (('standalone' in window.navigator) && window.navigator.standalone) {
                 var noddy, remotes = false;
